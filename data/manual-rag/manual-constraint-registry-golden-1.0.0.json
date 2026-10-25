@@ -1,0 +1,23 @@
+{
+  "goldenId": "nio-manual-constraint-registry-golden",
+  "version": "1.0.0",
+  "manualVersion": "nio-es8-user-manual-2026",
+  "positiveCases": [
+    { "id": "tailgate-reviewed", "chunkId": "es8-manual-chunk-0052", "expectedRegistryId": "es8-tailgate-clear-path" },
+    { "id": "window-reviewed", "chunkId": "es8-manual-chunk-0065", "expectedRegistryId": "es8-window-anti-pinch-unavailable" }
+  ],
+  "negativeCases": [
+    "unknown-chunk",
+    "same-keywords-different-subject",
+    "negation-reversal",
+    "exception-reversal",
+    "missing-reviewed-span",
+    "wrong-manual-version",
+    "wrong-source",
+    "directory-noise",
+    "registry-tampered",
+    "registry-missing-field",
+    "registry-unknown-effect",
+    "registry-not-approved"
+  ]
+}

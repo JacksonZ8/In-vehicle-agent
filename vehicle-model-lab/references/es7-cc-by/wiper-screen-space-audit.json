@@ -1,0 +1,4595 @@
+{
+  "contract": "nio-es7-wiper-screen-space-audit@0.1.0",
+  "frame": 601,
+  "imageSize": [
+    720,
+    405
+  ],
+  "objects": {
+    "es7_work__ES7_Body_C": [
+      {
+        "rootVertex": 55027,
+        "vertices": 22,
+        "polygons": 28,
+        "worldCenter": [
+          1.080798,
+          -0.717322,
+          1.265745
+        ],
+        "worldSize": [
+          0.011805,
+          0.021716,
+          0.006827
+        ],
+        "pixelCenter": [
+          109.89,
+          259.02
+        ]
+      },
+      {
+        "rootVertex": 55061,
+        "vertices": 12,
+        "polygons": 12,
+        "worldCenter": [
+          1.078354,
+          -0.716489,
+          1.263311
+        ],
+        "worldSize": [
+          0.010131,
+          0.022702,
+          0.001958
+        ],
+        "pixelCenter": [
+          110.38,
+          259.32
+        ]
+      },
+      {
+        "rootVertex": 55073,
+        "vertices": 38,
+        "polygons": 43,
+        "worldCenter": [
+          1.079998,
+          -0.718188,
+          1.260967
+        ],
+        "worldSize": [
+          0.017391,
+          0.0261,
+          0.016383
+        ],
+        "pixelCenter": [
+          109.77,
+          260.32
+        ]
+      },
+      {
+        "rootVertex": 54997,
+        "vertices": 30,
+        "polygons": 40,
+        "worldCenter": [
+          1.087873,
+          -0.719542,
+          1.261987
+        ],
+        "worldSize": [
+          0.015018,
+          0.023392,
+          0.012182
+        ],
+        "pixelCenter": [
+          108.85,
+          261.4
+        ]
+      },
+      {
+        "rootVertex": 55111,
+        "vertices": 42,
+        "polygons": 59,
+        "worldCenter": [
+          1.086253,
+          -0.708668,
+          1.260572
+        ],
+        "worldSize": [
+          0.018258,
+          0.00744,
+          0.017173
+        ],
+        "pixelCenter": [
+          112.77,
+          261.54
+        ]
+      },
+      {
+        "rootVertex": 55049,
+        "vertices": 12,
+        "polygons": 12,
+        "worldCenter": [
+          1.089582,
+          -0.720867,
+          1.254287
+        ],
+        "worldSize": [
+          0.0116,
+          0.020742,
+          0.004657
+        ],
+        "pixelCenter": [
+          108.51,
+          264.02
+        ]
+      },
+      {
+        "rootVertex": 55793,
+        "vertices": 52,
+        "polygons": 90,
+        "worldCenter": [
+          1.216795,
+          0.692177,
+          1.194024
+        ],
+        "worldSize": [
+          0.020564,
+          0.022604,
+          0.014385
+        ],
+        "pixelCenter": [
+          606.49,
+          305.53
+        ]
+      },
+      {
+        "rootVertex": 54981,
+        "vertices": 16,
+        "polygons": 14,
+        "worldCenter": [
+          1.217207,
+          0.689341,
+          1.194078
+        ],
+        "worldSize": [
+          0.021516,
+          0.018804,
+          0.013885
+        ],
+        "pixelCenter": [
+          605.5,
+          305.6
+        ]
+      },
+      {
+        "rootVertex": 55483,
+        "vertices": 24,
+        "polygons": 24,
+        "worldCenter": [
+          1.216661,
+          0.692259,
+          1.192755
+        ],
+        "worldSize": [
+          0.020107,
+          0.022512,
+          0.01264
+        ],
+        "pixelCenter": [
+          606.48,
+          305.89
+        ]
+      },
+      {
+        "rootVertex": 55459,
+        "vertices": 24,
+        "polygons": 24,
+        "worldCenter": [
+          1.21619,
+          0.692105,
+          1.19175
+        ],
+        "worldSize": [
+          0.019165,
+          0.022189,
+          0.01063
+        ],
+        "pixelCenter": [
+          606.37,
+          306.11
+        ]
+      }
+    ],
+    "wiper_left_mesh": [
+      {
+        "rootVertex": 1815,
+        "vertices": 28,
+        "polygons": 38,
+        "worldCenter": [
+          1.186541,
+          0.380869,
+          1.259559
+        ],
+        "worldSize": [
+          0.006457,
+          0.025362,
+          0.007932
+        ],
+        "pixelCenter": [
+          495.77,
+          279.95
+        ]
+      },
+      {
+        "rootVertex": 1918,
+        "vertices": 15,
+        "polygons": 16,
+        "worldCenter": [
+          1.18327,
+          0.380681,
+          1.256733
+        ],
+        "worldSize": [
+          0.005323,
+          0.0253,
+          0.002279
+        ],
+        "pixelCenter": [
+          495.56,
+          280.21
+        ]
+      },
+      {
+        "rootVertex": 1781,
+        "vertices": 34,
+        "polygons": 32,
+        "worldCenter": [
+          1.186993,
+          0.380785,
+          1.254307
+        ],
+        "worldSize": [
+          0.01782,
+          0.026284,
+          0.018437
+        ],
+        "pixelCenter": [
+          495.67,
+          281.64
+        ]
+      },
+      {
+        "rootVertex": 1881,
+        "vertices": 37,
+        "polygons": 50,
+        "worldCenter": [
+          1.189777,
+          0.368129,
+          1.25399
+        ],
+        "worldSize": [
+          0.020055,
+          0.001706,
+          0.018608
+        ],
+        "pixelCenter": [
+          491.24,
+          282.25
+        ]
+      },
+      {
+        "rootVertex": 2657,
+        "vertices": 4,
+        "polygons": 2,
+        "worldCenter": [
+          1.1917,
+          0.322334,
+          1.254908
+        ],
+        "worldSize": [
+          0.014361,
+          0.127819,
+          0.001518
+        ],
+        "pixelCenter": [
+          474.97,
+          282.32
+        ]
+      },
+      {
+        "rootVertex": 3062,
+        "vertices": 7,
+        "polygons": 4,
+        "worldCenter": [
+          1.21785,
+          0.134702,
+          1.269936
+        ],
+        "worldSize": [
+          0.002785,
+          0.037676,
+          0.002912
+        ],
+        "pixelCenter": [
+          408.41,
+          282.57
+        ]
+      },
+      {
+        "rootVertex": 1843,
+        "vertices": 38,
+        "polygons": 54,
+        "worldCenter": [
+          1.194628,
+          0.38115,
+          1.255554
+        ],
+        "worldSize": [
+          0.010428,
+          0.025514,
+          0.013475
+        ],
+        "pixelCenter": [
+          496.05,
+          282.67
+        ]
+      },
+      {
+        "rootVertex": 2694,
+        "vertices": 4,
+        "polygons": 2,
+        "worldCenter": [
+          1.219029,
+          0.111178,
+          1.26841
+        ],
+        "worldSize": [
+          0.000427,
+          0.009595,
+          0.001363
+        ],
+        "pixelCenter": [
+          399.96,
+          283.26
+        ]
+      },
+      {
+        "rootVertex": 3153,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.226979,
+          0.080011,
+          1.269218
+        ],
+        "worldSize": [
+          0.001083,
+          0.008828,
+          0.001098
+        ],
+        "pixelCenter": [
+          388.81,
+          284.5
+        ]
+      },
+      {
+        "rootVertex": 3256,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.227072,
+          0.08002,
+          1.269212
+        ],
+        "worldSize": [
+          0.001009,
+          0.008543,
+          0.001031
+        ],
+        "pixelCenter": [
+          388.81,
+          284.52
+        ]
+      },
+      {
+        "rootVertex": 3770,
+        "vertices": 69,
+        "polygons": 92,
+        "worldCenter": [
+          1.222495,
+          0.15455,
+          1.265666
+        ],
+        "worldSize": [
+          0.012075,
+          0.002069,
+          0.015687
+        ],
+        "pixelCenter": [
+          415.57,
+          284.76
+        ]
+      },
+      {
+        "rootVertex": 2656,
+        "vertices": 4,
+        "polygons": 2,
+        "worldCenter": [
+          1.20544,
+          0.194166,
+          1.25508
+        ],
+        "worldSize": [
+          0.013279,
+          0.128534,
+          0.001173
+        ],
+        "pixelCenter": [
+          429.47,
+          284.82
+        ]
+      },
+      {
+        "rootVertex": 2664,
+        "vertices": 4,
+        "polygons": 2,
+        "worldCenter": [
+          1.199213,
+          0.323113,
+          1.249897
+        ],
+        "worldSize": [
+          0.014433,
+          0.127851,
+          0.001796
+        ],
+        "pixelCenter": [
+          475.37,
+          285.25
+        ]
+      },
+      {
+        "rootVertex": 1933,
+        "vertices": 44,
+        "polygons": 61,
+        "worldCenter": [
+          1.221063,
+          0.045337,
+          1.262295
+        ],
+        "worldSize": [
+          0.009497,
+          0.021306,
+          0.013768
+        ],
+        "pixelCenter": [
+          376.29,
+          285.52
+        ]
+      },
+      {
+        "rootVertex": 3248,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.23016,
+          0.084741,
+          1.267392
+        ],
+        "worldSize": [
+          0.006908,
+          0.00094,
+          0.004395
+        ],
+        "pixelCenter": [
+          390.53,
+          285.66
+        ]
+      },
+      {
+        "rootVertex": 3143,
+        "vertices": 10,
+        "polygons": 8,
+        "worldCenter": [
+          1.230135,
+          0.084839,
+          1.26735
+        ],
+        "worldSize": [
+          0.007069,
+          0.001078,
+          0.004556
+        ],
+        "pixelCenter": [
+          390.56,
+          285.67
+        ]
+      },
+      {
+        "rootVertex": 1771,
+        "vertices": 10,
+        "polygons": 8,
+        "worldCenter": [
+          1.196922,
+          0.38105,
+          1.246934
+        ],
+        "worldSize": [
+          0.00584,
+          0.025082,
+          0.005125
+        ],
+        "pixelCenter": [
+          495.94,
+          285.73
+        ]
+      },
+      {
+        "rootVertex": 3737,
+        "vertices": 33,
+        "polygons": 52,
+        "worldCenter": [
+          1.230629,
+          0.08039,
+          1.267313
+        ],
+        "worldSize": [
+          0.007737,
+          0.009608,
+          0.004827
+        ],
+        "pixelCenter": [
+          388.96,
+          285.77
+        ]
+      },
+      {
+        "rootVertex": 3069,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.218221,
+          0.050458,
+          1.259394
+        ],
+        "worldSize": [
+          0.001357,
+          0.011159,
+          0.000874
+        ],
+        "pixelCenter": [
+          378.11,
+          285.88
+        ]
+      },
+      {
+        "rootVertex": 2076,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.218018,
+          0.050314,
+          1.259265
+        ],
+        "worldSize": [
+          0.001346,
+          0.011012,
+          0.000721
+        ],
+        "pixelCenter": [
+          378.06,
+          285.89
+        ]
+      },
+      {
+        "rootVertex": 469,
+        "vertices": 24,
+        "polygons": 22,
+        "worldCenter": [
+          1.224337,
+          0.248816,
+          1.26295
+        ],
+        "worldSize": [
+          0.013944,
+          0.192238,
+          0.018103
+        ],
+        "pixelCenter": [
+          449.47,
+          285.94
+        ]
+      },
+      {
+        "rootVertex": 3264,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.230871,
+          0.076058,
+          1.266801
+        ],
+        "worldSize": [
+          0.006913,
+          0.000945,
+          0.004398
+        ],
+        "pixelCenter": [
+          387.4,
+          285.98
+        ]
+      },
+      {
+        "rootVertex": 3161,
+        "vertices": 10,
+        "polygons": 8,
+        "worldCenter": [
+          1.230867,
+          0.075963,
+          1.266754
+        ],
+        "worldSize": [
+          0.007063,
+          0.001034,
+          0.004573
+        ],
+        "pixelCenter": [
+          387.37,
+          285.99
+        ]
+      },
+      {
+        "rootVertex": 2082,
+        "vertices": 16,
+        "polygons": 14,
+        "worldCenter": [
+          1.21769,
+          0.056065,
+          1.257368
+        ],
+        "worldSize": [
+          0.002694,
+          0.00051,
+          0.004516
+        ],
+        "pixelCenter": [
+          380.12,
+          286.41
+        ]
+      },
+      {
+        "rootVertex": 3272,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.23398,
+          0.080784,
+          1.265009
+        ],
+        "worldSize": [
+          0.001034,
+          0.00854,
+          0.000973
+        ],
+        "pixelCenter": [
+          389.12,
+          287.11
+        ]
+      },
+      {
+        "rootVertex": 3171,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.234087,
+          0.080789,
+          1.264919
+        ],
+        "worldSize": [
+          0.001054,
+          0.008809,
+          0.001094
+        ],
+        "pixelCenter": [
+          389.12,
+          287.16
+        ]
+      },
+      {
+        "rootVertex": 2098,
+        "vertices": 20,
+        "polygons": 24,
+        "worldCenter": [
+          1.218539,
+          0.045521,
+          1.255289
+        ],
+        "worldSize": [
+          0.004448,
+          0.021532,
+          0.003188
+        ],
+        "pixelCenter": [
+          376.33,
+          287.2
+        ]
+      },
+      {
+        "rootVertex": 2267,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.225992,
+          0.03632,
+          1.259766
+        ],
+        "worldSize": [
+          0.002434,
+          0.001143,
+          0.001268
+        ],
+        "pixelCenter": [
+          373.06,
+          287.23
+        ]
+      },
+      {
+        "rootVertex": 2237,
+        "vertices": 20,
+        "polygons": 18,
+        "worldCenter": [
+          1.22179,
+          0.045357,
+          1.257034
+        ],
+        "worldSize": [
+          0.00604,
+          0.021861,
+          0.006678
+        ],
+        "pixelCenter": [
+          376.29,
+          287.28
+        ]
+      },
+      {
+        "rootVertex": 2668,
+        "vertices": 403,
+        "polygons": 622,
+        "worldCenter": [
+          1.227527,
+          0.099815,
+          1.260445
+        ],
+        "worldSize": [
+          0.026789,
+          0.110825,
+          0.026128
+        ],
+        "pixelCenter": [
+          395.91,
+          287.31
+        ]
+      },
+      {
+        "rootVertex": 348,
+        "vertices": 25,
+        "polygons": 24,
+        "worldCenter": [
+          1.23061,
+          0.248747,
+          1.262305
+        ],
+        "worldSize": [
+          0.01972,
+          0.192376,
+          0.019393
+        ],
+        "pixelCenter": [
+          449.56,
+          287.31
+        ]
+      },
+      {
+        "rootVertex": 373,
+        "vertices": 48,
+        "polygons": 66,
+        "worldCenter": [
+          1.228084,
+          0.248534,
+          1.259542
+        ],
+        "worldSize": [
+          0.02144,
+          0.192499,
+          0.023734
+        ],
+        "pixelCenter": [
+          449.41,
+          287.69
+        ]
+      },
+      {
+        "rootVertex": 735,
+        "vertices": 7,
+        "polygons": 5,
+        "worldCenter": [
+          1.211494,
+          0.194274,
+          1.248981
+        ],
+        "worldSize": [
+          0.038954,
+          0.385508,
+          0.00645
+        ],
+        "pixelCenter": [
+          429.55,
+          287.82
+        ]
+      },
+      {
+        "rootVertex": 3105,
+        "vertices": 38,
+        "polygons": 36,
+        "worldCenter": [
+          1.229702,
+          0.046377,
+          1.25915
+        ],
+        "worldSize": [
+          0.022253,
+          0.003915,
+          0.019957
+        ],
+        "pixelCenter": [
+          376.69,
+          288.11
+        ]
+      },
+      {
+        "rootVertex": 2022,
+        "vertices": 30,
+        "polygons": 28,
+        "worldCenter": [
+          1.229672,
+          0.046294,
+          1.259107
+        ],
+        "worldSize": [
+          0.022386,
+          0.004475,
+          0.020024
+        ],
+        "pixelCenter": [
+          376.66,
+          288.12
+        ]
+      },
+      {
+        "rootVertex": 860,
+        "vertices": 12,
+        "polygons": 10,
+        "worldCenter": [
+          1.21755,
+          0.065436,
+          1.250632
+        ],
+        "worldSize": [
+          0.058073,
+          0.643168,
+          0.02598
+        ],
+        "pixelCenter": [
+          383.46,
+          288.45
+        ]
+      },
+      {
+        "rootVertex": 2118,
+        "vertices": 82,
+        "polygons": 119,
+        "worldCenter": [
+          1.229892,
+          0.041101,
+          1.257671
+        ],
+        "worldSize": [
+          0.022936,
+          0.013725,
+          0.023016
+        ],
+        "pixelCenter": [
+          374.79,
+          288.6
+        ]
+      },
+      {
+        "rootVertex": 995,
+        "vertices": 12,
+        "polygons": 10,
+        "worldCenter": [
+          1.209614,
+          0.063228,
+          1.24417
+        ],
+        "worldSize": [
+          0.057543,
+          0.645305,
+          0.026328
+        ],
+        "pixelCenter": [
+          382.61,
+          288.94
+        ]
+      },
+      {
+        "rootVertex": 3077,
+        "vertices": 20,
+        "polygons": 18,
+        "worldCenter": [
+          1.225578,
+          0.057215,
+          1.253594
+        ],
+        "worldSize": [
+          0.018531,
+          0.002404,
+          0.012404
+        ],
+        "pixelCenter": [
+          380.56,
+          289.04
+        ]
+      },
+      {
+        "rootVertex": 2225,
+        "vertices": 12,
+        "polygons": 10,
+        "worldCenter": [
+          1.227441,
+          0.035959,
+          1.254393
+        ],
+        "worldSize": [
+          0.001803,
+          0.001842,
+          0.009568
+        ],
+        "pixelCenter": [
+          372.93,
+          289.15
+        ]
+      },
+      {
+        "rootVertex": 872,
+        "vertices": 30,
+        "polygons": 40,
+        "worldCenter": [
+          1.216507,
+          0.06385,
+          1.24738
+        ],
+        "worldSize": [
+          0.0592,
+          0.646255,
+          0.032485
+        ],
+        "pixelCenter": [
+          382.88,
+          289.25
+        ]
+      },
+      {
+        "rootVertex": 2403,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.228464,
+          0.343872,
+          1.254701
+        ],
+        "worldSize": [
+          0.002328,
+          0.002048,
+          0.003834
+        ],
+        "pixelCenter": [
+          483.64,
+          289.25
+        ]
+      },
+      {
+        "rootVertex": 1196,
+        "vertices": 22,
+        "polygons": 23,
+        "worldCenter": [
+          1.211886,
+          0.063406,
+          1.243548
+        ],
+        "worldSize": [
+          0.06139,
+          0.64566,
+          0.027573
+        ],
+        "pixelCenter": [
+          382.69,
+          289.55
+        ]
+      },
+      {
+        "rootVertex": 421,
+        "vertices": 48,
+        "polygons": 66,
+        "worldCenter": [
+          1.231691,
+          0.248548,
+          1.255523
+        ],
+        "worldSize": [
+          0.017557,
+          0.192439,
+          0.015695
+        ],
+        "pixelCenter": [
+          449.44,
+          289.6
+        ]
+      },
+      {
+        "rootVertex": 1218,
+        "vertices": 18,
+        "polygons": 20,
+        "worldCenter": [
+          1.211336,
+          0.063393,
+          1.24288
+        ],
+        "worldSize": [
+          0.060987,
+          0.645506,
+          0.027329
+        ],
+        "pixelCenter": [
+          382.68,
+          289.65
+        ]
+      },
+      {
+        "rootVertex": 902,
+        "vertices": 18,
+        "polygons": 20,
+        "worldCenter": [
+          1.213554,
+          0.063613,
+          1.242863
+        ],
+        "worldSize": [
+          0.058199,
+          0.64526,
+          0.026072
+        ],
+        "pixelCenter": [
+          382.77,
+          290.07
+        ]
+      },
+      {
+        "rootVertex": 836,
+        "vertices": 24,
+        "polygons": 30,
+        "worldCenter": [
+          1.214388,
+          0.063709,
+          1.243266
+        ],
+        "worldSize": [
+          0.059867,
+          0.645543,
+          0.026644
+        ],
+        "pixelCenter": [
+          382.81,
+          290.11
+        ]
+      },
+      {
+        "rootVertex": 824,
+        "vertices": 12,
+        "polygons": 10,
+        "worldCenter": [
+          1.215623,
+          0.06365,
+          1.243936
+        ],
+        "worldSize": [
+          0.058636,
+          0.645854,
+          0.026793
+        ],
+        "pixelCenter": [
+          382.79,
+          290.13
+        ]
+      },
+      {
+        "rootVertex": 2257,
+        "vertices": 10,
+        "polygons": 8,
+        "worldCenter": [
+          1.227694,
+          0.046532,
+          1.25001
+        ],
+        "worldSize": [
+          0.001698,
+          0.021465,
+          0.001708
+        ],
+        "pixelCenter": [
+          376.72,
+          290.54
+        ]
+      },
+      {
+        "rootVertex": 1007,
+        "vertices": 24,
+        "polygons": 30,
+        "worldCenter": [
+          1.212523,
+          0.063608,
+          1.240695
+        ],
+        "worldSize": [
+          0.058861,
+          0.645077,
+          0.027899
+        ],
+        "pixelCenter": [
+          382.75,
+          290.54
+        ]
+      },
+      {
+        "rootVertex": 953,
+        "vertices": 42,
+        "polygons": 60,
+        "worldCenter": [
+          1.219559,
+          0.06409,
+          1.244595
+        ],
+        "worldSize": [
+          0.061775,
+          0.646008,
+          0.037229
+        ],
+        "pixelCenter": [
+          382.97,
+          290.67
+        ]
+      },
+      {
+        "rootVertex": 3017,
+        "vertices": 4,
+        "polygons": 2,
+        "worldCenter": [
+          1.22955,
+          0.092475,
+          1.250618
+        ],
+        "worldSize": [
+          0.001831,
+          0.00597,
+          0.00131
+        ],
+        "pixelCenter": [
+          393.24,
+          290.71
+        ]
+      },
+      {
+        "rootVertex": 108,
+        "vertices": 56,
+        "polygons": 81,
+        "worldCenter": [
+          1.221318,
+          0.455882,
+          1.245426
+        ],
+        "worldSize": [
+          0.014576,
+          0.226187,
+          0.025229
+        ],
+        "pixelCenter": [
+          523.48,
+          290.75
+        ]
+      },
+      {
+        "rootVertex": 2415,
+        "vertices": 10,
+        "polygons": 8,
+        "worldCenter": [
+          1.234924,
+          0.343787,
+          1.253685
+        ],
+        "worldSize": [
+          0.010746,
+          0.002136,
+          0.006134
+        ],
+        "pixelCenter": [
+          483.77,
+          290.78
+        ]
+      },
+      {
+        "rootVertex": 2338,
+        "vertices": 10,
+        "polygons": 9,
+        "worldCenter": [
+          1.226922,
+          0.550123,
+          1.248282
+        ],
+        "worldSize": [
+          0.002451,
+          0.001977,
+          0.002173
+        ],
+        "pixelCenter": [
+          557.59,
+          290.93
+        ]
+      },
+      {
+        "rootVertex": 2348,
+        "vertices": 55,
+        "polygons": 81,
+        "worldCenter": [
+          1.23357,
+          0.342788,
+          1.251895
+        ],
+        "worldSize": [
+          0.017184,
+          0.000363,
+          0.013057
+        ],
+        "pixelCenter": [
+          483.35,
+          291.07
+        ]
+      },
+      {
+        "rootVertex": 2288,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.228407,
+          0.542036,
+          1.248126
+        ],
+        "worldSize": [
+          0.001941,
+          0.014197,
+          0.00078
+        ],
+        "pixelCenter": [
+          554.74,
+          291.25
+        ]
+      },
+      {
+        "rootVertex": 1031,
+        "vertices": 18,
+        "polygons": 20,
+        "worldCenter": [
+          1.213603,
+          0.063814,
+          1.238935
+        ],
+        "worldSize": [
+          0.06102,
+          0.644944,
+          0.027274
+        ],
+        "pixelCenter": [
+          382.83,
+          291.28
+        ]
+      },
+      {
+        "rootVertex": 2058,
+        "vertices": 18,
+        "polygons": 16,
+        "worldCenter": [
+          1.230807,
+          0.057645,
+          1.249121
+        ],
+        "worldSize": [
+          0.007884,
+          0.000802,
+          0.003486
+        ],
+        "pixelCenter": [
+          380.72,
+          291.4
+        ]
+      },
+      {
+        "rootVertex": 1977,
+        "vertices": 45,
+        "polygons": 63,
+        "worldCenter": [
+          1.237162,
+          0.047257,
+          1.252858
+        ],
+        "worldSize": [
+          0.008398,
+          0.021577,
+          0.013689
+        ],
+        "pixelCenter": [
+          377.02,
+          291.45
+        ]
+      },
+      {
+        "rootVertex": 2425,
+        "vertices": 10,
+        "polygons": 8,
+        "worldCenter": [
+          1.232813,
+          0.343822,
+          1.250018
+        ],
+        "worldSize": [
+          0.011027,
+          0.002187,
+          0.005715
+        ],
+        "pixelCenter": [
+          483.68,
+          291.51
+        ]
+      },
+      {
+        "rootVertex": 2200,
+        "vertices": 25,
+        "polygons": 32,
+        "worldCenter": [
+          1.230722,
+          0.046893,
+          1.248257
+        ],
+        "worldSize": [
+          0.007754,
+          0.022211,
+          0.004486
+        ],
+        "pixelCenter": [
+          376.86,
+          291.65
+        ]
+      },
+      {
+        "rootVertex": 1085,
+        "vertices": 17,
+        "polygons": 19,
+        "worldCenter": [
+          1.213698,
+          0.063907,
+          1.237468
+        ],
+        "worldSize": [
+          0.058387,
+          0.644447,
+          0.026406
+        ],
+        "pixelCenter": [
+          382.86,
+          291.75
+        ]
+      },
+      {
+        "rootVertex": 1073,
+        "vertices": 12,
+        "polygons": 10,
+        "worldCenter": [
+          1.214613,
+          0.063984,
+          1.23764
+        ],
+        "worldSize": [
+          0.059168,
+          0.644588,
+          0.026063
+        ],
+        "pixelCenter": [
+          382.89,
+          291.87
+        ]
+      },
+      {
+        "rootVertex": 1162,
+        "vertices": 12,
+        "polygons": 10,
+        "worldCenter": [
+          1.215173,
+          0.06398,
+          1.237858
+        ],
+        "worldSize": [
+          0.058047,
+          0.644613,
+          0.026499
+        ],
+        "pixelCenter": [
+          382.89,
+          291.91
+        ]
+      },
+      {
+        "rootVertex": 1102,
+        "vertices": 16,
+        "polygons": 16,
+        "worldCenter": [
+          1.213742,
+          0.063902,
+          1.236869
+        ],
+        "worldSize": [
+          0.058475,
+          0.644352,
+          0.026393
+        ],
+        "pixelCenter": [
+          382.85,
+          291.94
+        ]
+      },
+      {
+        "rootVertex": 3097,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.235184,
+          0.052305,
+          1.249567
+        ],
+        "worldSize": [
+          0.001454,
+          0.011457,
+          0.000871
+        ],
+        "pixelCenter": [
+          378.82,
+          292.09
+        ]
+      },
+      {
+        "rootVertex": 2052,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.235181,
+          0.052251,
+          1.249469
+        ],
+        "worldSize": [
+          0.00153,
+          0.011415,
+          0.000749
+        ],
+        "pixelCenter": [
+          378.8,
+          292.12
+        ]
+      },
+      {
+        "rootVertex": 793,
+        "vertices": 12,
+        "polygons": 10,
+        "worldCenter": [
+          1.216207,
+          0.064121,
+          1.237361
+        ],
+        "worldSize": [
+          0.058213,
+          0.644568,
+          0.026359
+        ],
+        "pixelCenter": [
+          382.95,
+          292.25
+        ]
+      },
+      {
+        "rootVertex": 174,
+        "vertices": 31,
+        "polygons": 36,
+        "worldCenter": [
+          1.222743,
+          0.477654,
+          1.24072
+        ],
+        "worldSize": [
+          0.013311,
+          0.183389,
+          0.018074
+        ],
+        "pixelCenter": [
+          531.25,
+          292.46
+        ]
+      },
+      {
+        "rootVertex": 1049,
+        "vertices": 12,
+        "polygons": 10,
+        "worldCenter": [
+          1.21646,
+          0.064144,
+          1.23662
+        ],
+        "worldSize": [
+          0.05872,
+          0.644573,
+          0.026908
+        ],
+        "pixelCenter": [
+          382.95,
+          292.53
+        ]
+      },
+      {
+        "rootVertex": 1118,
+        "vertices": 18,
+        "polygons": 20,
+        "worldCenter": [
+          1.213618,
+          0.063959,
+          1.234823
+        ],
+        "worldSize": [
+          0.058722,
+          0.64424,
+          0.029369
+        ],
+        "pixelCenter": [
+          382.87,
+          292.54
+        ]
+      },
+      {
+        "rootVertex": 939,
+        "vertices": 14,
+        "polygons": 12,
+        "worldCenter": [
+          1.220987,
+          0.064424,
+          1.239144
+        ],
+        "worldSize": [
+          0.057976,
+          0.645208,
+          0.026123
+        ],
+        "pixelCenter": [
+          383.08,
+          292.61
+        ]
+      },
+      {
+        "rootVertex": 1150,
+        "vertices": 12,
+        "polygons": 10,
+        "worldCenter": [
+          1.21778,
+          0.064285,
+          1.237036
+        ],
+        "worldSize": [
+          0.060848,
+          0.644896,
+          0.027011
+        ],
+        "pixelCenter": [
+          383.01,
+          292.65
+        ]
+      },
+      {
+        "rootVertex": 0,
+        "vertices": 14,
+        "polygons": 12,
+        "worldCenter": [
+          1.221132,
+          0.064439,
+          1.239038
+        ],
+        "worldSize": [
+          0.058218,
+          0.645237,
+          0.026114
+        ],
+        "pixelCenter": [
+          383.09,
+          292.67
+        ]
+      },
+      {
+        "rootVertex": 2326,
+        "vertices": 4,
+        "polygons": 2,
+        "worldCenter": [
+          1.231626,
+          0.386894,
+          1.24538
+        ],
+        "worldSize": [
+          0.011078,
+          0.001938,
+          0.007245
+        ],
+        "pixelCenter": [
+          499.06,
+          292.7
+        ]
+      },
+      {
+        "rootVertex": 2500,
+        "vertices": 36,
+        "polygons": 48,
+        "worldCenter": [
+          1.223094,
+          0.557409,
+          1.240124
+        ],
+        "worldSize": [
+          0.015937,
+          0.023973,
+          0.018519
+        ],
+        "pixelCenter": [
+          559.84,
+          292.7
+        ]
+      },
+      {
+        "rootVertex": 1061,
+        "vertices": 12,
+        "polygons": 10,
+        "worldCenter": [
+          1.216853,
+          0.064229,
+          1.235799
+        ],
+        "worldSize": [
+          0.057935,
+          0.644404,
+          0.026521
+        ],
+        "pixelCenter": [
+          382.98,
+          292.85
+        ]
+      },
+      {
+        "rootVertex": 780,
+        "vertices": 13,
+        "polygons": 11,
+        "worldCenter": [
+          1.216521,
+          0.064239,
+          1.235493
+        ],
+        "worldSize": [
+          0.058586,
+          0.644341,
+          0.025909
+        ],
+        "pixelCenter": [
+          382.99,
+          292.88
+        ]
+      },
+      {
+        "rootVertex": 742,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.227348,
+          -0.064545,
+          1.242129
+        ],
+        "worldSize": [
+          0.030612,
+          0.388894,
+          0.024734
+        ],
+        "pixelCenter": [
+          336.83,
+          292.89
+        ]
+      },
+      {
+        "rootVertex": 762,
+        "vertices": 18,
+        "polygons": 20,
+        "worldCenter": [
+          1.214813,
+          0.064197,
+          1.2342
+        ],
+        "worldSize": [
+          0.06029,
+          0.644256,
+          0.028495
+        ],
+        "pixelCenter": [
+          382.96,
+          292.96
+        ]
+      },
+      {
+        "rootVertex": 750,
+        "vertices": 12,
+        "polygons": 10,
+        "worldCenter": [
+          1.219998,
+          0.064495,
+          1.237163
+        ],
+        "worldSize": [
+          0.059486,
+          0.644967,
+          0.027266
+        ],
+        "pixelCenter": [
+          383.1,
+          293.03
+        ]
+      },
+      {
+        "rootVertex": 2409,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.239306,
+          0.343802,
+          1.248941
+        ],
+        "worldSize": [
+          0.001983,
+          0.002044,
+          0.003561
+        ],
+        "pixelCenter": [
+          483.83,
+          293.06
+        ]
+      },
+      {
+        "rootVertex": 1136,
+        "vertices": 14,
+        "polygons": 13,
+        "worldCenter": [
+          1.213423,
+          0.064091,
+          1.23297
+        ],
+        "worldSize": [
+          0.058333,
+          0.643682,
+          0.026139
+        ],
+        "pixelCenter": [
+          382.91,
+          293.07
+        ]
+      },
+      {
+        "rootVertex": 1174,
+        "vertices": 22,
+        "polygons": 27,
+        "worldCenter": [
+          1.223023,
+          0.064595,
+          1.238065
+        ],
+        "worldSize": [
+          0.062048,
+          0.645533,
+          0.027925
+        ],
+        "pixelCenter": [
+          383.15,
+          293.32
+        ]
+      },
+      {
+        "rootVertex": 14,
+        "vertices": 48,
+        "polygons": 48,
+        "worldCenter": [
+          1.23825,
+          0.445929,
+          1.24653
+        ],
+        "worldSize": [
+          0.023329,
+          0.206506,
+          0.023792
+        ],
+        "pixelCenter": [
+          520.53,
+          293.6
+        ]
+      },
+      {
+        "rootVertex": 920,
+        "vertices": 19,
+        "polygons": 19,
+        "worldCenter": [
+          1.223137,
+          0.064658,
+          1.23683
+        ],
+        "worldSize": [
+          0.061206,
+          0.645293,
+          0.027933
+        ],
+        "pixelCenter": [
+          383.17,
+          293.72
+        ]
+      },
+      {
+        "rootVertex": 805,
+        "vertices": 19,
+        "polygons": 22,
+        "worldCenter": [
+          1.224512,
+          0.064821,
+          1.236521
+        ],
+        "worldSize": [
+          0.059069,
+          0.645081,
+          0.027315
+        ],
+        "pixelCenter": [
+          383.24,
+          294.07
+        ]
+      },
+      {
+        "rootVertex": 1765,
+        "vertices": 3,
+        "polygons": 1,
+        "worldCenter": [
+          1.236013,
+          -0.063309,
+          1.241486
+        ],
+        "worldSize": [
+          0.010085,
+          0.129657,
+          0.008539
+        ],
+        "pixelCenter": [
+          337.23,
+          294.73
+        ]
+      },
+      {
+        "rootVertex": 2273,
+        "vertices": 9,
+        "polygons": 8,
+        "worldCenter": [
+          1.238052,
+          0.541518,
+          1.242082
+        ],
+        "worldSize": [
+          0.018436,
+          0.014647,
+          0.012867
+        ],
+        "pixelCenter": [
+          554.83,
+          294.93
+        ]
+      },
+      {
+        "rootVertex": 2458,
+        "vertices": 14,
+        "polygons": 12,
+        "worldCenter": [
+          1.238069,
+          0.553327,
+          1.241737
+        ],
+        "worldSize": [
+          0.018365,
+          0.004773,
+          0.014602
+        ],
+        "pixelCenter": [
+          559.07,
+          295.04
+        ]
+      },
+      {
+        "rootVertex": 236,
+        "vertices": 112,
+        "polygons": 160,
+        "worldCenter": [
+          1.227029,
+          0.456051,
+          1.234447
+        ],
+        "worldSize": [
+          0.025998,
+          0.226594,
+          0.036487
+        ],
+        "pixelCenter": [
+          523.54,
+          295.18
+        ]
+      },
+      {
+        "rootVertex": 2435,
+        "vertices": 23,
+        "polygons": 24,
+        "worldCenter": [
+          1.236987,
+          0.548429,
+          1.240543
+        ],
+        "worldSize": [
+          0.017431,
+          0.007327,
+          0.01282
+        ],
+        "pixelCenter": [
+          557.24,
+          295.2
+        ]
+      },
+      {
+        "rootVertex": 2294,
+        "vertices": 32,
+        "polygons": 38,
+        "worldCenter": [
+          1.238045,
+          0.5488,
+          1.241039
+        ],
+        "worldSize": [
+          0.023741,
+          0.002351,
+          0.018547
+        ],
+        "pixelCenter": [
+          557.43,
+          295.25
+        ]
+      },
+      {
+        "rootVertex": 2628,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.230294,
+          0.548391,
+          1.235386
+        ],
+        "worldSize": [
+          0.009163,
+          0.00626,
+          0.014774
+        ],
+        "pixelCenter": [
+          556.81,
+          295.51
+        ]
+      },
+      {
+        "rootVertex": 2636,
+        "vertices": 12,
+        "polygons": 12,
+        "worldCenter": [
+          1.232678,
+          0.550935,
+          1.23316
+        ],
+        "worldSize": [
+          0.012852,
+          0.002893,
+          0.01727
+        ],
+        "pixelCenter": [
+          557.78,
+          296.65
+        ]
+      },
+      {
+        "rootVertex": 2648,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.235143,
+          0.548472,
+          1.231593
+        ],
+        "worldSize": [
+          0.009265,
+          0.006919,
+          0.014136
+        ],
+        "pixelCenter": [
+          556.97,
+          297.59
+        ]
+      },
+      {
+        "rootVertex": 3202,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.238801,
+          -0.251464,
+          1.233298
+        ],
+        "worldSize": [
+          0.005668,
+          0.0261,
+          0.003456
+        ],
+        "pixelCenter": [
+          269.6,
+          297.76
+        ]
+      },
+      {
+        "rootVertex": 3196,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.236863,
+          -0.251889,
+          1.231314
+        ],
+        "worldSize": [
+          0.004822,
+          0.024725,
+          0.007424
+        ],
+        "pixelCenter": [
+          269.51,
+          298.0
+        ]
+      },
+      {
+        "rootVertex": 2282,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.247144,
+          0.541034,
+          1.235853
+        ],
+        "worldSize": [
+          0.000893,
+          0.013582,
+          0.001948
+        ],
+        "pixelCenter": [
+          554.91,
+          298.57
+        ]
+      },
+      {
+        "rootVertex": 1762,
+        "vertices": 3,
+        "polygons": 1,
+        "worldCenter": [
+          1.247577,
+          0.547725,
+          1.23545
+        ],
+        "worldSize": [
+          0.000613,
+          0.0002,
+          0.001143
+        ],
+        "pixelCenter": [
+          557.33,
+          298.77
+        ]
+      },
+      {
+        "rootVertex": 52,
+        "vertices": 56,
+        "polygons": 81,
+        "worldCenter": [
+          1.244576,
+          0.455025,
+          1.233474
+        ],
+        "worldSize": [
+          0.013112,
+          0.224621,
+          0.03454
+        ],
+        "pixelCenter": [
+          523.78,
+          298.81
+        ]
+      },
+      {
+        "rootVertex": 205,
+        "vertices": 31,
+        "polygons": 36,
+        "worldCenter": [
+          1.242803,
+          0.476746,
+          1.231301
+        ],
+        "worldSize": [
+          0.01262,
+          0.18164,
+          0.027369
+        ],
+        "pixelCenter": [
+          531.49,
+          299.14
+        ]
+      },
+      {
+        "rootVertex": 1330,
+        "vertices": 56,
+        "polygons": 81,
+        "worldCenter": [
+          1.281622,
+          -0.023891,
+          1.254198
+        ],
+        "worldSize": [
+          0.02584,
+          0.227012,
+          0.020644
+        ],
+        "pixelCenter": [
+          351.31,
+          299.52
+        ]
+      },
+      {
+        "rootVertex": 3354,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.292856,
+          0.068841,
+          1.260978
+        ],
+        "worldSize": [
+          0.001968,
+          0.002213,
+          0.002138
+        ],
+        "pixelCenter": [
+          385.13,
+          299.59
+        ]
+      },
+      {
+        "rootVertex": 2330,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.24759,
+          0.550818,
+          1.232542
+        ],
+        "worldSize": [
+          0.0023,
+          0.002015,
+          0.001552
+        ],
+        "pixelCenter": [
+          558.37,
+          299.67
+        ]
+      },
+      {
+        "rootVertex": 3316,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.293314,
+          0.060671,
+          1.259973
+        ],
+        "worldSize": [
+          0.003196,
+          0.014126,
+          0.00186
+        ],
+        "pixelCenter": [
+          382.15,
+          299.99
+        ]
+      },
+      {
+        "rootVertex": 493,
+        "vertices": 119,
+        "polygons": 176,
+        "worldCenter": [
+          1.226079,
+          0.631031,
+          1.217573
+        ],
+        "worldSize": [
+          0.043512,
+          0.151989,
+          0.063621
+        ],
+        "pixelCenter": [
+          585.79,
+          300.15
+        ]
+      },
+      {
+        "rootVertex": 1396,
+        "vertices": 32,
+        "polygons": 37,
+        "worldCenter": [
+          1.285071,
+          -0.002468,
+          1.253619
+        ],
+        "worldSize": [
+          0.022463,
+          0.184475,
+          0.019485
+        ],
+        "pixelCenter": [
+          359.1,
+          300.37
+        ]
+      },
+      {
+        "rootVertex": 3208,
+        "vertices": 21,
+        "polygons": 24,
+        "worldCenter": [
+          1.25075,
+          -0.250273,
+          1.232034
+        ],
+        "worldSize": [
+          0.008773,
+          0.027246,
+          0.014515
+        ],
+        "pixelCenter": [
+          269.81,
+          300.43
+        ]
+      },
+      {
+        "rootVertex": 3280,
+        "vertices": 21,
+        "polygons": 19,
+        "worldCenter": [
+          1.289136,
+          0.079798,
+          1.255917
+        ],
+        "worldSize": [
+          0.014333,
+          0.019943,
+          0.017206
+        ],
+        "pixelCenter": [
+          389.09,
+          300.44
+        ]
+      },
+      {
+        "rootVertex": 2472,
+        "vertices": 28,
+        "polygons": 36,
+        "worldCenter": [
+          1.242351,
+          0.557507,
+          1.226136
+        ],
+        "worldSize": [
+          0.010967,
+          0.025401,
+          0.021475
+        ],
+        "pixelCenter": [
+          560.4,
+          300.63
+        ]
+      },
+      {
+        "rootVertex": 3609,
+        "vertices": 40,
+        "polygons": 54,
+        "worldCenter": [
+          1.244504,
+          0.559623,
+          1.226363
+        ],
+        "worldSize": [
+          0.013256,
+          0.015886,
+          0.019295
+        ],
+        "pixelCenter": [
+          561.26,
+          300.97
+        ]
+      },
+      {
+        "rootVertex": 3235,
+        "vertices": 13,
+        "polygons": 14,
+        "worldCenter": [
+          1.243646,
+          -0.249565,
+          1.22532
+        ],
+        "worldSize": [
+          0.018388,
+          0.028899,
+          0.010347
+        ],
+        "pixelCenter": [
+          270.27,
+          301.13
+        ]
+      },
+      {
+        "rootVertex": 3483,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.289023,
+          0.088984,
+          1.253128
+        ],
+        "worldSize": [
+          0.011925,
+          0.002672,
+          0.015331
+        ],
+        "pixelCenter": [
+          392.42,
+          301.28
+        ]
+      },
+      {
+        "rootVertex": 2536,
+        "vertices": 76,
+        "polygons": 108,
+        "worldCenter": [
+          1.2233,
+          0.637793,
+          1.211829
+        ],
+        "worldSize": [
+          0.048049,
+          0.138463,
+          0.069355
+        ],
+        "pixelCenter": [
+          587.92,
+          301.37
+        ]
+      },
+      {
+        "rootVertex": 3455,
+        "vertices": 28,
+        "polygons": 36,
+        "worldCenter": [
+          1.29145,
+          0.07697,
+          1.254081
+        ],
+        "worldSize": [
+          0.013383,
+          0.025425,
+          0.017677
+        ],
+        "pixelCenter": [
+          388.06,
+          301.45
+        ]
+      },
+      {
+        "rootVertex": 2616,
+        "vertices": 12,
+        "polygons": 10,
+        "worldCenter": [
+          1.242292,
+          0.569519,
+          1.222797
+        ],
+        "worldSize": [
+          0.010066,
+          0.002774,
+          0.017615
+        ],
+        "pixelCenter": [
+          564.63,
+          301.64
+        ]
+      },
+      {
+        "rootVertex": 1236,
+        "vertices": 48,
+        "polygons": 48,
+        "worldCenter": [
+          1.293828,
+          -0.035268,
+          1.253857
+        ],
+        "worldSize": [
+          0.043124,
+          0.20619,
+          0.017827
+        ],
+        "pixelCenter": [
+          347.13,
+          301.98
+        ]
+      },
+      {
+        "rootVertex": 612,
+        "vertices": 123,
+        "polygons": 188,
+        "worldCenter": [
+          1.218837,
+          0.625651,
+          1.205933
+        ],
+        "worldSize": [
+          0.039122,
+          0.159669,
+          0.057564
+        ],
+        "pixelCenter": [
+          583.21,
+          302.31
+        ]
+      },
+      {
+        "rootVertex": 3360,
+        "vertices": 4,
+        "polygons": 2,
+        "worldCenter": [
+          1.280121,
+          -0.093378,
+          1.243654
+        ],
+        "worldSize": [
+          0.010553,
+          0.002655,
+          0.007485
+        ],
+        "pixelCenter": [
+          326.08,
+          302.49
+        ]
+      },
+      {
+        "rootVertex": 2612,
+        "vertices": 4,
+        "polygons": 2,
+        "worldCenter": [
+          1.237524,
+          0.570396,
+          1.215943
+        ],
+        "worldSize": [
+          0.001312,
+          0.000763,
+          0.002106
+        ],
+        "pixelCenter": [
+          564.57,
+          302.82
+        ]
+      },
+      {
+        "rootVertex": 3301,
+        "vertices": 9,
+        "polygons": 8,
+        "worldCenter": [
+          1.303144,
+          0.059781,
+          1.254186
+        ],
+        "worldSize": [
+          0.019288,
+          0.015369,
+          0.012771
+        ],
+        "pixelCenter": [
+          381.85,
+          303.69
+        ]
+      },
+      {
+        "rootVertex": 3229,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.253785,
+          -0.249455,
+          1.223162
+        ],
+        "worldSize": [
+          0.002703,
+          0.026235,
+          0.006032
+        ],
+        "pixelCenter": [
+          270.14,
+          303.73
+        ]
+      },
+      {
+        "rootVertex": 3441,
+        "vertices": 14,
+        "polygons": 12,
+        "worldCenter": [
+          1.304253,
+          0.071508,
+          1.254043
+        ],
+        "worldSize": [
+          0.018631,
+          0.004979,
+          0.016135
+        ],
+        "pixelCenter": [
+          386.15,
+          303.95
+        ]
+      },
+      {
+        "rootVertex": 3322,
+        "vertices": 32,
+        "polygons": 33,
+        "worldCenter": [
+          1.303705,
+          0.066811,
+          1.253511
+        ],
+        "worldSize": [
+          0.023368,
+          0.003196,
+          0.01852
+        ],
+        "pixelCenter": [
+          384.42,
+          304.01
+        ]
+      },
+      {
+        "rootVertex": 3497,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.295897,
+          0.067927,
+          1.247859
+        ],
+        "worldSize": [
+          0.009529,
+          0.00819,
+          0.014084
+        ],
+        "pixelCenter": [
+          384.77,
+          304.25
+        ]
+      },
+      {
+        "rootVertex": 3418,
+        "vertices": 23,
+        "polygons": 24,
+        "worldCenter": [
+          1.302372,
+          0.066721,
+          1.251462
+        ],
+        "worldSize": [
+          0.017416,
+          0.007463,
+          0.016468
+        ],
+        "pixelCenter": [
+          384.38,
+          304.39
+        ]
+      },
+      {
+        "rootVertex": 3505,
+        "vertices": 12,
+        "polygons": 12,
+        "worldCenter": [
+          1.298492,
+          0.070411,
+          1.245821
+        ],
+        "worldSize": [
+          0.012663,
+          0.00514,
+          0.016967
+        ],
+        "pixelCenter": [
+          385.69,
+          305.38
+        ]
+      },
+      {
+        "rootVertex": 1459,
+        "vertices": 30,
+        "polygons": 31,
+        "worldCenter": [
+          1.287941,
+          -0.026149,
+          1.238485
+        ],
+        "worldSize": [
+          0.038476,
+          0.222583,
+          0.018147
+        ],
+        "pixelCenter": [
+          350.49,
+          305.6
+        ]
+      },
+      {
+        "rootVertex": 3517,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.300719,
+          0.067812,
+          1.244218
+        ],
+        "worldSize": [
+          0.008581,
+          0.008925,
+          0.013761
+        ],
+        "pixelCenter": [
+          384.75,
+          306.31
+        ]
+      },
+      {
+        "rootVertex": 1428,
+        "vertices": 31,
+        "polygons": 36,
+        "worldCenter": [
+          1.300418,
+          -0.003145,
+          1.240012
+        ],
+        "worldSize": [
+          0.030813,
+          0.180425,
+          0.017803
+        ],
+        "pixelCenter": [
+          358.85,
+          307.55
+        ]
+      },
+      {
+        "rootVertex": 3310,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.311901,
+          0.058859,
+          1.247199
+        ],
+        "worldSize": [
+          0.002331,
+          0.013524,
+          0.001916
+        ],
+        "pixelCenter": [
+          381.54,
+          307.57
+        ]
+      },
+      {
+        "rootVertex": 1768,
+        "vertices": 3,
+        "polygons": 1,
+        "worldCenter": [
+          1.312943,
+          0.06552,
+          1.247511
+        ],
+        "worldSize": [
+          0.000309,
+          0.000203,
+          0.000768
+        ],
+        "pixelCenter": [
+          383.98,
+          307.68
+        ]
+      },
+      {
+        "rootVertex": 1274,
+        "vertices": 56,
+        "polygons": 81,
+        "worldCenter": [
+          1.300309,
+          -0.025782,
+          1.2387
+        ],
+        "worldSize": [
+          0.034768,
+          0.224948,
+          0.018577
+        ],
+        "pixelCenter": [
+          350.6,
+          307.94
+        ]
+      },
+      {
+        "rootVertex": 3384,
+        "vertices": 4,
+        "polygons": 2,
+        "worldCenter": [
+          1.313388,
+          0.068828,
+          1.244985
+        ],
+        "worldSize": [
+          0.002427,
+          0.002021,
+          0.001469
+        ],
+        "pixelCenter": [
+          385.19,
+          308.55
+        ]
+      },
+      {
+        "rootVertex": 1489,
+        "vertices": 118,
+        "polygons": 175,
+        "worldCenter": [
+          1.301123,
+          0.160192,
+          1.236499
+        ],
+        "worldSize": [
+          0.028045,
+          0.175436,
+          0.052841
+        ],
+        "pixelCenter": [
+          418.41,
+          308.78
+        ]
+      },
+      {
+        "rootVertex": 3404,
+        "vertices": 14,
+        "polygons": 12,
+        "worldCenter": [
+          1.309309,
+          0.077223,
+          1.240013
+        ],
+        "worldSize": [
+          0.010856,
+          0.026836,
+          0.020253
+        ],
+        "pixelCenter": [
+          388.22,
+          309.29
+        ]
+      },
+      {
+        "rootVertex": 1607,
+        "vertices": 40,
+        "polygons": 38,
+        "worldCenter": [
+          1.297778,
+          0.167192,
+          1.231202
+        ],
+        "worldSize": [
+          0.034735,
+          0.161435,
+          0.059181
+        ],
+        "pixelCenter": [
+          420.88,
+          309.76
+        ]
+      },
+      {
+        "rootVertex": 3364,
+        "vertices": 20,
+        "polygons": 18,
+        "worldCenter": [
+          1.311497,
+          0.078327,
+          1.239699
+        ],
+        "worldSize": [
+          0.012393,
+          0.01748,
+          0.018429
+        ],
+        "pixelCenter": [
+          388.64,
+          309.82
+        ]
+      },
+      {
+        "rootVertex": 3491,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.309968,
+          0.088716,
+          1.23688
+        ],
+        "worldSize": [
+          0.010355,
+          0.0049,
+          0.017103
+        ],
+        "pixelCenter": [
+          392.41,
+          310.39
+        ]
+      },
+      {
+        "rootVertex": 1647,
+        "vertices": 115,
+        "polygons": 173,
+        "worldCenter": [
+          1.294071,
+          0.157067,
+          1.22438
+        ],
+        "worldSize": [
+          0.027321,
+          0.181226,
+          0.045537
+        ],
+        "pixelCenter": [
+          417.1,
+          311.14
+        ]
+      },
+      {
+        "rootVertex": 3685,
+        "vertices": 52,
+        "polygons": 90,
+        "worldCenter": [
+          1.299583,
+          0.233028,
+          1.218012
+        ],
+        "worldSize": [
+          0.020355,
+          0.022701,
+          0.014642
+        ],
+        "pixelCenter": [
+          444.75,
+          314.18
+        ]
+      },
+      {
+        "rootVertex": 3388,
+        "vertices": 16,
+        "polygons": 14,
+        "worldCenter": [
+          1.299974,
+          0.230259,
+          1.218039
+        ],
+        "worldSize": [
+          0.021252,
+          0.019558,
+          0.013288
+        ],
+        "pixelCenter": [
+          443.75,
+          314.25
+        ]
+      },
+      {
+        "rootVertex": 3585,
+        "vertices": 24,
+        "polygons": 24,
+        "worldCenter": [
+          1.299418,
+          0.232965,
+          1.216612
+        ],
+        "worldSize": [
+          0.01986,
+          0.022739,
+          0.012677
+        ],
+        "pixelCenter": [
+          444.71,
+          314.58
+        ]
+      },
+      {
+        "rootVertex": 3525,
+        "vertices": 36,
+        "polygons": 48,
+        "worldCenter": [
+          1.29919,
+          0.233028,
+          1.216403
+        ],
+        "worldSize": [
+          0.019568,
+          0.022701,
+          0.011424
+        ],
+        "pixelCenter": [
+          444.73,
+          314.6
+        ]
+      },
+      {
+        "rootVertex": 3561,
+        "vertices": 24,
+        "polygons": 24,
+        "worldCenter": [
+          1.298934,
+          0.233041,
+          1.215755
+        ],
+        "worldSize": [
+          0.018891,
+          0.022215,
+          0.010962
+        ],
+        "pixelCenter": [
+          444.72,
+          314.75
+        ]
+      },
+      {
+        "rootVertex": 3649,
+        "vertices": 36,
+        "polygons": 48,
+        "worldCenter": [
+          1.298328,
+          0.233027,
+          1.214882
+        ],
+        "worldSize": [
+          0.019267,
+          0.020455,
+          0.013186
+        ],
+        "pixelCenter": [
+          444.7,
+          314.9
+        ]
+      }
+    ],
+    "wiper_right_mesh": [
+      {
+        "rootVertex": 233,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.111163,
+          -0.631365,
+          1.259459
+        ],
+        "worldSize": [
+          0.067121,
+          0.184892,
+          0.002986
+        ],
+        "pixelCenter": [
+          138.59,
+          266.3
+        ]
+      },
+      {
+        "rootVertex": 182,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.117349,
+          -0.633445,
+          1.255964
+        ],
+        "worldSize": [
+          0.067279,
+          0.185342,
+          0.002986
+        ],
+        "pixelCenter": [
+          137.65,
+          268.46
+        ]
+      },
+      {
+        "rootVertex": 1128,
+        "vertices": 48,
+        "polygons": 67,
+        "worldCenter": [
+          1.147098,
+          -0.526032,
+          1.266944
+        ],
+        "worldSize": [
+          0.011951,
+          0.02044,
+          0.012771
+        ],
+        "pixelCenter": [
+          173.93,
+          270.49
+        ]
+      },
+      {
+        "rootVertex": 1297,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.148698,
+          -0.5376,
+          1.264471
+        ],
+        "worldSize": [
+          0.002403,
+          0.001593,
+          0.001314
+        ],
+        "pixelCenter": [
+          169.82,
+          271.53
+        ]
+      },
+      {
+        "rootVertex": 1754,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.147914,
+          -0.52154,
+          1.263584
+        ],
+        "worldSize": [
+          0.004197,
+          0.010492,
+          0.000338
+        ],
+        "pixelCenter": [
+          175.56,
+          271.66
+        ]
+      },
+      {
+        "rootVertex": 1120,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.147816,
+          -0.521546,
+          1.263423
+        ],
+        "worldSize": [
+          0.004246,
+          0.010355,
+          0.000567
+        ],
+        "pixelCenter": [
+          175.56,
+          271.69
+        ]
+      },
+      {
+        "rootVertex": 1263,
+        "vertices": 22,
+        "polygons": 20,
+        "worldCenter": [
+          1.147021,
+          -0.527187,
+          1.261886
+        ],
+        "worldSize": [
+          0.007839,
+          0.021013,
+          0.006483
+        ],
+        "pixelCenter": [
+          173.63,
+          272.01
+        ]
+      },
+      {
+        "rootVertex": 1192,
+        "vertices": 24,
+        "polygons": 30,
+        "worldCenter": [
+          1.14591,
+          -0.526303,
+          1.259731
+        ],
+        "worldSize": [
+          0.009573,
+          0.020982,
+          0.002172
+        ],
+        "pixelCenter": [
+          174.03,
+          272.47
+        ]
+      },
+      {
+        "rootVertex": 1176,
+        "vertices": 16,
+        "polygons": 14,
+        "worldCenter": [
+          1.14971,
+          -0.516279,
+          1.261224
+        ],
+        "worldSize": [
+          0.002461,
+          0.000935,
+          0.004604
+        ],
+        "pixelCenter": [
+          177.39,
+          272.7
+        ]
+      },
+      {
+        "rootVertex": 811,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.169383,
+          -0.498461,
+          1.271268
+        ],
+        "worldSize": [
+          0.003231,
+          0.008079,
+          0.000673
+        ],
+        "pixelCenter": [
+          182.74,
+          273.22
+        ]
+      },
+      {
+        "rootVertex": 1840,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.169339,
+          -0.498406,
+          1.271209
+        ],
+        "worldSize": [
+          0.003377,
+          0.008286,
+          0.000548
+        ],
+        "pixelCenter": [
+          182.76,
+          273.23
+        ]
+      },
+      {
+        "rootVertex": 963,
+        "vertices": 99,
+        "polygons": 149,
+        "worldCenter": [
+          1.154136,
+          -0.535111,
+          1.261922
+        ],
+        "worldSize": [
+          0.026026,
+          0.014207,
+          0.022814
+        ],
+        "pixelCenter": [
+          170.54,
+          273.29
+        ]
+      },
+      {
+        "rootVertex": 1062,
+        "vertices": 30,
+        "polygons": 28,
+        "worldCenter": [
+          1.156421,
+          -0.530051,
+          1.262989
+        ],
+        "worldSize": [
+          0.021456,
+          0.008857,
+          0.020453
+        ],
+        "pixelCenter": [
+          172.21,
+          273.39
+        ]
+      },
+      {
+        "rootVertex": 1796,
+        "vertices": 36,
+        "polygons": 34,
+        "worldCenter": [
+          1.15641,
+          -0.530549,
+          1.262949
+        ],
+        "worldSize": [
+          0.021191,
+          0.007693,
+          0.020206
+        ],
+        "pixelCenter": [
+          172.04,
+          273.4
+        ]
+      },
+      {
+        "rootVertex": 1848,
+        "vertices": 10,
+        "polygons": 8,
+        "worldCenter": [
+          1.170876,
+          -0.503794,
+          1.268753
+        ],
+        "worldSize": [
+          0.006449,
+          0.002595,
+          0.004795
+        ],
+        "pixelCenter": [
+          180.83,
+          274.26
+        ]
+      },
+      {
+        "rootVertex": 819,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.170909,
+          -0.503743,
+          1.268793
+        ],
+        "worldSize": [
+          0.006283,
+          0.002495,
+          0.004679
+        ],
+        "pixelCenter": [
+          180.85,
+          274.26
+        ]
+      },
+      {
+        "rootVertex": 1941,
+        "vertices": 33,
+        "polygons": 52,
+        "worldCenter": [
+          1.172542,
+          -0.499736,
+          1.269031
+        ],
+        "worldSize": [
+          0.0092,
+          0.010508,
+          0.005147
+        ],
+        "pixelCenter": [
+          182.21,
+          274.48
+        ]
+      },
+      {
+        "rootVertex": 803,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.174041,
+          -0.495661,
+          1.268898
+        ],
+        "worldSize": [
+          0.006202,
+          0.002479,
+          0.004679
+        ],
+        "pixelCenter": [
+          183.6,
+          274.8
+        ]
+      },
+      {
+        "rootVertex": 1832,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.174064,
+          -0.495592,
+          1.268842
+        ],
+        "worldSize": [
+          0.006299,
+          0.002659,
+          0.004802
+        ],
+        "pixelCenter": [
+          183.63,
+          274.82
+        ]
+      },
+      {
+        "rootVertex": 172,
+        "vertices": 10,
+        "polygons": 8,
+        "worldCenter": [
+          1.155589,
+          -0.509742,
+          1.257016
+        ],
+        "worldSize": [
+          0.147885,
+          0.426067,
+          0.020754
+        ],
+        "pixelCenter": [
+          179.56,
+          275.05
+        ]
+      },
+      {
+        "rootVertex": 573,
+        "vertices": 16,
+        "polygons": 18,
+        "worldCenter": [
+          1.147975,
+          -0.508612,
+          1.252204
+        ],
+        "worldSize": [
+          0.148549,
+          0.427943,
+          0.021258
+        ],
+        "pixelCenter": [
+          180.36,
+          275.13
+        ]
+      },
+      {
+        "rootVertex": 1216,
+        "vertices": 47,
+        "polygons": 60,
+        "worldCenter": [
+          1.156067,
+          -0.530494,
+          1.256978
+        ],
+        "worldSize": [
+          0.015165,
+          0.021976,
+          0.013676
+        ],
+        "pixelCenter": [
+          172.2,
+          275.15
+        ]
+      },
+      {
+        "rootVertex": 1762,
+        "vertices": 26,
+        "polygons": 24,
+        "worldCenter": [
+          1.157057,
+          -0.518888,
+          1.257021
+        ],
+        "worldSize": [
+          0.016926,
+          0.006749,
+          0.013076
+        ],
+        "pixelCenter": [
+          176.27,
+          275.32
+        ]
+      },
+      {
+        "rootVertex": 1285,
+        "vertices": 12,
+        "polygons": 10,
+        "worldCenter": [
+          1.154055,
+          -0.529456,
+          1.25413
+        ],
+        "worldSize": [
+          0.008375,
+          0.019902,
+          0.000933
+        ],
+        "pixelCenter": [
+          172.71,
+          275.65
+        ]
+      },
+      {
+        "rootVertex": 408,
+        "vertices": 22,
+        "polygons": 24,
+        "worldCenter": [
+          1.149883,
+          -0.509221,
+          1.25157
+        ],
+        "worldSize": [
+          0.151012,
+          0.42916,
+          0.022525
+        ],
+        "pixelCenter": [
+          180.09,
+          275.67
+        ]
+      },
+      {
+        "rootVertex": 132,
+        "vertices": 20,
+        "polygons": 16,
+        "worldCenter": [
+          1.154088,
+          -0.51035,
+          1.254061
+        ],
+        "worldSize": [
+          0.150056,
+          0.427971,
+          0.026148
+        ],
+        "pixelCenter": [
+          179.47,
+          275.68
+        ]
+      },
+      {
+        "rootVertex": 430,
+        "vertices": 11,
+        "polygons": 9,
+        "worldCenter": [
+          1.149052,
+          -0.509099,
+          1.25067
+        ],
+        "worldSize": [
+          0.150702,
+          0.428669,
+          0.0226
+        ],
+        "pixelCenter": [
+          180.18,
+          275.79
+        ]
+      },
+      {
+        "rootVertex": 827,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.175565,
+          -0.500911,
+          1.266546
+        ],
+        "worldSize": [
+          0.003154,
+          0.008054,
+          0.000544
+        ],
+        "pixelCenter": [
+          181.72,
+          275.8
+        ]
+      },
+      {
+        "rootVertex": 1858,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.17559,
+          -0.500955,
+          1.26644
+        ],
+        "worldSize": [
+          0.003247,
+          0.008271,
+          0.000776
+        ],
+        "pixelCenter": [
+          181.71,
+          275.83
+        ]
+      },
+      {
+        "rootVertex": 513,
+        "vertices": 15,
+        "polygons": 16,
+        "worldCenter": [
+          1.151475,
+          -0.509834,
+          1.250718
+        ],
+        "worldSize": [
+          0.147901,
+          0.427954,
+          0.020786
+        ],
+        "pixelCenter": [
+          179.82,
+          276.21
+        ]
+      },
+      {
+        "rootVertex": 152,
+        "vertices": 20,
+        "polygons": 24,
+        "worldCenter": [
+          1.152218,
+          -0.510096,
+          1.251074
+        ],
+        "worldSize": [
+          0.149387,
+          0.428478,
+          0.021128
+        ],
+        "pixelCenter": [
+          179.7,
+          276.24
+        ]
+      },
+      {
+        "rootVertex": 912,
+        "vertices": 51,
+        "polygons": 72,
+        "worldCenter": [
+          1.161462,
+          -0.531894,
+          1.256586
+        ],
+        "worldSize": [
+          0.011376,
+          0.020554,
+          0.012891
+        ],
+        "pixelCenter": [
+          171.49,
+          276.25
+        ]
+      },
+      {
+        "rootVertex": 533,
+        "vertices": 15,
+        "polygons": 16,
+        "worldCenter": [
+          1.150363,
+          -0.509513,
+          1.248821
+        ],
+        "worldSize": [
+          0.148079,
+          0.427842,
+          0.022416
+        ],
+        "pixelCenter": [
+          180.02,
+          276.59
+        ]
+      },
+      {
+        "rootVertex": 208,
+        "vertices": 25,
+        "polygons": 32,
+        "worldCenter": [
+          1.156771,
+          -0.511555,
+          1.252224
+        ],
+        "worldSize": [
+          0.150498,
+          0.429428,
+          0.030338
+        ],
+        "pixelCenter": [
+          178.98,
+          276.72
+        ]
+      },
+      {
+        "rootVertex": 1303,
+        "vertices": 358,
+        "polygons": 543,
+        "worldCenter": [
+          1.174312,
+          -0.480962,
+          1.262203
+        ],
+        "worldSize": [
+          0.056994,
+          0.106866,
+          0.024033
+        ],
+        "pixelCenter": [
+          188.95,
+          276.89
+        ]
+      },
+      {
+        "rootVertex": 493,
+        "vertices": 20,
+        "polygons": 24,
+        "worldCenter": [
+          1.151656,
+          -0.510019,
+          1.247181
+        ],
+        "worldSize": [
+          0.150664,
+          0.428855,
+          0.022043
+        ],
+        "pixelCenter": [
+          179.83,
+          277.32
+        ]
+      },
+      {
+        "rootVertex": 1534,
+        "vertices": 93,
+        "polygons": 144,
+        "worldCenter": [
+          1.172948,
+          -0.474426,
+          1.259521
+        ],
+        "worldSize": [
+          0.048733,
+          0.093792,
+          0.018669
+        ],
+        "pixelCenter": [
+          191.38,
+          277.46
+        ]
+      },
+      {
+        "rootVertex": 1100,
+        "vertices": 20,
+        "polygons": 18,
+        "worldCenter": [
+          1.161726,
+          -0.520931,
+          1.252368
+        ],
+        "worldSize": [
+          0.007326,
+          0.002851,
+          0.003776
+        ],
+        "pixelCenter": [
+          175.46,
+          277.58
+        ]
+      },
+      {
+        "rootVertex": 286,
+        "vertices": 21,
+        "polygons": 23,
+        "worldCenter": [
+          1.151317,
+          -0.509951,
+          1.245954
+        ],
+        "worldSize": [
+          0.147915,
+          0.427734,
+          0.021094
+        ],
+        "pixelCenter": [
+          179.89,
+          277.63
+        ]
+      },
+      {
+        "rootVertex": 1788,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.16331,
+          -0.52762,
+          1.252982
+        ],
+        "worldSize": [
+          0.00442,
+          0.010885,
+          0.000385
+        ],
+        "pixelCenter": [
+          173.01,
+          277.69
+        ]
+      },
+      {
+        "rootVertex": 266,
+        "vertices": 20,
+        "polygons": 24,
+        "worldCenter": [
+          1.152156,
+          -0.510245,
+          1.24603
+        ],
+        "worldSize": [
+          0.149041,
+          0.428209,
+          0.020942
+        ],
+        "pixelCenter": [
+          179.75,
+          277.76
+        ]
+      },
+      {
+        "rootVertex": 1092,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.163399,
+          -0.527673,
+          1.252728
+        ],
+        "worldSize": [
+          0.00398,
+          0.010918,
+          0.000435
+        ],
+        "pixelCenter": [
+          172.99,
+          277.78
+        ]
+      },
+      {
+        "rootVertex": 307,
+        "vertices": 14,
+        "polygons": 14,
+        "worldCenter": [
+          1.151361,
+          -0.509994,
+          1.245455
+        ],
+        "worldSize": [
+          0.148001,
+          0.42782,
+          0.020893
+        ],
+        "pixelCenter": [
+          179.88,
+          277.79
+        ]
+      },
+      {
+        "rootVertex": 246,
+        "vertices": 20,
+        "polygons": 24,
+        "worldCenter": [
+          1.153016,
+          -0.510549,
+          1.246134
+        ],
+        "worldSize": [
+          0.147946,
+          0.427797,
+          0.02115
+        ],
+        "pixelCenter": [
+          179.61,
+          277.89
+        ]
+      },
+      {
+        "rootVertex": 347,
+        "vertices": 20,
+        "polygons": 24,
+        "worldCenter": [
+          1.153421,
+          -0.5107,
+          1.245855
+        ],
+        "worldSize": [
+          0.148011,
+          0.427836,
+          0.020984
+        ],
+        "pixelCenter": [
+          179.54,
+          278.04
+        ]
+      },
+      {
+        "rootVertex": 473,
+        "vertices": 20,
+        "polygons": 24,
+        "worldCenter": [
+          1.15377,
+          -0.510837,
+          1.245088
+        ],
+        "worldSize": [
+          0.148709,
+          0.42811,
+          0.021641
+        ],
+        "pixelCenter": [
+          179.5,
+          278.34
+        ]
+      },
+      {
+        "rootVertex": 321,
+        "vertices": 15,
+        "polygons": 16,
+        "worldCenter": [
+          1.151215,
+          -0.510043,
+          1.243532
+        ],
+        "worldSize": [
+          0.148292,
+          0.427723,
+          0.023703
+        ],
+        "pixelCenter": [
+          179.91,
+          278.35
+        ]
+      },
+      {
+        "rootVertex": 190,
+        "vertices": 14,
+        "polygons": 13,
+        "worldCenter": [
+          1.157875,
+          -0.512235,
+          1.247272
+        ],
+        "worldSize": [
+          0.148289,
+          0.428045,
+          0.020614
+        ],
+        "pixelCenter": [
+          178.8,
+          278.43
+        ]
+      },
+      {
+        "rootVertex": 563,
+        "vertices": 10,
+        "polygons": 8,
+        "worldCenter": [
+          1.15483,
+          -0.511237,
+          1.24536
+        ],
+        "worldSize": [
+          0.150161,
+          0.428681,
+          0.021635
+        ],
+        "pixelCenter": [
+          179.31,
+          278.45
+        ]
+      },
+      {
+        "rootVertex": 336,
+        "vertices": 11,
+        "polygons": 9,
+        "worldCenter": [
+          1.153652,
+          -0.510879,
+          1.244081
+        ],
+        "worldSize": [
+          0.148362,
+          0.427846,
+          0.020697
+        ],
+        "pixelCenter": [
+          179.51,
+          278.62
+        ]
+      },
+      {
+        "rootVertex": 367,
+        "vertices": 10,
+        "polygons": 8,
+        "worldCenter": [
+          1.154182,
+          -0.511019,
+          1.244338
+        ],
+        "worldSize": [
+          0.147884,
+          0.427745,
+          0.020856
+        ],
+        "pixelCenter": [
+          179.43,
+          278.64
+        ]
+      },
+      {
+        "rootVertex": 463,
+        "vertices": 10,
+        "polygons": 8,
+        "worldCenter": [
+          1.15246,
+          -0.510434,
+          1.242959
+        ],
+        "worldSize": [
+          0.149552,
+          0.428157,
+          0.022503
+        ],
+        "pixelCenter": [
+          179.74,
+          278.75
+        ]
+      },
+      {
+        "rootVertex": 377,
+        "vertices": 16,
+        "polygons": 18,
+        "worldCenter": [
+          1.15104,
+          -0.510011,
+          1.241947
+        ],
+        "worldSize": [
+          0.147941,
+          0.42766,
+          0.020533
+        ],
+        "pixelCenter": [
+          179.96,
+          278.79
+        ]
+      },
+      {
+        "rootVertex": 589,
+        "vertices": 10,
+        "polygons": 8,
+        "worldCenter": [
+          1.156908,
+          -0.511923,
+          1.245307
+        ],
+        "worldSize": [
+          0.149213,
+          0.428246,
+          0.021529
+        ],
+        "pixelCenter": [
+          178.99,
+          278.85
+        ]
+      },
+      {
+        "rootVertex": 441,
+        "vertices": 18,
+        "polygons": 21,
+        "worldCenter": [
+          1.159001,
+          -0.512777,
+          1.246335
+        ],
+        "worldSize": [
+          0.150585,
+          0.429234,
+          0.022157
+        ],
+        "pixelCenter": [
+          178.58,
+          278.92
+        ]
+      },
+      {
+        "rootVertex": 393,
+        "vertices": 15,
+        "polygons": 15,
+        "worldCenter": [
+          1.158784,
+          -0.512846,
+          1.245302
+        ],
+        "worldSize": [
+          0.150483,
+          0.428926,
+          0.021759
+        ],
+        "pixelCenter": [
+          178.59,
+          279.19
+        ]
+      },
+      {
+        "rootVertex": 548,
+        "vertices": 15,
+        "polygons": 16,
+        "worldCenter": [
+          1.160541,
+          -0.513287,
+          1.244934
+        ],
+        "worldSize": [
+          0.147505,
+          0.428213,
+          0.021022
+        ],
+        "pixelCenter": [
+          178.37,
+          279.63
+        ]
+      },
+      {
+        "rootVertex": 1866,
+        "vertices": 75,
+        "polygons": 100,
+        "worldCenter": [
+          1.197291,
+          -0.429681,
+          1.263187
+        ],
+        "worldSize": [
+          0.011037,
+          0.004303,
+          0.016096
+        ],
+        "pixelCenter": [
+          206.4,
+          280.83
+        ]
+      },
+      {
+        "rootVertex": 237,
+        "vertices": 7,
+        "polygons": 4,
+        "worldCenter": [
+          1.185048,
+          -0.417415,
+          1.249146
+        ],
+        "worldSize": [
+          0.080755,
+          0.24303,
+          0.017676
+        ],
+        "pixelCenter": [
+          211.43,
+          282.85
+        ]
+      },
+      {
+        "rootVertex": 187,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.191264,
+          -0.419476,
+          1.245697
+        ],
+        "worldSize": [
+          0.080571,
+          0.242632,
+          0.017558
+        ],
+        "pixelCenter": [
+          210.56,
+          285.05
+        ]
+      },
+      {
+        "rootVertex": 528,
+        "vertices": 5,
+        "polygons": 3,
+        "worldCenter": [
+          1.191312,
+          -0.419479,
+          1.245697
+        ],
+        "worldSize": [
+          0.080666,
+          0.242589,
+          0.017558
+        ],
+        "pixelCenter": [
+          210.55,
+          285.06
+        ]
+      },
+      {
+        "rootVertex": 459,
+        "vertices": 4,
+        "polygons": 2,
+        "worldCenter": [
+          1.200979,
+          -0.390824,
+          1.242694
+        ],
+        "worldSize": [
+          0.061761,
+          0.185153,
+          0.01438
+        ],
+        "pixelCenter": [
+          220.52,
+          287.78
+        ]
+      },
+      {
+        "rootVertex": 36,
+        "vertices": 36,
+        "polygons": 48,
+        "worldCenter": [
+          1.233386,
+          -0.282999,
+          1.258739
+        ],
+        "worldSize": [
+          0.08096,
+          0.295889,
+          0.021499
+        ],
+        "pixelCenter": [
+          258.09,
+          288.93
+        ]
+      },
+      {
+        "rootVertex": 769,
+        "vertices": 4,
+        "polygons": 2,
+        "worldCenter": [
+          1.224606,
+          -0.312785,
+          1.249092
+        ],
+        "worldSize": [
+          0.002021,
+          0.00087,
+          0.001761
+        ],
+        "pixelCenter": [
+          247.7,
+          290.24
+        ]
+      },
+      {
+        "rootVertex": 0,
+        "vertices": 36,
+        "polygons": 48,
+        "worldCenter": [
+          1.237678,
+          -0.283652,
+          1.254481
+        ],
+        "worldSize": [
+          0.089544,
+          0.297196,
+          0.027295
+        ],
+        "pixelCenter": [
+          257.8,
+          291.05
+        ]
+      },
+      {
+        "rootVertex": 108,
+        "vertices": 24,
+        "polygons": 26,
+        "worldCenter": [
+          1.24071,
+          -0.284362,
+          1.255873
+        ],
+        "worldSize": [
+          0.087808,
+          0.298051,
+          0.024813
+        ],
+        "pixelCenter": [
+          257.46,
+          291.2
+        ]
+      },
+      {
+        "rootVertex": 687,
+        "vertices": 22,
+        "polygons": 28,
+        "worldCenter": [
+          1.224487,
+          -0.301142,
+          1.245742
+        ],
+        "worldSize": [
+          0.00851,
+          0.022454,
+          0.008461
+        ],
+        "pixelCenter": [
+          251.93,
+          291.25
+        ]
+      },
+      {
+        "rootVertex": 656,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.221986,
+          -0.300271,
+          1.243332
+        ],
+        "worldSize": [
+          0.010951,
+          0.021876,
+          0.003642
+        ],
+        "pixelCenter": [
+          252.33,
+          291.51
+        ]
+      },
+      {
+        "rootVertex": 734,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.220129,
+          -0.299353,
+          1.241648
+        ],
+        "worldSize": [
+          0.009792,
+          0.020523,
+          0.007009
+        ],
+        "pixelCenter": [
+          252.73,
+          291.68
+        ]
+      },
+      {
+        "rootVertex": 742,
+        "vertices": 27,
+        "polygons": 36,
+        "worldCenter": [
+          1.223454,
+          -0.312671,
+          1.240191
+        ],
+        "worldSize": [
+          0.016441,
+          0.007471,
+          0.013599
+        ],
+        "pixelCenter": [
+          247.89,
+          292.75
+        ]
+      },
+      {
+        "rootVertex": 72,
+        "vertices": 36,
+        "polygons": 48,
+        "worldCenter": [
+          1.240718,
+          -0.284664,
+          1.250524
+        ],
+        "worldSize": [
+          0.087793,
+          0.297446,
+          0.019381
+        ],
+        "pixelCenter": [
+          257.42,
+          292.84
+        ]
+      },
+      {
+        "rootVertex": 773,
+        "vertices": 30,
+        "polygons": 40,
+        "worldCenter": [
+          1.231332,
+          -0.304282,
+          1.241987
+        ],
+        "worldSize": [
+          0.012142,
+          0.02425,
+          0.013806
+        ],
+        "pixelCenter": [
+          250.69,
+          293.69
+        ]
+      },
+      {
+        "rootVertex": 664,
+        "vertices": 23,
+        "polygons": 23,
+        "worldCenter": [
+          1.230507,
+          -0.301156,
+          1.240841
+        ],
+        "worldSize": [
+          0.013628,
+          0.024128,
+          0.018264
+        ],
+        "pixelCenter": [
+          251.84,
+          293.88
+        ]
+      },
+      {
+        "rootVertex": 709,
+        "vertices": 17,
+        "polygons": 20,
+        "worldCenter": [
+          1.225377,
+          -0.302485,
+          1.236515
+        ],
+        "worldSize": [
+          0.020287,
+          0.026786,
+          0.010152
+        ],
+        "pixelCenter": [
+          251.54,
+          294.24
+        ]
+      },
+      {
+        "rootVertex": 726,
+        "vertices": 8,
+        "polygons": 6,
+        "worldCenter": [
+          1.233637,
+          -0.305092,
+          1.234096
+        ],
+        "worldSize": [
+          0.007532,
+          0.02263,
+          0.005314
+        ],
+        "pixelCenter": [
+          250.44,
+          296.54
+        ]
+      },
+      {
+        "rootVertex": 623,
+        "vertices": 15,
+        "polygons": 16,
+        "worldCenter": [
+          1.242757,
+          -0.251527,
+          1.236013
+        ],
+        "worldSize": [
+          0.003751,
+          0.026225,
+          0.008888
+        ],
+        "pixelCenter": [
+          269.47,
+          297.68
+        ]
+      },
+      {
+        "rootVertex": 886,
+        "vertices": 6,
+        "polygons": 4,
+        "worldCenter": [
+          1.272272,
+          -0.136054,
+          1.249285
+        ],
+        "worldSize": [
+          0.002327,
+          0.002566,
+          0.003865
+        ],
+        "pixelCenter": [
+          310.63,
+          299.24
+        ]
+      },
+      {
+        "rootVertex": 638,
+        "vertices": 18,
+        "polygons": 17,
+        "worldCenter": [
+          1.244601,
+          -0.237427,
+          1.231302
+        ],
+        "worldSize": [
+          0.020299,
+          0.004624,
+          0.01831
+        ],
+        "pixelCenter": [
+          274.56,
+          299.48
+        ]
+      },
+      {
+        "rootVertex": 602,
+        "vertices": 21,
+        "polygons": 19,
+        "worldCenter": [
+          1.246349,
+          -0.25179,
+          1.230695
+        ],
+        "worldSize": [
+          0.01585,
+          0.025699,
+          0.019526
+        ],
+        "pixelCenter": [
+          269.36,
+          300.0
+        ]
+      },
+      {
+        "rootVertex": 892,
+        "vertices": 10,
+        "polygons": 8,
+        "worldCenter": [
+          1.278694,
+          -0.136741,
+          1.248137
+        ],
+        "worldSize": [
+          0.010759,
+          0.0027,
+          0.00642
+        ],
+        "pixelCenter": [
+          310.32,
+          300.83
+        ]
+      },
+      {
+        "rootVertex": 835,
+        "vertices": 51,
+        "polygons": 75,
+        "worldCenter": [
+          1.277216,
+          -0.136966,
+          1.246273
+        ],
+        "worldSize": [
+          0.017028,
+          0.002876,
+          0.013042
+        ],
+        "pixelCenter": [
+          310.27,
+          301.12
+        ]
+      },
+      {
+        "rootVertex": 902,
+        "vertices": 10,
+        "polygons": 8,
+        "worldCenter": [
+          1.276595,
+          -0.136133,
+          1.244485
+        ],
+        "worldSize": [
+          0.010975,
+          0.002769,
+          0.005904
+        ],
+        "pixelCenter": [
+          310.59,
+          301.56
+        ]
+      },
+      {
+        "rootVertex": 599,
+        "vertices": 3,
+        "polygons": 1,
+        "worldCenter": [
+          1.283675,
+          -0.136841,
+          1.244239
+        ],
+        "worldSize": [
+          0.000796,
+          0.002012,
+          0.001817
+        ],
+        "pixelCenter": [
+          310.25,
+          303.0
+        ]
+      }
+    ]
+  }
+}

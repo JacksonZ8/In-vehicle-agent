@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>蔚来 ES8 用户手册</title>
+    <link rel="stylesheet" href="/src/app/userguide.css" />
+  </head>
+  <body>
+    <main id="userGuideApp" class="guide-shell" data-load-state="loading">
+      <header class="guide-header">
+        <a class="brand-lockup" href="/" aria-label="返回车载智能交互主页">
+          <span class="brand-mark">NIO</span>
+          <span>
+            <strong>Manual Intelligence</strong>
+            <small>可验证用户手册阅读器</small>
+          </span>
+        </a>
+        <div class="guide-actions">
+          <button
+            id="returnToConsole"
+            class="return-console"
+            type="button"
+            data-testid="return-to-console"
+          >
+            ← 返回操作台
+          </button>
+          <a id="pdfLink" class="pdf-link" hidden>查看原版 PDF</a>
+        </div>
+      </header>
+
+      <section class="guide-hero" aria-labelledby="guideTitle">
+        <span class="eyebrow">NIO ES8 / Trusted Manual</span>
+        <h1 id="guideTitle">用户手册</h1>
+        <p id="guideMeta">正在载入受控手册内容…</p>
+        <p id="userGuideStatus" class="guide-status" role="status" aria-live="polite">正在载入用户手册</p>
+        <p id="userGuideError" class="guide-error" role="alert" hidden></p>
+      </section>
+
+      <section id="manualPages" class="manual-pages" aria-label="用户手册正文"></section>
+
+      <aside id="evidenceRegion" class="evidence-region" aria-label="本次可信证据" hidden>
+        <button
+          id="evidenceDrawerToggle"
+          class="evidence-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="evidenceDrawer"
+        ></button>
+        <div id="evidenceDrawer" class="evidence-drawer" hidden>
+          <div class="drawer-heading">
+            <span class="eyebrow">Accepted Evidence</span>
+            <strong>按检索排名查看</strong>
+          </div>
+          <div id="evidenceList" class="evidence-list"></div>
+        </div>
+      </aside>
+    </main>
+    <script type="module" src="/src/app/userguide.js"></script>
+  </body>
+</html>

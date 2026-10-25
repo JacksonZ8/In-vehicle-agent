@@ -1,0 +1,105 @@
+{
+  "version": "es8-manual-rag-golden-v1",
+  "sourceId": "nio-es8-user-manual-2026",
+  "chunkingVersion": "manual-rag-v1-page-heading-window-900-overlap-100",
+  "description": "ES8 用户手册检索质量黄金集；期望 chunk、页码和章节均由 es8-manual-chunks.jsonl 核验。",
+  "cases": [
+    {
+      "id": "operation-tailgate-height",
+      "category": "操作",
+      "query": "如何设置尾门开启高度？",
+      "expectedChunks": [
+        { "chunkId": "es8-manual-chunk-0055", "pageStart": 66, "pageEnd": 66, "sectionTitle": "门窗 / 尾门开启高度设置" }
+      ]
+    },
+    {
+      "id": "operation-smart-key-window",
+      "category": "操作",
+      "query": "怎么用智能钥匙控制车窗？",
+      "expectedChunks": [
+        { "chunkId": "es8-manual-chunk-0064", "pageStart": 78, "pageEnd": 78, "sectionTitle": "门窗 / 智能钥匙控制车窗" }
+      ]
+    },
+    {
+      "id": "operation-auto-wiper-sensitivity",
+      "category": "操作",
+      "query": "自动雨刮灵敏度在哪里调节？",
+      "expectedChunks": [
+        { "chunkId": "es8-manual-chunk-0159", "pageStart": 199, "pageEnd": 199, "sectionTitle": "灯光与雨刮 / 前雨刮自动调节" }
+      ]
+    },
+    {
+      "id": "safety-window-anti-pinch",
+      "category": "安全",
+      "query": "车窗防夹功能有哪些安全注意事项？",
+      "expectedChunks": [
+        { "chunkId": "es8-manual-chunk-0065", "pageStart": 79, "pageEnd": 79, "sectionTitle": "门窗 / 车窗防夹" }
+      ]
+    },
+    {
+      "id": "safety-airbag-warning",
+      "category": "安全",
+      "query": "安全气囊警告灯亮起时应该注意什么？",
+      "expectedChunks": [
+        { "chunkId": "es8-manual-chunk-0221", "pageStart": 263, "pageEnd": 263, "sectionTitle": "车辆与人员安全 / 安全气囊警告灯" }
+      ]
+    },
+    {
+      "id": "safety-child-seat",
+      "category": "安全",
+      "query": "安装儿童安全座椅有哪些安全要求？",
+      "expectedChunks": [
+        { "chunkId": "es8-manual-chunk-0223", "pageStart": 265, "pageEnd": 265, "sectionTitle": "车辆与人员安全 / 儿童安全座椅" }
+      ]
+    },
+    {
+      "id": "fault-emergency-tailgate",
+      "category": "故障",
+      "query": "尾门无法正常打开时如何应急开启？",
+      "expectedChunks": [
+        { "chunkId": "es8-manual-chunk-0394", "pageStart": 458, "pageEnd": 458, "sectionTitle": "车主应急 / 应急开启尾门" }
+      ]
+    },
+    {
+      "id": "fault-system-restart",
+      "category": "故障",
+      "query": "车机异常时怎么用方向盘双键重启？",
+      "expectedChunks": [
+        { "chunkId": "es8-manual-chunk-0389", "pageStart": 453, "pageEnd": 453, "sectionTitle": "车主应急 / 方向盘双键重启" }
+      ]
+    },
+    {
+      "id": "fault-tire-pressure-warning",
+      "category": "故障",
+      "query": "胎压监测系统故障或胎压异常警告灯是什么？",
+      "expectedChunks": [
+        { "chunkId": "es8-manual-chunk-0017", "pageStart": 19, "pageEnd": 22, "sectionTitle": "概览 / 天际屏图标 说明" },
+        { "chunkId": "es8-manual-chunk-0363", "pageStart": 423, "pageEnd": 423, "sectionTitle": "保养与维护 / 胎压监测系统" }
+      ]
+    },
+    {
+      "id": "maintenance-wiper-replacement",
+      "category": "保养",
+      "query": "如何更换雨刮片？",
+      "expectedChunks": [
+        { "chunkId": "es8-manual-chunk-0356", "pageStart": 413, "pageEnd": 414, "sectionTitle": "保养与维护 / 雨刮片更换" }
+      ]
+    },
+    {
+      "id": "maintenance-brake-fluid",
+      "category": "保养",
+      "query": "添加制动液时有哪些要求？",
+      "expectedChunks": [
+        { "chunkId": "es8-manual-chunk-0359", "pageStart": 418, "pageEnd": 419, "sectionTitle": "保养与维护 / 添加制动液" }
+      ]
+    },
+    {
+      "id": "maintenance-cabin-filter",
+      "category": "保养",
+      "query": "空调滤芯应该怎么检查和保养？",
+      "expectedChunks": [
+        { "chunkId": "es8-manual-chunk-0365", "pageStart": 425, "pageEnd": 425, "sectionTitle": "保养与维护 / 空调滤芯检查与保养" }
+      ]
+    }
+  ]
+}

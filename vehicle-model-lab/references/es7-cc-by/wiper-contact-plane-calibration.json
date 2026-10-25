@@ -1,0 +1,344 @@
+{
+  "contract": "nio-es7-wiper-contact-plane-calibration@0.1.0",
+  "source": "source/nio-es7-animation-master.blend",
+  "mode": "apply",
+  "constraints": {
+    "targetGapMeters": 0.003,
+    "maximumGapMetersBySide": {
+      "left": 0.008,
+      "right": 0.012
+    },
+    "penetrationToleranceMeters": 5e-05,
+    "fixedOrigins": true,
+    "rigidAssemblies": true
+  },
+  "feasible": true,
+  "wipers": {
+    "left": {
+      "pivot": "wiper_left_pivot",
+      "origin": [
+        1.21650004,
+        0.69220001,
+        1.19300008
+      ],
+      "baseWorldRotation": [
+        [
+          0.6599831,
+          0.0,
+          0.75128049
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -0.75128049,
+          0.0,
+          0.6599831
+        ]
+      ],
+      "baseWorldAxis": [
+        0.75128049,
+        0.0,
+        0.6599831
+      ],
+      "anglesByProgress": {
+        "0": 0.0,
+        "25": -0.51686347,
+        "50": -1.08000004,
+        "75": -0.54000002,
+        "100": 0.0
+      },
+      "sampleVertices": [
+        1147,
+        1145,
+        1127,
+        767,
+        1133
+      ],
+      "candidate": {
+        "feasible": true,
+        "axisTiltRadians": [
+          0.14,
+          0.215
+        ],
+        "tiltBasisWorld": [
+          [
+            -0.6599831,
+            0.0,
+            0.75128049
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        ],
+        "worldRotation": [
+          [
+            0.80350339,
+            -0.1048361,
+            0.58599633
+          ],
+          [
+            0.02977118,
+            0.99021596,
+            0.13633044
+          ],
+          [
+            -0.59455526,
+            -0.09209616,
+            0.79876292
+          ]
+        ],
+        "worldAxis": [
+          0.58599633,
+          0.13633044,
+          0.79876292
+        ],
+        "motionStatistics": {
+          "minimumMeters": 0.001485,
+          "medianMeters": 0.00427,
+          "maximumMeters": 0.007448,
+          "targetRmsErrorMeters": 0.001954
+        },
+        "keyframes": {
+          "0": {
+            "minimumMeters": 0.000839,
+            "medianMeters": 0.001005,
+            "maximumMeters": 0.003963,
+            "penetratingSamples": 0
+          },
+          "25": {
+            "minimumMeters": 0.003291,
+            "medianMeters": 0.004323,
+            "maximumMeters": 0.004706,
+            "penetratingSamples": 0
+          },
+          "50": {
+            "minimumMeters": 0.001485,
+            "medianMeters": 0.004555,
+            "maximumMeters": 0.007448,
+            "penetratingSamples": 0
+          },
+          "75": {
+            "minimumMeters": 0.003097,
+            "medianMeters": 0.00421,
+            "maximumMeters": 0.004801,
+            "penetratingSamples": 0
+          },
+          "100": {
+            "minimumMeters": 0.000839,
+            "medianMeters": 0.001005,
+            "maximumMeters": 0.003963,
+            "penetratingSamples": 0
+          }
+        },
+        "sampleGapsMeters": {
+          "0": [
+            0.003963,
+            0.001657,
+            0.001005,
+            0.000916,
+            0.000839
+          ],
+          "25": [
+            0.004706,
+            0.003291,
+            0.003395,
+            0.004323,
+            0.004675
+          ],
+          "50": [
+            0.001485,
+            0.002087,
+            0.004555,
+            0.007225,
+            0.007448
+          ],
+          "75": [
+            0.00421,
+            0.003097,
+            0.003256,
+            0.00427,
+            0.004801
+          ],
+          "100": [
+            0.003963,
+            0.001657,
+            0.001005,
+            0.000916,
+            0.000839
+          ]
+        }
+      }
+    },
+    "right": {
+      "pivot": "wiper_right_pivot",
+      "origin": [
+        1.27721608,
+        -0.136966,
+        1.24627316
+      ],
+      "baseWorldRotation": [
+        [
+          0.6599831,
+          0.0,
+          0.75128049
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -0.75128049,
+          0.0,
+          0.6599831
+        ]
+      ],
+      "baseWorldAxis": [
+        0.75128049,
+        0.0,
+        0.6599831
+      ],
+      "anglesByProgress": {
+        "0": 0.0,
+        "25": -0.51686347,
+        "50": -1.08000004,
+        "75": -0.54000002,
+        "100": 0.0
+      },
+      "sampleVertices": [
+        432,
+        380,
+        384,
+        381,
+        383,
+        303
+      ],
+      "candidate": {
+        "feasible": true,
+        "axisTiltRadians": [
+          -0.065,
+          0.225
+        ],
+        "tiltBasisWorld": [
+          [
+            -0.6599831,
+            0.0,
+            0.75128049
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        ],
+        "worldRotation": [
+          [
+            0.8106091,
+            0.0487989,
+            0.58355099
+          ],
+          [
+            -0.01449171,
+            0.99788827,
+            -0.06331708
+          ],
+          [
+            -0.58540839,
+            0.04286874,
+            0.80960447
+          ]
+        ],
+        "worldAxis": [
+          0.58355099,
+          -0.06331708,
+          0.80960447
+        ],
+        "motionStatistics": {
+          "minimumMeters": 0.000144,
+          "medianMeters": 0.001145,
+          "maximumMeters": 0.011777,
+          "targetRmsErrorMeters": 0.003448
+        },
+        "keyframes": {
+          "0": {
+            "minimumMeters": 0.000295,
+            "medianMeters": 0.001261,
+            "maximumMeters": 0.0079,
+            "penetratingSamples": 0
+          },
+          "25": {
+            "minimumMeters": 0.000206,
+            "medianMeters": 0.001161,
+            "maximumMeters": 0.009129,
+            "penetratingSamples": 0
+          },
+          "50": {
+            "minimumMeters": 0.000967,
+            "medianMeters": 0.001767,
+            "maximumMeters": 0.011777,
+            "penetratingSamples": 0
+          },
+          "75": {
+            "minimumMeters": 0.000144,
+            "medianMeters": 0.001117,
+            "maximumMeters": 0.009134,
+            "penetratingSamples": 0
+          },
+          "100": {
+            "minimumMeters": 0.000295,
+            "medianMeters": 0.001261,
+            "maximumMeters": 0.0079,
+            "penetratingSamples": 0
+          }
+        },
+        "sampleGapsMeters": {
+          "0": [
+            0.000295,
+            0.001272,
+            0.001251,
+            0.000677,
+            0.002246,
+            0.0079
+          ],
+          "25": [
+            0.001044,
+            0.00023,
+            0.000206,
+            0.001278,
+            0.002725,
+            0.009129
+          ],
+          "50": [
+            0.00105,
+            0.000989,
+            0.000967,
+            0.002483,
+            0.004967,
+            0.011777
+          ],
+          "75": [
+            0.000994,
+            0.000167,
+            0.000144,
+            0.001241,
+            0.002863,
+            0.009134
+          ],
+          "100": [
+            0.000295,
+            0.001272,
+            0.001251,
+            0.000677,
+            0.002246,
+            0.0079
+          ]
+        }
+      }
+    }
+  }
+}

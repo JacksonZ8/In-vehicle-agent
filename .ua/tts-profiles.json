@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "description": "Versioned TTS voice profiles for NIO in-vehicle assistant. Each profile defines provider, reference audio, prompt text, language, and licensing boundary. Set NIO_TTS_PROFILE to select; missing or unknown profile fails fast at startup.",
+  "defaultProfile": "sandrone-dev",
+  "profiles": {
+    "sandrone-dev": {
+      "provider": "GPT-SoVITS",
+      "description": "Sandrone 角色声线 — 本地开发测试用，不可用于商业用途",
+      "refAudioPath": "assets/tts/reference/sandrone-dev-reference.wav",
+      "promptText": "这地方倒是挺清静的刚好适合一个人做点研究",
+      "promptLang": "zh",
+      "textLang": "zh",
+      "mediaType": "wav",
+      "synthesis": {
+        "profileId": "sandrone-dev-gptsovits-cpu-balanced@1.0.0",
+        "textSplitMethod": "cut5",
+        "batchSize": 1,
+        "streamingMode": false,
+        "speedFactor": 1,
+        "topK": 5,
+        "topP": 1,
+        "temperature": 1
+      },
+      "licenseBoundary": "local-non-commercial-testing-only",
+      "licenseNote": "Reference audio and voice model derived from Sandrone character; must not be used in production or commercial contexts without explicit rights clearance."
+    },
+    "browser-tts-fallback": {
+      "provider": "BrowserSpeechSynthesis",
+      "description": "浏览器内置 TTS 回退 — 无需外部服务，质量较低",
+      "refAudioPath": null,
+      "promptText": null,
+      "promptLang": "zh",
+      "textLang": "zh",
+      "mediaType": null,
+      "synthesis": {
+        "profileId": "browser-tts-fallback@1.0.0"
+      },
+      "licenseBoundary": "browser-built-in",
+      "licenseNote": "Uses the browser's built-in SpeechSynthesis API. No server-side voice data involved."
+    }
+  }
+}

@@ -1,0 +1,5078 @@
+{
+  "contract": "nio-es7-component-audit@0.1.0",
+  "sourceScene": "source/es7-reference.blend",
+  "sourceCollection": "REF_ES7_IMPORTED",
+  "summary": {
+    "objects": 96,
+    "meshObjects": 47,
+    "vertices": 353360,
+    "triangles": 588958,
+    "materials": 54,
+    "images": 9
+  },
+  "candidates": [
+    {
+      "componentId": "front_left_door",
+      "kind": "door",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_Door_LF"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_Door_* mesh in the authenticated source asset."
+    },
+    {
+      "componentId": "front_right_door",
+      "kind": "door",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_Door_RF"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_Door_* mesh in the authenticated source asset."
+    },
+    {
+      "componentId": "rear_left_door",
+      "kind": "door",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_Door_LB"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_Door_* mesh in the authenticated source asset."
+    },
+    {
+      "componentId": "rear_right_door",
+      "kind": "door",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_Door_RB"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_Door_* mesh in the authenticated source asset."
+    },
+    {
+      "componentId": "front_left_window",
+      "kind": "window",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_DoorGlass_LF"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_DoorGlass_* mesh using the matching door-glass material."
+    },
+    {
+      "componentId": "front_right_window",
+      "kind": "window",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_DoorGlass_RF"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_DoorGlass_* mesh using the matching door-glass material."
+    },
+    {
+      "componentId": "rear_left_window",
+      "kind": "window",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_DoorGlass_LB"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_DoorGlass_* mesh using the matching door-glass material."
+    },
+    {
+      "componentId": "rear_right_window",
+      "kind": "window",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_DoorGlass_RB"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_DoorGlass_* mesh using the matching door-glass material."
+    },
+    {
+      "componentId": "front_left_handle",
+      "kind": "handle",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_Doorknob_LF"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_Doorknob_* mesh parented to the matching source door."
+    },
+    {
+      "componentId": "front_right_handle",
+      "kind": "handle",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_Doorknob_RF"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_Doorknob_* mesh parented to the matching source door."
+    },
+    {
+      "componentId": "rear_left_handle",
+      "kind": "handle",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_Doorknob_LB"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_Doorknob_* mesh parented to the matching source door."
+    },
+    {
+      "componentId": "rear_right_handle",
+      "kind": "handle",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_Doorknob_RB"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_Doorknob_* mesh parented to the matching source door."
+    },
+    {
+      "componentId": "front_left_handle_light",
+      "kind": "handle-light",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_DoorLight_LF"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_DoorLight_* mesh using the handle-light material."
+    },
+    {
+      "componentId": "front_right_handle_light",
+      "kind": "handle-light",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_DoorLight_RF"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_DoorLight_* mesh using the handle-light material."
+    },
+    {
+      "componentId": "rear_left_handle_light",
+      "kind": "handle-light",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_DoorLight_LB"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_DoorLight_* mesh using the handle-light material."
+    },
+    {
+      "componentId": "rear_right_handle_light",
+      "kind": "handle-light",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_DoorLight_RB"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_DoorLight_* mesh using the handle-light material."
+    },
+    {
+      "componentId": "tailgate",
+      "kind": "tailgate",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "Trunk"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated Trunk mesh containing the liftgate exterior, glazing, trim, and rear lamp materials."
+    },
+    {
+      "componentId": "wheel_front_left",
+      "kind": "wheel",
+      "status": "separated-source-objects",
+      "sourceObjects": [
+        "Wheel1_3",
+        "WheelCaliper_LF"
+      ],
+      "selectionMode": "whole-object-with-material-segmentation",
+      "sourceCenter": [
+        0.574565,
+        -0.201866,
+        -0.017859
+      ],
+      "caliperCenter": [
+        0.587559,
+        -0.201456,
+        -0.017705
+      ],
+      "evidence": "Wheel position and LF/RF/LB/RB caliper label agree; wheel internals still require material-based spin/caliper separation."
+    },
+    {
+      "componentId": "wheel_front_right",
+      "kind": "wheel",
+      "status": "separated-source-objects",
+      "sourceObjects": [
+        "Wheel1_1",
+        "WheelCaliper_RF"
+      ],
+      "selectionMode": "whole-object-with-material-segmentation",
+      "sourceCenter": [
+        -0.55984,
+        -0.201865,
+        -0.016514
+      ],
+      "caliperCenter": [
+        -0.564762,
+        -0.201456,
+        -0.017705
+      ],
+      "evidence": "Wheel position and LF/RF/LB/RB caliper label agree; wheel internals still require material-based spin/caliper separation."
+    },
+    {
+      "componentId": "wheel_rear_left",
+      "kind": "wheel",
+      "status": "separated-source-objects",
+      "sourceObjects": [
+        "Wheel1_2",
+        "WheelCaliper_LB"
+      ],
+      "selectionMode": "whole-object-with-material-segmentation",
+      "sourceCenter": [
+        0.572547,
+        1.78853,
+        -0.015841
+      ],
+      "caliperCenter": [
+        0.597601,
+        1.785188,
+        -0.015431
+      ],
+      "evidence": "Wheel position and LF/RF/LB/RB caliper label agree; wheel internals still require material-based spin/caliper separation."
+    },
+    {
+      "componentId": "wheel_rear_right",
+      "kind": "wheel",
+      "status": "separated-source-objects",
+      "sourceObjects": [
+        "Wheel1",
+        "WheelCaliper_RB"
+      ],
+      "selectionMode": "whole-object-with-material-segmentation",
+      "sourceCenter": [
+        -0.561859,
+        1.789875,
+        -0.014495
+      ],
+      "caliperCenter": [
+        -0.574801,
+        1.785188,
+        -0.015431
+      ],
+      "evidence": "Wheel position and LF/RF/LB/RB caliper label agree; wheel internals still require material-based spin/caliper separation."
+    },
+    {
+      "componentId": "hood",
+      "kind": "hood",
+      "status": "requires-working-copy-extraction",
+      "sourceObjects": [
+        "ES7_Body_L",
+        "ES7_Body_R"
+      ],
+      "selectionMode": "mesh-boundary-extraction",
+      "evidence": "No dedicated hood object exists; the exterior body halves contain the hood surface."
+    },
+    {
+      "componentId": "front_lights",
+      "kind": "light-group",
+      "status": "requires-working-copy-material-segmentation",
+      "sourceObjects": [
+        "ES7_Body_L",
+        "ES7_Body_R"
+      ],
+      "selectionMode": "material-segmentation",
+      "materialCandidates": [
+        "2_车灯_前白色",
+        "2_车灯_侧白色",
+        "2_车灯_前大灯",
+        "2_车灯_前大灯2",
+        "3_玻璃_车大灯",
+        "3_玻璃_车灯"
+      ],
+      "evidence": "Front-light materials exist on both exterior body halves, but no dedicated lamp mesh exists."
+    },
+    {
+      "componentId": "rear_lights",
+      "kind": "light-group",
+      "status": "requires-working-copy-material-segmentation",
+      "sourceObjects": [
+        "Trunk",
+        "ES7_Body_L",
+        "ES7_Body_R"
+      ],
+      "selectionMode": "material-segmentation",
+      "materialCandidates": [
+        "2_车灯_后转向",
+        "2_车灯_刹车灯",
+        "2_车灯_后红色",
+        "3_玻璃_车灯"
+      ],
+      "evidence": "Rear-light materials span the liftgate and fixed body halves and must preserve their ownership after segmentation."
+    }
+  ],
+  "objects": [
+    {
+      "name": "20_INCH_ELEGANT_DARE ",
+      "type": "EMPTY",
+      "parent": "ES7_Wheel",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        0.0,
+        0.003
+      ]
+    },
+    {
+      "name": "20_INCH_ELEGANT_DARE   ",
+      "type": "MESH",
+      "parent": "20_INCH_ELEGANT_DARE_RF",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.300079,
+          0.025407,
+          -0.819208
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.486137,
+          -1.486137,
+          -1.486137
+        ]
+      },
+      "worldLocation": [
+        -0.0,
+        -0.0,
+        0.0
+      ],
+      "mesh": {
+        "vertices": 13188,
+        "polygons": 21651,
+        "triangles": 21651,
+        "materials": [
+          "4_轮胎_轮毂暗面",
+          "1_车身_Moon",
+          "4_轮胎_轮面",
+          "车轮毂亮面"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.382857,
+          -0.382857,
+          -0.1344
+        ],
+        "maximum": [
+          0.382857,
+          0.382857,
+          0.1344
+        ],
+        "center": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "size": [
+          0.765714,
+          0.765714,
+          0.2688
+        ]
+      }
+    },
+    {
+      "name": "20_INCH_ELEGANT_DARE    ",
+      "type": "MESH",
+      "parent": "20_INCH_ELEGANT_DARE_RF1",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        -0.551233,
+        1.789875,
+        -0.017096
+      ],
+      "mesh": {
+        "vertices": 13188,
+        "polygons": 21651,
+        "triangles": 21651,
+        "materials": [
+          "4_轮胎_轮毂暗面",
+          "1_车身_Moon",
+          "4_轮胎_轮面",
+          "车轮毂亮面"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.641669,
+          1.532256,
+          -0.274715
+        ],
+        "maximum": [
+          -0.460797,
+          2.047494,
+          0.240523
+        ],
+        "center": [
+          -0.551233,
+          1.789875,
+          -0.017096
+        ],
+        "size": [
+          0.180872,
+          0.515238,
+          0.515238
+        ]
+      }
+    },
+    {
+      "name": "20_INCH_ELEGANT_DARE_LB",
+      "type": "EMPTY",
+      "parent": "20_INCH_ELEGANT_DARE ",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          2.66,
+          -0.029865,
+          0.836147
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.574031,
+        1.789875,
+        -0.017095
+      ]
+    },
+    {
+      "name": "20_INCH_ELEGANT_DARE_LF",
+      "type": "EMPTY",
+      "parent": "20_INCH_ELEGANT_DARE ",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.300079,
+          -0.029865,
+          0.836147
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.574031,
+        -0.201919,
+        -0.017096
+      ]
+    },
+    {
+      "name": "20_INCH_ELEGANT_DARE_RF",
+      "type": "EMPTY",
+      "parent": "20_INCH_ELEGANT_DARE ",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.300079,
+          -0.029865,
+          -0.83615
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        -0.551233,
+        -0.201919,
+        -0.017096
+      ]
+    },
+    {
+      "name": "20_INCH_ELEGANT_DARE_RF1",
+      "type": "EMPTY",
+      "parent": "20_INCH_ELEGANT_DARE ",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          2.66,
+          -0.029865,
+          -0.83615
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        -0.551233,
+        1.789875,
+        -0.017096
+      ]
+    },
+    {
+      "name": "21_INCH_DESIGN_1",
+      "type": "MESH",
+      "parent": "21_INCH_DESIGN_1_LF",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.574031,
+        -0.201919,
+        -0.017096
+      ],
+      "mesh": {
+        "vertices": 8251,
+        "polygons": 13240,
+        "triangles": 13240,
+        "materials": [
+          "车轮毂亮面",
+          "4_轮胎_轮毂暗面",
+          "1_车身_Moon",
+          "4_轮胎_轮面"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          0.482192,
+          -0.459017,
+          -0.274194
+        ],
+        "maximum": [
+          0.66587,
+          0.055179,
+          0.240003
+        ],
+        "center": [
+          0.574031,
+          -0.201919,
+          -0.017096
+        ],
+        "size": [
+          0.183678,
+          0.514197,
+          0.514197
+        ]
+      }
+    },
+    {
+      "name": "21_INCH_DESIGN_1 ",
+      "type": "EMPTY",
+      "parent": "ES7_Wheel",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        0.0,
+        0.003
+      ]
+    },
+    {
+      "name": "21_INCH_DESIGN_1  ",
+      "type": "MESH",
+      "parent": "21_INCH_DESIGN_1_LB",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.574031,
+        1.789875,
+        -0.017095
+      ],
+      "mesh": {
+        "vertices": 8251,
+        "polygons": 13240,
+        "triangles": 13240,
+        "materials": [
+          "车轮毂亮面",
+          "4_轮胎_轮毂暗面",
+          "1_车身_Moon",
+          "4_轮胎_轮面"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          0.482192,
+          1.532777,
+          -0.274194
+        ],
+        "maximum": [
+          0.66587,
+          2.046974,
+          0.240003
+        ],
+        "center": [
+          0.574031,
+          1.789875,
+          -0.017095
+        ],
+        "size": [
+          0.183678,
+          0.514197,
+          0.514197
+        ]
+      }
+    },
+    {
+      "name": "21_INCH_DESIGN_1   ",
+      "type": "MESH",
+      "parent": "21_INCH_DESIGN_1_RF",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        -0.551233,
+        -0.201919,
+        -0.017096
+      ],
+      "mesh": {
+        "vertices": 8251,
+        "polygons": 13240,
+        "triangles": 13240,
+        "materials": [
+          "车轮毂亮面",
+          "4_轮胎_轮毂暗面",
+          "1_车身_Moon",
+          "4_轮胎_轮面"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.643072,
+          -0.459017,
+          -0.274194
+        ],
+        "maximum": [
+          -0.459394,
+          0.055179,
+          0.240003
+        ],
+        "center": [
+          -0.551233,
+          -0.201919,
+          -0.017096
+        ],
+        "size": [
+          0.183678,
+          0.514197,
+          0.514197
+        ]
+      }
+    },
+    {
+      "name": "21_INCH_DESIGN_1    ",
+      "type": "MESH",
+      "parent": "21_INCH_DESIGN_1_RB",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        -0.551233,
+        1.789875,
+        -0.017096
+      ],
+      "mesh": {
+        "vertices": 8251,
+        "polygons": 13240,
+        "triangles": 13240,
+        "materials": [
+          "车轮毂亮面",
+          "4_轮胎_轮毂暗面",
+          "1_车身_Moon",
+          "4_轮胎_轮面"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.643072,
+          1.532777,
+          -0.274194
+        ],
+        "maximum": [
+          -0.459394,
+          2.046974,
+          0.240003
+        ],
+        "center": [
+          -0.551233,
+          1.789875,
+          -0.017096
+        ],
+        "size": [
+          0.183678,
+          0.514197,
+          0.514197
+        ]
+      }
+    },
+    {
+      "name": "21_INCH_DESIGN_1   .001",
+      "type": "MESH",
+      "parent": "21_INCH_DESIGN_1_RF.001",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        -0.551233,
+        -0.201919,
+        -0.017096
+      ],
+      "mesh": {
+        "vertices": 8251,
+        "polygons": 13240,
+        "triangles": 13240,
+        "materials": [
+          "车轮毂亮面",
+          "4_轮胎_轮毂暗面",
+          "1_车身_Moon",
+          "4_轮胎_轮面"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.643072,
+          -0.459017,
+          -0.274194
+        ],
+        "maximum": [
+          -0.459394,
+          0.055179,
+          0.240003
+        ],
+        "center": [
+          -0.551233,
+          -0.201919,
+          -0.017096
+        ],
+        "size": [
+          0.183678,
+          0.514197,
+          0.514197
+        ]
+      }
+    },
+    {
+      "name": "21_INCH_DESIGN_1_LB",
+      "type": "EMPTY",
+      "parent": "21_INCH_DESIGN_1 ",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          2.66,
+          -0.029865,
+          0.836147
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.574031,
+        1.789875,
+        -0.017095
+      ]
+    },
+    {
+      "name": "21_INCH_DESIGN_1_LB.001",
+      "type": "EMPTY",
+      "parent": "21_INCH_DESIGN_3",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          2.66,
+          -0.029865,
+          0.836147
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.574031,
+        1.789875,
+        -0.017095
+      ]
+    },
+    {
+      "name": "21_INCH_DESIGN_1_LF",
+      "type": "EMPTY",
+      "parent": "21_INCH_DESIGN_1 ",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.300079,
+          -0.029865,
+          0.836147
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.574031,
+        -0.201919,
+        -0.017096
+      ]
+    },
+    {
+      "name": "21_INCH_DESIGN_1_LF.001",
+      "type": "EMPTY",
+      "parent": "21_INCH_DESIGN_3",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.300079,
+          -0.029865,
+          0.836147
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.574031,
+        -0.201919,
+        -0.017096
+      ]
+    },
+    {
+      "name": "21_INCH_DESIGN_1_RB",
+      "type": "EMPTY",
+      "parent": "21_INCH_DESIGN_1 ",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          2.66,
+          -0.029865,
+          -0.83615
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        -0.551233,
+        1.789875,
+        -0.017096
+      ]
+    },
+    {
+      "name": "21_INCH_DESIGN_1_RB.001",
+      "type": "EMPTY",
+      "parent": "21_INCH_DESIGN_3",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          2.66,
+          -0.029865,
+          -0.83615
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        -0.551233,
+        1.789875,
+        -0.017096
+      ]
+    },
+    {
+      "name": "21_INCH_DESIGN_1_RF",
+      "type": "EMPTY",
+      "parent": "21_INCH_DESIGN_1 ",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.300079,
+          -0.029865,
+          -0.83615
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        -0.551233,
+        -0.201919,
+        -0.017096
+      ]
+    },
+    {
+      "name": "21_INCH_DESIGN_1_RF.001",
+      "type": "EMPTY",
+      "parent": "21_INCH_DESIGN_3",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.300079,
+          -0.029865,
+          -0.83615
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        -0.551233,
+        -0.201919,
+        -0.017096
+      ]
+    },
+    {
+      "name": "21_INCH_DESIGN_3",
+      "type": "EMPTY",
+      "parent": "ES7_Wheel",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        0.0,
+        0.003
+      ]
+    },
+    {
+      "name": "22_INCH_DESIGN_1",
+      "type": "EMPTY",
+      "parent": "ES7_Wheel",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          1.274,
+          -0.483,
+          -0.012
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.003325,
+        0.857256,
+        -0.322004
+      ]
+    },
+    {
+      "name": "BackLight",
+      "type": "EMPTY",
+      "parent": "Trunk",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.555,
+          -0.488,
+          0.011
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.018802,
+        2.323409,
+        0.481476
+      ]
+    },
+    {
+      "name": "BackLight.001",
+      "type": "EMPTY",
+      "parent": "Lights",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          3.319,
+          0.8,
+          0.659
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        -0.526909,
+        2.233307,
+        0.446432
+      ]
+    },
+    {
+      "name": "BackLight.002",
+      "type": "EMPTY",
+      "parent": "Lights",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          3.319,
+          -0.8,
+          0.659
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.549708,
+        2.233307,
+        0.446432
+      ]
+    },
+    {
+      "name": "Block",
+      "type": "EMPTY",
+      "parent": "ES7.001",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          1.202,
+          0.402,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        0.808808,
+        0.2735
+      ]
+    },
+    {
+      "name": "DoorTrigger",
+      "type": "EMPTY",
+      "parent": "ES7_Door_LB",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.050705,
+          -0.242647,
+          0.037286
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.649261,
+        1.005989,
+        0.267114
+      ]
+    },
+    {
+      "name": "DoorTrigger.001",
+      "type": "EMPTY",
+      "parent": "ES7_Door_LF",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.00488,
+          -0.225702,
+          0.032724
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.642055,
+        0.208473,
+        0.267114
+      ]
+    },
+    {
+      "name": "DoorTrigger.002",
+      "type": "EMPTY",
+      "parent": "ES7_Door_RB",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.050705,
+          -0.242647,
+          0.03729
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        -0.626462,
+        1.005989,
+        0.267114
+      ]
+    },
+    {
+      "name": "DoorTrigger.003",
+      "type": "EMPTY",
+      "parent": "ES7_Door_RF",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.00488,
+          -0.225702,
+          0.03272
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        -0.619255,
+        0.208473,
+        0.267114
+      ]
+    },
+    {
+      "name": "ES7",
+      "type": "EMPTY",
+      "parent": "ES7_CC_BY_REFERENCE_ROOT",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0114,
+          0.0,
+          0.003
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.672885,
+          0.672885,
+          0.672885
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        0.0,
+        0.003
+      ]
+    },
+    {
+      "name": "ES7.001",
+      "type": "EMPTY",
+      "parent": "ES7",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        0.0,
+        0.003
+      ]
+    },
+    {
+      "name": "ES7_Body",
+      "type": "EMPTY",
+      "parent": "ES7.001",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        0.0,
+        0.003
+      ]
+    },
+    {
+      "name": "ES7_Body_C",
+      "type": "MESH",
+      "parent": "ES7_Body",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          1.286593,
+          0.552671,
+          -1.7e-05
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.011389,
+        0.86573,
+        0.374884
+      ],
+      "mesh": {
+        "vertices": 67261,
+        "polygons": 111650,
+        "triangles": 111650,
+        "materials": [
+          "0_车内_翻毛皮",
+          "0_车内_内饰皮革",
+          "0_车内_木纹材质",
+          "1_车身_钢琴漆",
+          "0_车内_车顶",
+          "1_车身_车底车身黑塑料",
+          "3_玻璃_车门后视镜",
+          "0_车内_金属",
+          "0_车内_屏幕",
+          "1_车身_脱钩",
+          "1_车身_黑色胶条",
+          "0_车内_褐色金属",
+          "1_车身_车漆",
+          "1_车身_Moon",
+          "1_车身_前玻璃遮挡版",
+          "1_车身_车牌迎宾灯",
+          "4_轮胎_卡钳Logo"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.648361,
+          -0.825819,
+          -0.138405
+        ],
+        "maximum": [
+          0.671139,
+          2.472947,
+          0.888174
+        ],
+        "center": [
+          0.011389,
+          0.823564,
+          0.374884
+        ],
+        "size": [
+          1.3195,
+          3.298766,
+          1.026579
+        ]
+      }
+    },
+    {
+      "name": "ES7_Body_L",
+      "type": "MESH",
+      "parent": "ES7_Body",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        0.0,
+        0.003
+      ],
+      "mesh": {
+        "vertices": 45499,
+        "polygons": 79508,
+        "triangles": 79508,
+        "materials": [
+          "1_车身_车漆",
+          "3_玻璃_车大灯",
+          "1_车身_黑塑料",
+          "1_车身_车底车身黑塑料",
+          "3_玻璃_车灯",
+          "2_车灯_前白色",
+          "2_车灯_侧白色",
+          "0_车内_翻毛皮",
+          "1_车身_黑色胶条",
+          "1_车身_脱钩",
+          "0_车内_内饰皮革",
+          "Red",
+          "0_车内_金属",
+          "0_车内_灰色塑料",
+          "2_车灯_红色反光贴",
+          "2_车灯_雾灯",
+          "1_车身_钢琴漆",
+          "2_车灯_后转向",
+          "2_车灯_后红色",
+          "2_车灯_前大灯",
+          "2_车灯_前大灯2",
+          "0_车内_迎宾条",
+          "1_车身_车门柱",
+          "1_车身_Lider",
+          "1_车身_前玻璃遮挡版",
+          "0_车内_车顶",
+          "1_车身_车牌迎宾灯"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          0.010432,
+          -0.8308,
+          -0.140491
+        ],
+        "maximum": [
+          0.679448,
+          2.469823,
+          0.895778
+        ],
+        "center": [
+          0.34494,
+          0.819512,
+          0.377643
+        ],
+        "size": [
+          0.669017,
+          3.300623,
+          1.036268
+        ]
+      }
+    },
+    {
+      "name": "ES7_Body_R",
+      "type": "MESH",
+      "parent": "ES7_Body",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        0.0,
+        0.003
+      ],
+      "mesh": {
+        "vertices": 45499,
+        "polygons": 79508,
+        "triangles": 79508,
+        "materials": [
+          "1_车身_车漆",
+          "3_玻璃_车大灯",
+          "1_车身_黑塑料",
+          "1_车身_车底车身黑塑料",
+          "3_玻璃_车灯",
+          "2_车灯_前白色",
+          "2_车灯_侧白色",
+          "0_车内_翻毛皮",
+          "1_车身_黑色胶条",
+          "1_车身_脱钩",
+          "0_车内_内饰皮革",
+          "Red",
+          "0_车内_金属",
+          "0_车内_灰色塑料",
+          "2_车灯_红色反光贴",
+          "2_车灯_雾灯",
+          "1_车身_钢琴漆",
+          "2_车灯_后转向",
+          "2_车灯_后红色",
+          "2_车灯_前大灯",
+          "2_车灯_前大灯2",
+          "0_车内_迎宾条",
+          "1_车身_车门柱",
+          "1_车身_Lider",
+          "1_车身_前玻璃遮挡版",
+          "0_车内_车顶",
+          "1_车身_车牌迎宾灯"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.656648,
+          -0.8308,
+          -0.140491
+        ],
+        "maximum": [
+          0.012368,
+          2.469823,
+          0.895778
+        ],
+        "center": [
+          -0.32214,
+          0.819512,
+          0.377643
+        ],
+        "size": [
+          0.669017,
+          3.300623,
+          1.036269
+        ]
+      }
+    },
+    {
+      "name": "ES7_Door",
+      "type": "EMPTY",
+      "parent": "ES7.001",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        0.0,
+        0.003
+      ]
+    },
+    {
+      "name": "ES7_DoorGlass_LB",
+      "type": "MESH",
+      "parent": "ES7_Door_LB",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.398457,
+          -0.358672,
+          -1.954848
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        -0.691217,
+        1.239986,
+        0.189042
+      ],
+      "mesh": {
+        "vertices": 190,
+        "polygons": 248,
+        "triangles": 248,
+        "materials": [
+          "3_玻璃_后车窗"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          0.451622,
+          0.987987,
+          0.538924
+        ],
+        "maximum": [
+          0.579018,
+          1.517901,
+          0.827827
+        ],
+        "center": [
+          0.51532,
+          1.252944,
+          0.683376
+        ],
+        "size": [
+          0.127396,
+          0.529914,
+          0.288903
+        ]
+      }
+    },
+    {
+      "name": "ES7_DoorGlass_LF",
+      "type": "MESH",
+      "parent": "ES7_Door_LF",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.865891,
+          -0.377025,
+          -2.144505
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        -0.822971,
+        0.787835,
+        0.165291
+      ],
+      "mesh": {
+        "vertices": 293,
+        "polygons": 392,
+        "triangles": 392,
+        "materials": [
+          "3_玻璃_前车窗"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          0.462278,
+          0.39238,
+          0.504596
+        ],
+        "maximum": [
+          0.580948,
+          0.986935,
+          0.827311
+        ],
+        "center": [
+          0.521613,
+          0.689658,
+          0.665953
+        ],
+        "size": [
+          0.11867,
+          0.594554,
+          0.322716
+        ]
+      }
+    },
+    {
+      "name": "ES7_DoorGlass_RB",
+      "type": "MESH",
+      "parent": "ES7_Door_RB",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.398457,
+          -0.358672,
+          -1.954845
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.714017,
+        1.239986,
+        0.189043
+      ],
+      "mesh": {
+        "vertices": 190,
+        "polygons": 248,
+        "triangles": 248,
+        "materials": [
+          "3_玻璃_后车窗"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.556218,
+          0.987988,
+          0.538924
+        ],
+        "maximum": [
+          -0.428822,
+          1.517901,
+          0.827827
+        ],
+        "center": [
+          -0.49252,
+          1.252944,
+          0.683375
+        ],
+        "size": [
+          0.127396,
+          0.529914,
+          0.288903
+        ]
+      }
+    },
+    {
+      "name": "ES7_DoorGlass_RF",
+      "type": "MESH",
+      "parent": "ES7_Door_RF",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.865891,
+          -0.377025,
+          -2.144509
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.845771,
+        0.787835,
+        0.165292
+      ],
+      "mesh": {
+        "vertices": 293,
+        "polygons": 392,
+        "triangles": 392,
+        "materials": [
+          "3_玻璃_前车窗"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.558148,
+          0.39238,
+          0.504595
+        ],
+        "maximum": [
+          -0.439478,
+          0.986935,
+          0.827311
+        ],
+        "center": [
+          -0.498813,
+          0.689657,
+          0.665953
+        ],
+        "size": [
+          0.11867,
+          0.594554,
+          0.322716
+        ]
+      }
+    },
+    {
+      "name": "ES7_DoorLight_LB",
+      "type": "MESH",
+      "parent": "ES7_Door_LB",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.072992,
+          -0.145908,
+          0.020094
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.637693,
+        0.922755,
+        0.332208
+      ],
+      "mesh": {
+        "vertices": 64,
+        "polygons": 43,
+        "triangles": 43,
+        "materials": [
+          "2_车灯_门把手灯"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          0.643526,
+          1.535762,
+          0.39609
+        ],
+        "maximum": [
+          0.659124,
+          1.620429,
+          0.422942
+        ],
+        "center": [
+          0.651325,
+          1.578095,
+          0.409516
+        ],
+        "size": [
+          0.015599,
+          0.084667,
+          0.026852
+        ]
+      }
+    },
+    {
+      "name": "ES7_DoorLight_LF",
+      "type": "MESH",
+      "parent": "ES7_Door_LF",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.040599,
+          -0.165964,
+          0.021741
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.634665,
+        0.177871,
+        0.307311
+      ],
+      "mesh": {
+        "vertices": 64,
+        "polygons": 43,
+        "triangles": 43,
+        "materials": [
+          "2_车灯_门把手灯"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          0.640498,
+          0.790878,
+          0.371193
+        ],
+        "maximum": [
+          0.656096,
+          0.875545,
+          0.398045
+        ],
+        "center": [
+          0.648297,
+          0.833211,
+          0.384619
+        ],
+        "size": [
+          0.015599,
+          0.084667,
+          0.026852
+        ]
+      }
+    },
+    {
+      "name": "ES7_DoorLight_RB",
+      "type": "MESH",
+      "parent": "ES7_Door_RB",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.072992,
+          -0.145908,
+          0.020094
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        -0.614891,
+        0.922756,
+        0.332208
+      ],
+      "mesh": {
+        "vertices": 64,
+        "polygons": 43,
+        "triangles": 43,
+        "materials": [
+          "2_车灯_门把手灯"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.636323,
+          1.535762,
+          0.39609
+        ],
+        "maximum": [
+          -0.620724,
+          1.620429,
+          0.422942
+        ],
+        "center": [
+          -0.628523,
+          1.578095,
+          0.409516
+        ],
+        "size": [
+          0.015599,
+          0.084667,
+          0.026852
+        ]
+      }
+    },
+    {
+      "name": "ES7_DoorLight_RF",
+      "type": "MESH",
+      "parent": "ES7_Door_RF",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.040599,
+          -0.165964,
+          0.021741
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        -0.611868,
+        0.177871,
+        0.307311
+      ],
+      "mesh": {
+        "vertices": 64,
+        "polygons": 43,
+        "triangles": 43,
+        "materials": [
+          "2_车灯_门把手灯"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.633299,
+          0.790878,
+          0.371193
+        ],
+        "maximum": [
+          -0.617701,
+          0.875545,
+          0.398045
+        ],
+        "center": [
+          -0.6255,
+          0.833211,
+          0.384619
+        ],
+        "size": [
+          0.015599,
+          0.084667,
+          0.026852
+        ]
+      }
+    },
+    {
+      "name": "ES7_Door_LB",
+      "type": "MESH",
+      "parent": "ES7_Door",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          1.444333,
+          0.635157,
+          0.910663
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.624172,
+        0.971871,
+        0.430388
+      ],
+      "mesh": {
+        "vertices": 10123,
+        "polygons": 18150,
+        "triangles": 18150,
+        "materials": [
+          "0_车内_金属",
+          "1_车身_车底车身黑塑料",
+          "3_玻璃_后车窗",
+          "0_车内_木纹材质",
+          "0_车内_翻毛皮",
+          "1_车身_车漆",
+          "0_车内_内饰皮革",
+          "0_车内_灰色塑料",
+          "1_车身_车门柱",
+          "1_车身_钢琴漆",
+          "1_车身_Moon",
+          "1_车身_黑色胶条"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          0.430496,
+          0.899745,
+          -0.106623
+        ],
+        "maximum": [
+          0.670823,
+          1.699117,
+          0.841846
+        ],
+        "center": [
+          0.550659,
+          1.299431,
+          0.367611
+        ],
+        "size": [
+          0.240326,
+          0.799372,
+          0.948469
+        ]
+      }
+    },
+    {
+      "name": "ES7_Door_LF",
+      "type": "MESH",
+      "parent": "ES7_Door",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.30494,
+          0.618212,
+          0.904516
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.620036,
+        0.20519,
+        0.418986
+      ],
+      "mesh": {
+        "vertices": 19017,
+        "polygons": 35497,
+        "triangles": 35497,
+        "materials": [
+          "0_车内_金属",
+          "1_车身_车漆",
+          "1_车身_车底车身黑塑料",
+          "0_车内_灰色塑料",
+          "3_玻璃_前挡风",
+          "3_玻璃_前车窗",
+          "0_车内_翻毛皮",
+          "1_车身_钢琴漆",
+          "3_玻璃_车门后视镜",
+          "1_车身_车门柱",
+          "2_车灯_侧转向",
+          "1_车身_Moon",
+          "0_车内_内饰皮革",
+          "0_车内_木纹材质",
+          "1_车身_黑色胶条"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          0.445457,
+          0.160919,
+          -0.108294
+        ],
+        "maximum": [
+          0.781895,
+          1.028205,
+          0.841621
+        ],
+        "center": [
+          0.613676,
+          0.594562,
+          0.366663
+        ],
+        "size": [
+          0.336438,
+          0.867286,
+          0.949915
+        ]
+      }
+    },
+    {
+      "name": "ES7_Door_RB",
+      "type": "MESH",
+      "parent": "ES7_Door",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          1.444333,
+          0.635157,
+          -0.91066
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        -0.60137,
+        0.971871,
+        0.430388
+      ],
+      "mesh": {
+        "vertices": 10123,
+        "polygons": 18150,
+        "triangles": 18150,
+        "materials": [
+          "0_车内_金属",
+          "1_车身_车底车身黑塑料",
+          "3_玻璃_后车窗",
+          "0_车内_木纹材质",
+          "0_车内_翻毛皮",
+          "1_车身_车漆",
+          "0_车内_内饰皮革",
+          "0_车内_灰色塑料",
+          "1_车身_车门柱",
+          "1_车身_钢琴漆",
+          "1_车身_Moon",
+          "1_车身_黑色胶条"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.648021,
+          0.899745,
+          -0.106623
+        ],
+        "maximum": [
+          -0.407694,
+          1.699117,
+          0.841846
+        ],
+        "center": [
+          -0.527857,
+          1.299431,
+          0.367611
+        ],
+        "size": [
+          0.240326,
+          0.799372,
+          0.948469
+        ]
+      }
+    },
+    {
+      "name": "ES7_Door_RF",
+      "type": "MESH",
+      "parent": "ES7_Door",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.30494,
+          0.618212,
+          -0.90452
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        -0.597239,
+        0.20519,
+        0.418986
+      ],
+      "mesh": {
+        "vertices": 19017,
+        "polygons": 35497,
+        "triangles": 35497,
+        "materials": [
+          "0_车内_金属",
+          "1_车身_车漆",
+          "1_车身_车底车身黑塑料",
+          "0_车内_灰色塑料",
+          "3_玻璃_前挡风",
+          "3_玻璃_前车窗",
+          "0_车内_翻毛皮",
+          "1_车身_钢琴漆",
+          "3_玻璃_车门后视镜",
+          "1_车身_车门柱",
+          "2_车灯_侧转向",
+          "1_车身_Moon",
+          "0_车内_内饰皮革",
+          "0_车内_木纹材质",
+          "1_车身_黑色胶条"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.759098,
+          0.160919,
+          -0.108295
+        ],
+        "maximum": [
+          -0.42266,
+          1.028205,
+          0.841621
+        ],
+        "center": [
+          -0.590879,
+          0.594562,
+          0.366663
+        ],
+        "size": [
+          0.336438,
+          0.867286,
+          0.949915
+        ]
+      }
+    },
+    {
+      "name": "ES7_Doorknob_LB",
+      "type": "MESH",
+      "parent": "ES7_Door_LB",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.793692,
+          -0.037018,
+          0.036018
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.648408,
+        1.505934,
+        0.405479
+      ],
+      "mesh": {
+        "vertices": 531,
+        "polygons": 701,
+        "triangles": 701,
+        "materials": [
+          "1_车身_车漆",
+          "0_车内_翻毛皮"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          0.621873,
+          1.470556,
+          0.395092
+        ],
+        "maximum": [
+          0.660906,
+          1.617695,
+          0.422725
+        ],
+        "center": [
+          0.64139,
+          1.544125,
+          0.408908
+        ],
+        "size": [
+          0.039033,
+          0.147139,
+          0.027632
+        ]
+      }
+    },
+    {
+      "name": "ES7_Doorknob_LF",
+      "type": "MESH",
+      "parent": "ES7_Door_LF",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.827167,
+          -0.056695,
+          0.040211
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.647093,
+        0.761778,
+        0.380837
+      ],
+      "mesh": {
+        "vertices": 531,
+        "polygons": 701,
+        "triangles": 701,
+        "materials": [
+          "1_车身_车漆",
+          "0_车内_翻毛皮"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          0.620553,
+          0.726501,
+          0.3707
+        ],
+        "maximum": [
+          0.657752,
+          0.873835,
+          0.39694
+        ],
+        "center": [
+          0.639152,
+          0.800168,
+          0.38382
+        ],
+        "size": [
+          0.037199,
+          0.147334,
+          0.02624
+        ]
+      }
+    },
+    {
+      "name": "ES7_Doorknob_RB",
+      "type": "MESH",
+      "parent": "ES7_Door_RB",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.793692,
+          -0.037018,
+          0.035705
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        -0.625395,
+        1.505935,
+        0.405479
+      ],
+      "mesh": {
+        "vertices": 531,
+        "polygons": 701,
+        "triangles": 701,
+        "materials": [
+          "1_车身_车漆",
+          "0_车内_翻毛皮"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.637894,
+          1.470556,
+          0.395092
+        ],
+        "maximum": [
+          -0.598861,
+          1.617695,
+          0.422725
+        ],
+        "center": [
+          -0.618377,
+          1.544126,
+          0.408908
+        ],
+        "size": [
+          0.039033,
+          0.147139,
+          0.027632
+        ]
+      }
+    },
+    {
+      "name": "ES7_Doorknob_RF",
+      "type": "MESH",
+      "parent": "ES7_Door_RF",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.827167,
+          -0.056695,
+          0.04021
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        -0.624295,
+        0.761779,
+        0.380836
+      ],
+      "mesh": {
+        "vertices": 531,
+        "polygons": 701,
+        "triangles": 701,
+        "materials": [
+          "1_车身_车漆",
+          "0_车内_翻毛皮"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.634954,
+          0.726501,
+          0.370699
+        ],
+        "maximum": [
+          -0.597755,
+          0.873835,
+          0.39694
+        ],
+        "center": [
+          -0.616354,
+          0.800168,
+          0.38382
+        ],
+        "size": [
+          0.037199,
+          0.147334,
+          0.02624
+        ]
+      }
+    },
+    {
+      "name": "ES7_Glass1",
+      "type": "MESH",
+      "parent": "ES7_Body_C",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.565466,
+          0.804259,
+          1.6e-05
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.1,
+          0.1,
+          0.1
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        1.246223,
+        0.916059
+      ],
+      "mesh": {
+        "vertices": 448,
+        "polygons": 776,
+        "triangles": 776,
+        "materials": [
+          "3_玻璃_前挡风"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.538814,
+          0.007541,
+          0.480784
+        ],
+        "maximum": [
+          0.561766,
+          0.612476,
+          0.82005
+        ],
+        "center": [
+          0.011476,
+          0.310008,
+          0.650417
+        ],
+        "size": [
+          1.10058,
+          0.604935,
+          0.339266
+        ]
+      }
+    },
+    {
+      "name": "ES7_Glass2",
+      "type": "MESH",
+      "parent": "ES7_Body_C",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.565466,
+          0.804259,
+          1.6e-05
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.1,
+          0.1,
+          0.1
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        1.246223,
+        0.916059
+      ],
+      "mesh": {
+        "vertices": 1468,
+        "polygons": 2656,
+        "triangles": 2656,
+        "materials": [
+          "3_玻璃_天窗后备箱"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.295672,
+          0.737086,
+          0.861425
+        ],
+        "maximum": [
+          0.318472,
+          1.697098,
+          0.895472
+        ],
+        "center": [
+          0.0114,
+          1.217092,
+          0.878448
+        ],
+        "size": [
+          0.614144,
+          0.960012,
+          0.034047
+        ]
+      }
+    },
+    {
+      "name": "ES7_Glass3",
+      "type": "MESH",
+      "parent": "ES7_Body_L",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        0.0,
+        0.003
+      ],
+      "mesh": {
+        "vertices": 83,
+        "polygons": 86,
+        "triangles": 86,
+        "materials": [
+          "3_玻璃_后车窗"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          0.452187,
+          1.596738,
+          0.575425
+        ],
+        "maximum": [
+          0.555277,
+          2.113133,
+          0.806823
+        ],
+        "center": [
+          0.503732,
+          1.854935,
+          0.691124
+        ],
+        "size": [
+          0.10309,
+          0.516395,
+          0.231398
+        ]
+      }
+    },
+    {
+      "name": "ES7_Glass3  ",
+      "type": "MESH",
+      "parent": "ES7_Body_R",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        0.0,
+        0.003
+      ],
+      "mesh": {
+        "vertices": 83,
+        "polygons": 86,
+        "triangles": 86,
+        "materials": [
+          "3_玻璃_后车窗"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.532477,
+          1.596738,
+          0.575425
+        ],
+        "maximum": [
+          -0.429387,
+          2.113133,
+          0.806823
+        ],
+        "center": [
+          -0.480932,
+          1.854935,
+          0.691124
+        ],
+        "size": [
+          0.10309,
+          0.516395,
+          0.231398
+        ]
+      }
+    },
+    {
+      "name": "ES7_Wheel",
+      "type": "EMPTY",
+      "parent": "ES7.001",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        0.0,
+        0.003
+      ]
+    },
+    {
+      "name": "ES7_WheelCaliper",
+      "type": "EMPTY",
+      "parent": "ES7.001",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        0.0,
+        0.003
+      ]
+    },
+    {
+      "name": "FrontLight",
+      "type": "EMPTY",
+      "parent": "Lights",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.897,
+          0.81,
+          0.301
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        -0.533637,
+        -0.603578,
+        0.205538
+      ]
+    },
+    {
+      "name": "FrontLight.001",
+      "type": "EMPTY",
+      "parent": "Lights",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.897,
+          -0.81,
+          0.301
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.556437,
+        -0.603578,
+        0.205539
+      ]
+    },
+    {
+      "name": "GameObject",
+      "type": "EMPTY",
+      "parent": "22_INCH_DESIGN_1",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          1.386,
+          0.457,
+          -0.759
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        -0.507395,
+        1.789875,
+        -0.014495
+      ]
+    },
+    {
+      "name": "GameObject_1",
+      "type": "EMPTY",
+      "parent": "22_INCH_DESIGN_1",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -1.574,
+          0.454,
+          -0.756
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        -0.505376,
+        -0.201865,
+        -0.016514
+      ]
+    },
+    {
+      "name": "GameObject_2",
+      "type": "EMPTY",
+      "parent": "22_INCH_DESIGN_1",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          1.384,
+          0.455,
+          0.765
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        0.518083,
+        1.78853,
+        -0.015841
+      ]
+    },
+    {
+      "name": "GameObject_3",
+      "type": "EMPTY",
+      "parent": "22_INCH_DESIGN_1",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -1.574,
+          0.452,
+          0.768
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.0,
+          -1.0,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        0.520101,
+        -0.201866,
+        -0.017859
+      ]
+    },
+    {
+      "name": "Hook",
+      "type": "MESH",
+      "parent": "ES7_Body_C",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -1.286593,
+          -0.552671,
+          1.7e-05
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        0.0,
+        0.003
+      ],
+      "mesh": {
+        "vertices": 1048,
+        "polygons": 1970,
+        "triangles": 1970,
+        "materials": [
+          "1_车身_脱钩",
+          "0_车内_翻毛皮"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.037538,
+          2.354944,
+          -0.044027
+        ],
+        "maximum": [
+          0.023872,
+          2.557082,
+          0.057909
+        ],
+        "center": [
+          -0.006833,
+          2.456013,
+          0.006941
+        ],
+        "size": [
+          0.06141,
+          0.202138,
+          0.101935
+        ]
+      }
+    },
+    {
+      "name": "HookG",
+      "type": "EMPTY",
+      "parent": "ES7_Body_C",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          2.316406,
+          -0.433671,
+          -0.023983
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          10.0,
+          10.0,
+          10.0
+        ]
+      },
+      "worldLocation": [
+        -0.004749,
+        2.424406,
+        0.083074
+      ]
+    },
+    {
+      "name": "Hook_1",
+      "type": "MESH",
+      "parent": "HookG",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.0019,
+          -0.0038,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        -0.004749,
+        2.402519,
+        0.064682
+      ],
+      "mesh": {
+        "vertices": 1048,
+        "polygons": 1970,
+        "triangles": 1970,
+        "materials": [
+          "0_车内_金属7",
+          "0_车内_金属6"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.035454,
+          2.361221,
+          -0.039011
+        ],
+        "maximum": [
+          0.025956,
+          2.563508,
+          0.063219
+        ],
+        "center": [
+          -0.004749,
+          2.462364,
+          0.012104
+        ],
+        "size": [
+          0.06141,
+          0.202287,
+          0.102231
+        ]
+      }
+    },
+    {
+      "name": "Lights",
+      "type": "EMPTY",
+      "parent": "ES7.001",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        0.0,
+        0.003
+      ]
+    },
+    {
+      "name": "Mark",
+      "type": "MESH",
+      "parent": "Trunk",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -2.935905,
+          -1.19908,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        -0.02557,
+        0.003
+      ],
+      "mesh": {
+        "vertices": 542,
+        "polygons": 721,
+        "triangles": 721,
+        "materials": [
+          "Red",
+          "0_车内_金属"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          0.382643,
+          2.362521,
+          0.326226
+        ],
+        "maximum": [
+          0.449697,
+          2.386008,
+          0.332072
+        ],
+        "center": [
+          0.41617,
+          2.374264,
+          0.329149
+        ],
+        "size": [
+          0.067053,
+          0.023487,
+          0.005846
+        ]
+      }
+    },
+    {
+      "name": "Mesh",
+      "type": "MESH",
+      "parent": "ES7.001",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.300079,
+          -0.029865,
+          0.768918
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.528794,
+        -0.201919,
+        -0.017096
+      ],
+      "mesh": {
+        "vertices": 148,
+        "polygons": 142,
+        "triangles": 142,
+        "materials": [
+          "4_轮胎_轮面.001"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          0.462507,
+          -0.506309,
+          -0.321485
+        ],
+        "maximum": [
+          0.595081,
+          0.102471,
+          0.287294
+        ],
+        "center": [
+          0.528794,
+          -0.201919,
+          -0.017096
+        ],
+        "size": [
+          0.132574,
+          0.608779,
+          0.60878
+        ]
+      }
+    },
+    {
+      "name": "NOMI1",
+      "type": "MESH",
+      "parent": "ES7_Body_C",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.857319,
+          0.301669,
+          0.004969
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.014732,
+        0.288852,
+        0.577873
+      ],
+      "mesh": {
+        "vertices": 633,
+        "polygons": 1152,
+        "triangles": 1152,
+        "materials": [
+          "0_车内_屏幕",
+          "0_车内_nomi脑袋",
+          "0_车内_翻毛皮",
+          "1_车身_钢琴漆"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.04447,
+          0.212271,
+          0.550949
+        ],
+        "maximum": [
+          0.073935,
+          0.365434,
+          0.604796
+        ],
+        "center": [
+          0.014732,
+          0.288852,
+          0.577873
+        ],
+        "size": [
+          0.118405,
+          0.153163,
+          0.053847
+        ]
+      }
+    },
+    {
+      "name": "NOMI2",
+      "type": "MESH",
+      "parent": "ES7_Body_C",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.856496,
+          0.275827,
+          0.004387
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.014341,
+        0.289406,
+        0.560484
+      ],
+      "mesh": {
+        "vertices": 973,
+        "polygons": 1758,
+        "triangles": 1758,
+        "materials": [
+          "1_车身_黑色胶条",
+          "0_车内_翻毛皮"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.04459,
+          0.213549,
+          0.547201
+        ],
+        "maximum": [
+          0.073272,
+          0.365263,
+          0.572801
+        ],
+        "center": [
+          0.014341,
+          0.289406,
+          0.560001
+        ],
+        "size": [
+          0.117863,
+          0.151713,
+          0.0256
+        ]
+      }
+    },
+    {
+      "name": "Shadow",
+      "type": "MESH",
+      "parent": "ES7.001",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.001516
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.014861,
+          0.014861,
+          0.014861
+        ]
+      },
+      "worldLocation": [
+        0.01242,
+        -0.0,
+        0.003
+      ],
+      "mesh": {
+        "vertices": 9,
+        "polygons": 8,
+        "triangles": 8,
+        "materials": [
+          "Shadow"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.032106,
+          -0.017854,
+          -0.001115
+        ],
+        "maximum": [
+          0.032505,
+          0.017854,
+          -0.001115
+        ],
+        "center": [
+          0.000199,
+          -0.0,
+          -0.001115
+        ],
+        "size": [
+          0.064611,
+          0.035707,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Trunk",
+      "type": "MESH",
+      "parent": "ES7.001",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          2.897905,
+          1.19908,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.0114,
+        1.949958,
+        0.809844
+      ],
+      "mesh": {
+        "vertices": 12679,
+        "polygons": 22323,
+        "triangles": 22323,
+        "materials": [
+          "1_车身_车底车身黑塑料",
+          "1_车身_车牌迎宾灯",
+          "3_玻璃_天窗后备箱",
+          "3_玻璃_前挡风",
+          "1_车身_Moon",
+          "1_车身_黑色胶条",
+          "1_车身_钢琴漆",
+          "2_车灯_后转向",
+          "2_车灯_刹车灯",
+          "1_车身_车漆",
+          "2_车灯_后红色",
+          "3_玻璃_车灯"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.511525,
+          1.910918,
+          0.221537
+        ],
+        "maximum": [
+          0.534325,
+          2.462538,
+          0.848716
+        ],
+        "center": [
+          0.0114,
+          2.186728,
+          0.535126
+        ],
+        "size": [
+          1.04585,
+          0.55162,
+          0.62718
+        ]
+      }
+    },
+    {
+      "name": "Untitled.001",
+      "type": "MESH",
+      "parent": "ES7",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -1.229107,
+          0.180315,
+          -0.014091
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.021103,
+          1.021103,
+          1.021103
+        ]
+      },
+      "worldLocation": [
+        0.001919,
+        -0.827048,
+        0.124331
+      ],
+      "mesh": {
+        "vertices": 150,
+        "polygons": 232,
+        "triangles": 232,
+        "materials": [
+          "metal_white"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.216949,
+          -0.828043,
+          0.074107
+        ],
+        "maximum": [
+          0.259025,
+          -0.826261,
+          0.174555
+        ],
+        "center": [
+          0.021038,
+          -0.827152,
+          0.124331
+        ],
+        "size": [
+          0.475974,
+          0.001782,
+          0.100448
+        ]
+      }
+    },
+    {
+      "name": "Wheel1",
+      "type": "MESH",
+      "parent": "GameObject",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        -0.507395,
+        1.789875,
+        -0.014495
+      ],
+      "mesh": {
+        "vertices": 10501,
+        "polygons": 14705,
+        "triangles": 14705,
+        "materials": [
+          "4_轮胎_轮毂暗面1",
+          "1_车身_Moon",
+          "A轮毂金属面1",
+          "4_轮胎_轮面1"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.650419,
+          1.53082,
+          -0.27355
+        ],
+        "maximum": [
+          -0.473299,
+          2.04893,
+          0.24456
+        ],
+        "center": [
+          -0.561859,
+          1.789875,
+          -0.014495
+        ],
+        "size": [
+          0.17712,
+          0.51811,
+          0.51811
+        ]
+      }
+    },
+    {
+      "name": "Wheel1_1",
+      "type": "MESH",
+      "parent": "GameObject_1",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        -0.505376,
+        -0.201865,
+        -0.016514
+      ],
+      "mesh": {
+        "vertices": 10501,
+        "polygons": 14705,
+        "triangles": 14705,
+        "materials": [
+          "4_轮胎_轮毂暗面1",
+          "1_车身_Moon",
+          "A轮毂金属面1",
+          "4_轮胎_轮面1"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.6484,
+          -0.460921,
+          -0.275569
+        ],
+        "maximum": [
+          -0.47128,
+          0.05719,
+          0.242541
+        ],
+        "center": [
+          -0.55984,
+          -0.201865,
+          -0.016514
+        ],
+        "size": [
+          0.17712,
+          0.51811,
+          0.51811
+        ]
+      }
+    },
+    {
+      "name": "Wheel1_2",
+      "type": "MESH",
+      "parent": "GameObject_2",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.518083,
+        1.78853,
+        -0.015841
+      ],
+      "mesh": {
+        "vertices": 10501,
+        "polygons": 14705,
+        "triangles": 14705,
+        "materials": [
+          "4_轮胎_轮毂暗面1",
+          "1_车身_Moon",
+          "A轮毂金属面1",
+          "4_轮胎_轮面1"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          0.483987,
+          1.529475,
+          -0.274896
+        ],
+        "maximum": [
+          0.661107,
+          2.047585,
+          0.243215
+        ],
+        "center": [
+          0.572547,
+          1.78853,
+          -0.015841
+        ],
+        "size": [
+          0.17712,
+          0.51811,
+          0.51811
+        ]
+      }
+    },
+    {
+      "name": "Wheel1_3",
+      "type": "MESH",
+      "parent": "GameObject_3",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.520101,
+        -0.201866,
+        -0.017859
+      ],
+      "mesh": {
+        "vertices": 10501,
+        "polygons": 14705,
+        "triangles": 14705,
+        "materials": [
+          "4_轮胎_轮毂暗面1",
+          "1_车身_Moon",
+          "A轮毂金属面1",
+          "4_轮胎_轮面1"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          0.486005,
+          -0.460921,
+          -0.276915
+        ],
+        "maximum": [
+          0.663126,
+          0.057189,
+          0.241196
+        ],
+        "center": [
+          0.574565,
+          -0.201866,
+          -0.017859
+        ],
+        "size": [
+          0.17712,
+          0.51811,
+          0.51811
+        ]
+      }
+    },
+    {
+      "name": "WheelCaliper_LB",
+      "type": "MESH",
+      "parent": "ES7_WheelCaliper",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          2.66,
+          -0.02987,
+          0.8351
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.15,
+          1.15,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.573327,
+        1.789875,
+        -0.017099
+      ],
+      "mesh": {
+        "vertices": 1248,
+        "polygons": 1180,
+        "triangles": 1180,
+        "materials": [
+          "4_轮胎_轮毂暗面",
+          "4_轮胎_刹车片",
+          "4_轮胎_卡钳"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          0.567674,
+          1.631394,
+          -0.16372
+        ],
+        "maximum": [
+          0.627528,
+          1.938982,
+          0.132859
+        ],
+        "center": [
+          0.597601,
+          1.785188,
+          -0.015431
+        ],
+        "size": [
+          0.059855,
+          0.307588,
+          0.296579
+        ]
+      }
+    },
+    {
+      "name": "WheelCaliper_LF",
+      "type": "MESH",
+      "parent": "ES7_WheelCaliper",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.300079,
+          -0.029865,
+          0.835097
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.15,
+          1.15,
+          1.0
+        ]
+      },
+      "worldLocation": [
+        0.573325,
+        -0.201919,
+        -0.017096
+      ],
+      "mesh": {
+        "vertices": 1016,
+        "polygons": 1090,
+        "triangles": 1090,
+        "materials": [
+          "4_轮胎_卡钳",
+          "4_轮胎_轮毂暗面",
+          "4_轮胎_刹车片"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          0.550835,
+          -0.349832,
+          -0.167052
+        ],
+        "maximum": [
+          0.624284,
+          -0.053079,
+          0.131642
+        ],
+        "center": [
+          0.587559,
+          -0.201456,
+          -0.017705
+        ],
+        "size": [
+          0.073449,
+          0.296752,
+          0.298694
+        ]
+      }
+    },
+    {
+      "name": "WheelCaliper_RB",
+      "type": "MESH",
+      "parent": "ES7_WheelCaliper",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          2.66,
+          -0.02987,
+          -0.8351
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.15,
+          -1.15,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        -0.550527,
+        1.789875,
+        -0.017099
+      ],
+      "mesh": {
+        "vertices": 1248,
+        "polygons": 1180,
+        "triangles": 1180,
+        "materials": [
+          "4_轮胎_轮毂暗面",
+          "4_轮胎_刹车片",
+          "4_轮胎_卡钳"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.604728,
+          1.631394,
+          -0.16372
+        ],
+        "maximum": [
+          -0.544874,
+          1.938982,
+          0.132859
+        ],
+        "center": [
+          -0.574801,
+          1.785188,
+          -0.015431
+        ],
+        "size": [
+          0.059855,
+          0.307588,
+          0.296579
+        ]
+      }
+    },
+    {
+      "name": "WheelCaliper_RF",
+      "type": "MESH",
+      "parent": "ES7_WheelCaliper",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.300079,
+          -0.029865,
+          -0.8351
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          -1.15,
+          -1.15,
+          -1.0
+        ]
+      },
+      "worldLocation": [
+        -0.550527,
+        -0.201919,
+        -0.017096
+      ],
+      "mesh": {
+        "vertices": 1016,
+        "polygons": 1090,
+        "triangles": 1090,
+        "materials": [
+          "4_轮胎_卡钳",
+          "4_轮胎_轮毂暗面",
+          "4_轮胎_刹车片"
+        ]
+      },
+      "worldBounds": {
+        "minimum": [
+          -0.601486,
+          -0.349832,
+          -0.167052
+        ],
+        "maximum": [
+          -0.528037,
+          -0.053079,
+          0.131642
+        ],
+        "center": [
+          -0.564762,
+          -0.201456,
+          -0.017705
+        ],
+        "size": [
+          0.073449,
+          0.296753,
+          0.298694
+        ]
+      }
+    },
+    {
+      "name": "pin_Caliper_LB",
+      "type": "EMPTY",
+      "parent": "ES7_WheelCaliper",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          2.3972,
+          0.081,
+          0.987
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.08,
+          0.08,
+          0.08
+        ]
+      },
+      "worldLocation": [
+        0.675538,
+        1.613041,
+        0.057504
+      ]
+    },
+    {
+      "name": "pin_Caliper_LF",
+      "type": "EMPTY",
+      "parent": "ES7_WheelCaliper",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.039,
+          0.075,
+          0.987
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.08,
+          0.08,
+          0.08
+        ]
+      },
+      "worldLocation": [
+        0.675538,
+        -0.026243,
+        0.053466
+      ]
+    },
+    {
+      "name": "pin_Caliper_RB",
+      "type": "EMPTY",
+      "parent": "ES7_WheelCaliper",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          2.394,
+          0.068,
+          -0.989
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.08,
+          0.08,
+          0.08
+        ]
+      },
+      "worldLocation": [
+        -0.654084,
+        1.610888,
+        0.048756
+      ]
+    },
+    {
+      "name": "pin_Caliper_RF",
+      "type": "EMPTY",
+      "parent": "ES7_WheelCaliper",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.031,
+          0.06,
+          -0.989
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.08,
+          0.08,
+          0.08
+        ]
+      },
+      "worldLocation": [
+        -0.654084,
+        -0.020859,
+        0.043373
+      ]
+    },
+    {
+      "name": "pin_Hook",
+      "type": "EMPTY",
+      "parent": "ES7",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          3.68047,
+          -0.056,
+          0.141
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.08,
+          0.08,
+          0.08
+        ]
+      },
+      "worldLocation": [
+        0.106277,
+        2.476535,
+        -0.034681
+      ]
+    },
+    {
+      "name": "pin_Moon_B",
+      "type": "EMPTY",
+      "parent": "Trunk",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          0.782565,
+          -0.36271,
+          -0.124
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.08,
+          0.08,
+          0.08
+        ]
+      },
+      "worldLocation": [
+        -0.072038,
+        2.476534,
+        0.565781
+      ]
+    },
+    {
+      "name": "pin_Moon_F",
+      "type": "EMPTY",
+      "parent": "ES7_Body",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -1.1061,
+          0.6207,
+          0.2182
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.08,
+          0.08,
+          0.08
+        ]
+      },
+      "worldLocation": [
+        0.158224,
+        -0.744279,
+        0.42066
+      ]
+    },
+    {
+      "name": "pin_Wheel_LB",
+      "type": "EMPTY",
+      "parent": "ES7_Wheel",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          2.943,
+          -0.039,
+          1.003
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.08,
+          0.08,
+          0.08
+        ]
+      },
+      "worldLocation": [
+        0.686304,
+        1.980302,
+        -0.023242
+      ]
+    },
+    {
+      "name": "pin_Wheel_LF",
+      "type": "EMPTY",
+      "parent": "ES7_Wheel",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.585,
+          -0.04,
+          1.003
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.08,
+          0.08,
+          0.08
+        ]
+      },
+      "worldLocation": [
+        0.686304,
+        -0.393638,
+        -0.023915
+      ]
+    },
+    {
+      "name": "pin_Wheel_RB",
+      "type": "EMPTY",
+      "parent": "ES7_Wheel",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          2.945,
+          -0.038,
+          -1.002
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.08,
+          0.08,
+          0.08
+        ]
+      },
+      "worldLocation": [
+        -0.662831,
+        1.981648,
+        -0.022569
+      ]
+    },
+    {
+      "name": "pin_Wheel_RF",
+      "type": "EMPTY",
+      "parent": "ES7_Wheel",
+      "collections": [
+        "REF_ES7_IMPORTED"
+      ],
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "localTransform": {
+        "location": [
+          -0.582,
+          -0.038,
+          -1.001
+        ],
+        "rotationQuaternion": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.08,
+          0.08,
+          0.08
+        ]
+      },
+      "worldLocation": [
+        -0.662158,
+        -0.391619,
+        -0.02257
+      ]
+    }
+  ]
+}

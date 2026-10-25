@@ -1,0 +1,53 @@
+.DS_Store
+node_modules/
+.local-services/
+.superpowers/
+.worktrees/
+test-results/
+*.log
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env.sample
+!.env.*.sample
+external/
+__pycache__/
+*.py[cod]
+*.blend
+*.blend1
+
+# Local Codex/project process files
+.workbuddy/
+# Product evaluator run outputs (scripts/benchmarks write here by default)
+/artifacts/
+
+# Generated Manual RAG intermediates; keep source metadata and versioned quality goldens tracked.
+data/manual-rag/es8-manual-embedding-queue.jsonl
+data/manual-rag/es8-manual-embeddings-manifest.json
+
+# Local knowledge-graph working files; the runtime TTS profile stays tracked
+.ua/*
+!.ua/tts-profiles.json
+
+# Temporary security-review fixtures and extracted manual data
+.tmp-userguide-security*/
+
+# The runtime only loads the final NIO ES7 asset pair
+assets/models/*
+!assets/models/nio-es7/
+!assets/models/nio-es7/**
+
+# Vehicle modeling source code, schemas, verifiers, and provenance stay tracked.
+# Ignore large local checkpoints, rendered previews, and generated exports.
+vehicle-model-lab/previews/**/*.png
+vehicle-model-lab/previews/**/*.jpg
+vehicle-model-lab/dist/*
+!vehicle-model-lab/dist/nio-es7-animated.glb
+!vehicle-model-lab/dist/nio-es7-component-manifest.json
+vehicle-model-lab/references/es7-cc-by/nio-es7-2023.zip
+vehicle-model-lab/references/es7-cc-by/working/
+
+# AOCI agent host integration (machine-bound; do not commit)
+.mcp.json
+.mcp.json.backup.*

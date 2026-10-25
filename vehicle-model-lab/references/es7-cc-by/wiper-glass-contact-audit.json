@@ -1,0 +1,991 @@
+{
+  "contract": "nio-es7-wiper-glass-contact-audit@0.1.0",
+  "source": "source/nio-es7-animation-master.blend",
+  "windshield": {
+    "object": "es7_work__ES7_Glass1",
+    "vertices": 448,
+    "triangles": 776
+  },
+  "frames": {
+    "0": 601,
+    "25": 618,
+    "50": 636,
+    "75": 653,
+    "100": 670
+  },
+  "wipers": {
+    "left": {
+      "object": "wiper_left_mesh",
+      "bladeIslandRoots": [
+        0,
+        735,
+        742,
+        750,
+        762,
+        780,
+        793,
+        805,
+        824,
+        836,
+        860,
+        872,
+        902,
+        920,
+        939,
+        953,
+        995,
+        1007,
+        1031,
+        1049,
+        1061,
+        1073,
+        1085,
+        1102,
+        1118,
+        1136,
+        1150,
+        1162,
+        1174,
+        1196,
+        1218
+      ],
+      "bladeIslandCount": 31,
+      "longitudinalWorldAxis": "Y",
+      "normalOrientation": "+X outward",
+      "sampleVertices": [
+        1147,
+        1145,
+        1127,
+        767,
+        1133
+      ],
+      "keyframes": {
+        "0": {
+          "frame": 601,
+          "statistics": {
+            "minimumMeters": 0.000839,
+            "medianMeters": 0.001005,
+            "maximumMeters": 0.003963,
+            "penetratingSamples": 0
+          },
+          "samples": [
+            {
+              "vertex": 1147,
+              "world": [
+                1.242121,
+                -0.257715,
+                1.219901
+              ],
+              "nearestGlass": [
+                1.239879,
+                -0.257509,
+                1.21664
+              ],
+              "signedGapMeters": 0.003963
+            },
+            {
+              "vertex": 1145,
+              "world": [
+                1.233151,
+                -0.128013,
+                1.23097
+              ],
+              "nearestGlass": [
+                1.23221,
+                -0.127983,
+                1.229606
+              ],
+              "signedGapMeters": 0.001657
+            },
+            {
+              "vertex": 1127,
+              "world": [
+                1.223192,
+                0.001089,
+                1.239854
+              ],
+              "nearestGlass": [
+                1.222623,
+                0.001072,
+                1.239027
+              ],
+              "signedGapMeters": 0.001005
+            },
+            {
+              "vertex": 767,
+              "world": [
+                1.212183,
+                0.13023,
+                1.24448
+              ],
+              "nearestGlass": [
+                1.211663,
+                0.130213,
+                1.243726
+              ],
+              "signedGapMeters": 0.000916
+            },
+            {
+              "vertex": 1133,
+              "world": [
+                1.19853,
+                0.258392,
+                1.24604
+              ],
+              "nearestGlass": [
+                1.198056,
+                0.258349,
+                1.245349
+              ],
+              "signedGapMeters": 0.000839
+            }
+          ]
+        },
+        "25": {
+          "frame": 618,
+          "statistics": {
+            "minimumMeters": 0.059923,
+            "medianMeters": 0.089379,
+            "maximumMeters": 0.120654,
+            "penetratingSamples": 0
+          },
+          "samples": [
+            {
+              "vertex": 1147,
+              "world": [
+                0.932606,
+                -0.132,
+                1.572232
+              ],
+              "nearestGlass": [
+                0.869267,
+                -0.126248,
+                1.469702
+              ],
+              "signedGapMeters": 0.120654
+            },
+            {
+              "vertex": 1145,
+              "world": [
+                0.967163,
+                -0.012206,
+                1.533752
+              ],
+              "nearestGlass": [
+                0.912372,
+                -0.010604,
+                1.445248
+              ],
+              "signedGapMeters": 0.104104
+            },
+            {
+              "vertex": 1127,
+              "world": [
+                1.000451,
+                0.106579,
+                1.493408
+              ],
+              "nearestGlass": [
+                0.951421,
+                0.10512,
+                1.418692
+              ],
+              "signedGapMeters": 0.089379
+            },
+            {
+              "vertex": 767,
+              "world": [
+                1.032485,
+                0.224158,
+                1.449036
+              ],
+              "nearestGlass": [
+                0.991443,
+                0.220342,
+                1.386483
+              ],
+              "signedGapMeters": 0.074913
+            },
+            {
+              "vertex": 1133,
+              "world": [
+                1.061509,
+                0.340611,
+                1.402016
+              ],
+              "nearestGlass": [
+                1.028821,
+                0.335532,
+                1.352052
+              ],
+              "signedGapMeters": 0.059923
+            }
+          ]
+        },
+        "50": {
+          "frame": 636,
+          "statistics": {
+            "minimumMeters": 0.119879,
+            "medianMeters": 0.181417,
+            "maximumMeters": 0.243088,
+            "penetratingSamples": 0
+          },
+          "samples": [
+            {
+              "vertex": 1147,
+              "world": [
+                0.690349,
+                0.247389,
+                1.848001
+              ],
+              "nearestGlass": [
+                0.577837,
+                0.231288,
+                1.633122
+              ],
+              "signedGapMeters": 0.243088
+            },
+            {
+              "vertex": 1145,
+              "world": [
+                0.761842,
+                0.321077,
+                1.767476
+              ],
+              "nearestGlass": [
+                0.657885,
+                0.304487,
+                1.582963
+              ],
+              "signedGapMeters": 0.212432
+            },
+            {
+              "vertex": 1127,
+              "world": [
+                0.831654,
+                0.39361,
+                1.685556
+              ],
+              "nearestGlass": [
+                0.741623,
+                0.374244,
+                1.529231
+              ],
+              "signedGapMeters": 0.181417
+            },
+            {
+              "vertex": 767,
+              "world": [
+                0.899562,
+                0.463951,
+                1.600348
+              ],
+              "nearestGlass": [
+                0.820606,
+                0.446881,
+                1.471285
+              ],
+              "signedGapMeters": 0.152258
+            },
+            {
+              "vertex": 1133,
+              "world": [
+                0.964062,
+                0.533338,
+                1.512943
+              ],
+              "nearestGlass": [
+                0.899103,
+                0.519227,
+                1.413182
+              ],
+              "signedGapMeters": 0.119879
+            }
+          ]
+        },
+        "75": {
+          "frame": 653,
+          "statistics": {
+            "minimumMeters": 0.062588,
+            "medianMeters": 0.093098,
+            "maximumMeters": 0.125847,
+            "penetratingSamples": 0
+          },
+          "samples": [
+            {
+              "vertex": 1147,
+              "world": [
+                0.920105,
+                -0.120853,
+                1.586463
+              ],
+              "nearestGlass": [
+                0.853842,
+                -0.118861,
+                1.479491
+              ],
+              "signedGapMeters": 0.125847
+            },
+            {
+              "vertex": 1145,
+              "world": [
+                0.956482,
+                -0.002288,
+                1.545911
+              ],
+              "nearestGlass": [
+                0.89929,
+                -0.000616,
+                1.453527
+              ],
+              "signedGapMeters": 0.108666
+            },
+            {
+              "vertex": 1127,
+              "world": [
+                0.991575,
+                0.115255,
+                1.503512
+              ],
+              "nearestGlass": [
+                0.940504,
+                0.113736,
+                1.425687
+              ],
+              "signedGapMeters": 0.093098
+            },
+            {
+              "vertex": 767,
+              "world": [
+                1.025394,
+                0.231543,
+                1.457108
+              ],
+              "nearestGlass": [
+                0.982582,
+                0.227562,
+                1.391856
+              ],
+              "signedGapMeters": 0.078144
+            },
+            {
+              "vertex": 1133,
+              "world": [
+                1.056186,
+                0.346704,
+                1.408075
+              ],
+              "nearestGlass": [
+                1.022045,
+                0.341399,
+                1.355888
+              ],
+              "signedGapMeters": 0.062588
+            }
+          ]
+        },
+        "100": {
+          "frame": 670,
+          "statistics": {
+            "minimumMeters": 0.000839,
+            "medianMeters": 0.001005,
+            "maximumMeters": 0.003963,
+            "penetratingSamples": 0
+          },
+          "samples": [
+            {
+              "vertex": 1147,
+              "world": [
+                1.242121,
+                -0.257715,
+                1.219901
+              ],
+              "nearestGlass": [
+                1.239879,
+                -0.257509,
+                1.21664
+              ],
+              "signedGapMeters": 0.003963
+            },
+            {
+              "vertex": 1145,
+              "world": [
+                1.233151,
+                -0.128013,
+                1.23097
+              ],
+              "nearestGlass": [
+                1.23221,
+                -0.127983,
+                1.229606
+              ],
+              "signedGapMeters": 0.001657
+            },
+            {
+              "vertex": 1127,
+              "world": [
+                1.223192,
+                0.001089,
+                1.239854
+              ],
+              "nearestGlass": [
+                1.222623,
+                0.001072,
+                1.239027
+              ],
+              "signedGapMeters": 0.001005
+            },
+            {
+              "vertex": 767,
+              "world": [
+                1.212183,
+                0.13023,
+                1.24448
+              ],
+              "nearestGlass": [
+                1.211663,
+                0.130213,
+                1.243726
+              ],
+              "signedGapMeters": 0.000916
+            },
+            {
+              "vertex": 1133,
+              "world": [
+                1.19853,
+                0.258392,
+                1.24604
+              ],
+              "nearestGlass": [
+                1.198056,
+                0.258349,
+                1.245349
+              ],
+              "signedGapMeters": 0.000839
+            }
+          ]
+        }
+      }
+    },
+    "right": {
+      "object": "wiper_right_mesh",
+      "bladeIslandRoots": [
+        132,
+        152,
+        172,
+        190,
+        208,
+        246,
+        266,
+        286,
+        307,
+        321,
+        336,
+        347,
+        367,
+        377,
+        393,
+        408,
+        430,
+        441,
+        463,
+        473,
+        493,
+        513,
+        533,
+        548,
+        563,
+        573,
+        589
+      ],
+      "bladeIslandCount": 27,
+      "longitudinalWorldAxis": "Y",
+      "normalOrientation": "+X outward",
+      "sampleVertices": [
+        432,
+        380,
+        384,
+        381,
+        383,
+        303
+      ],
+      "keyframes": {
+        "0": {
+          "frame": 601,
+          "statistics": {
+            "minimumMeters": 0.000295,
+            "medianMeters": 0.001261,
+            "maximumMeters": 0.0079,
+            "penetratingSamples": 0
+          },
+          "samples": [
+            {
+              "vertex": 432,
+              "world": [
+                1.0737,
+                -0.722329,
+                1.26197
+              ],
+              "nearestGlass": [
+                1.073538,
+                -0.72228,
+                1.261728
+              ],
+              "signedGapMeters": 0.000295
+            },
+            {
+              "vertex": 380,
+              "world": [
+                1.111438,
+                -0.631256,
+                1.251574
+              ],
+              "nearestGlass": [
+                1.110734,
+                -0.631062,
+                1.250533
+              ],
+              "signedGapMeters": 0.001272
+            },
+            {
+              "vertex": 384,
+              "world": [
+                1.111197,
+                -0.631149,
+                1.251732
+              ],
+              "nearestGlass": [
+                1.110505,
+                -0.630957,
+                1.250707
+              ],
+              "signedGapMeters": 0.001251
+            },
+            {
+              "vertex": 381,
+              "world": [
+                1.144194,
+                -0.539265,
+                1.248742
+              ],
+              "nearestGlass": [
+                1.143815,
+                -0.539183,
+                1.248186
+              ],
+              "signedGapMeters": 0.000677
+            },
+            {
+              "vertex": 383,
+              "world": [
+                1.164006,
+                -0.481619,
+                1.245729
+              ],
+              "nearestGlass": [
+                1.16275,
+                -0.481345,
+                1.243887
+              ],
+              "signedGapMeters": 0.002246
+            },
+            {
+              "vertex": 303,
+              "world": [
+                1.196638,
+                -0.383974,
+                1.243351
+              ],
+              "nearestGlass": [
+                1.192189,
+                -0.383281,
+                1.236859
+              ],
+              "signedGapMeters": 0.0079
+            }
+          ]
+        },
+        "25": {
+          "frame": 618,
+          "statistics": {
+            "minimumMeters": 0.031281,
+            "medianMeters": 0.038958,
+            "maximumMeters": 0.049006,
+            "penetratingSamples": 0
+          },
+          "samples": [
+            {
+              "vertex": 432,
+              "world": [
+                0.895389,
+                -0.573665,
+                1.464947
+              ],
+              "nearestGlass": [
+                0.870152,
+                -0.566769,
+                1.423509
+              ],
+              "signedGapMeters": 0.049006
+            },
+            {
+              "vertex": 380,
+              "world": [
+                0.960008,
+                -0.510655,
+                1.423951
+              ],
+              "nearestGlass": [
+                0.937815,
+                -0.505834,
+                1.389868
+              ],
+              "signedGapMeters": 0.040957
+            },
+            {
+              "vertex": 384,
+              "world": [
+                0.959827,
+                -0.510425,
+                1.424041
+              ],
+              "nearestGlass": [
+                0.937661,
+                -0.50561,
+                1.39
+              ],
+              "signedGapMeters": 0.040907
+            },
+            {
+              "vertex": 381,
+              "world": [
+                1.020719,
+                -0.442415,
+                1.389298
+              ],
+              "nearestGlass": [
+                1.000689,
+                -0.438125,
+                1.358473
+              ],
+              "signedGapMeters": 0.03701
+            },
+            {
+              "vertex": 383,
+              "world": [
+                1.058009,
+                -0.399879,
+                1.366389
+              ],
+              "nearestGlass": [
+                1.039827,
+                -0.397054,
+                1.338597
+              ],
+              "signedGapMeters": 0.033331
+            },
+            {
+              "vertex": 303,
+              "world": [
+                1.120475,
+                -0.326514,
+                1.330049
+              ],
+              "nearestGlass": [
+                1.102875,
+                -0.323803,
+                1.304331
+              ],
+              "signedGapMeters": 0.031281
+            }
+          ]
+        },
+        "50": {
+          "frame": 636,
+          "statistics": {
+            "minimumMeters": 0.043072,
+            "medianMeters": 0.055579,
+            "maximumMeters": 0.06799,
+            "penetratingSamples": 0
+          },
+          "samples": [
+            {
+              "vertex": 432,
+              "world": [
+                0.783953,
+                -0.284002,
+                1.591798
+              ],
+              "nearestGlass": [
+                0.750535,
+                -0.278857,
+                1.532812
+              ],
+              "signedGapMeters": 0.06799
+            },
+            {
+              "vertex": 380,
+              "world": [
+                0.863287,
+                -0.269931,
+                1.534052
+              ],
+              "nearestGlass": [
+                0.83243,
+                -0.265231,
+                1.483901
+              ],
+              "signedGapMeters": 0.059071
+            },
+            {
+              "vertex": 384,
+              "world": [
+                0.863206,
+                -0.269636,
+                1.534028
+              ],
+              "nearestGlass": [
+                0.832394,
+                -0.264943,
+                1.48395
+              ],
+              "signedGapMeters": 0.058985
+            },
+            {
+              "vertex": 381,
+              "world": [
+                0.941304,
+                -0.247516,
+                1.479698
+              ],
+              "nearestGlass": [
+                0.913897,
+                -0.244989,
+                1.435376
+              ],
+              "signedGapMeters": 0.052173
+            },
+            {
+              "vertex": 383,
+              "world": [
+                0.989318,
+                -0.233875,
+                1.444582
+              ],
+              "nearestGlass": [
+                0.962978,
+                -0.231484,
+                1.404442
+              ],
+              "signedGapMeters": 0.04807
+            },
+            {
+              "vertex": 303,
+              "world": [
+                1.070649,
+                -0.208422,
+                1.386767
+              ],
+              "nearestGlass": [
+                1.047079,
+                -0.206229,
+                1.350783
+              ],
+              "signedGapMeters": 0.043072
+            }
+          ]
+        },
+        "75": {
+          "frame": 653,
+          "statistics": {
+            "minimumMeters": 0.032012,
+            "medianMeters": 0.040192,
+            "maximumMeters": 0.050586,
+            "penetratingSamples": 0
+          },
+          "samples": [
+            {
+              "vertex": 432,
+              "world": [
+                0.888795,
+                -0.563917,
+                1.472453
+              ],
+              "nearestGlass": [
+                0.862745,
+                -0.556799,
+                1.429679
+              ],
+              "signedGapMeters": 0.050586
+            },
+            {
+              "vertex": 380,
+              "world": [
+                0.954363,
+                -0.502623,
+                1.430377
+              ],
+              "nearestGlass": [
+                0.931442,
+                -0.497644,
+                1.395176
+              ],
+              "signedGapMeters": 0.0423
+            },
+            {
+              "vertex": 384,
+              "world": [
+                0.954186,
+                -0.502389,
+                1.430463
+              ],
+              "nearestGlass": [
+                0.931292,
+                -0.497416,
+                1.395306
+              ],
+              "signedGapMeters": 0.042248
+            },
+            {
+              "vertex": 381,
+              "world": [
+                1.016104,
+                -0.435931,
+                1.394551
+              ],
+              "nearestGlass": [
+                0.995465,
+                -0.431511,
+                1.362788
+              ],
+              "signedGapMeters": 0.038137
+            },
+            {
+              "vertex": 383,
+              "world": [
+                1.054036,
+                -0.394374,
+                1.370911
+              ],
+              "nearestGlass": [
+                1.035234,
+                -0.391452,
+                1.342171
+              ],
+              "signedGapMeters": 0.034468
+            },
+            {
+              "vertex": 303,
+              "world": [
+                1.117611,
+                -0.322614,
+                1.33331
+              ],
+              "nearestGlass": [
+                1.099599,
+                -0.31984,
+                1.306991
+              ],
+              "signedGapMeters": 0.032012
+            }
+          ]
+        },
+        "100": {
+          "frame": 670,
+          "statistics": {
+            "minimumMeters": 0.000295,
+            "medianMeters": 0.001261,
+            "maximumMeters": 0.0079,
+            "penetratingSamples": 0
+          },
+          "samples": [
+            {
+              "vertex": 432,
+              "world": [
+                1.0737,
+                -0.722329,
+                1.26197
+              ],
+              "nearestGlass": [
+                1.073538,
+                -0.72228,
+                1.261728
+              ],
+              "signedGapMeters": 0.000295
+            },
+            {
+              "vertex": 380,
+              "world": [
+                1.111438,
+                -0.631256,
+                1.251574
+              ],
+              "nearestGlass": [
+                1.110734,
+                -0.631062,
+                1.250533
+              ],
+              "signedGapMeters": 0.001272
+            },
+            {
+              "vertex": 384,
+              "world": [
+                1.111197,
+                -0.631149,
+                1.251732
+              ],
+              "nearestGlass": [
+                1.110505,
+                -0.630957,
+                1.250707
+              ],
+              "signedGapMeters": 0.001251
+            },
+            {
+              "vertex": 381,
+              "world": [
+                1.144194,
+                -0.539265,
+                1.248742
+              ],
+              "nearestGlass": [
+                1.143815,
+                -0.539183,
+                1.248186
+              ],
+              "signedGapMeters": 0.000677
+            },
+            {
+              "vertex": 383,
+              "world": [
+                1.164006,
+                -0.481619,
+                1.245729
+              ],
+              "nearestGlass": [
+                1.16275,
+                -0.481345,
+                1.243887
+              ],
+              "signedGapMeters": 0.002246
+            },
+            {
+              "vertex": 303,
+              "world": [
+                1.196638,
+                -0.383974,
+                1.243351
+              ],
+              "nearestGlass": [
+                1.192189,
+                -0.383281,
+                1.236859
+              ],
+              "signedGapMeters": 0.0079
+            }
+          ]
+        }
+      }
+    }
+  }
+}

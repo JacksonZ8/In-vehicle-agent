@@ -1,0 +1,842 @@
+{
+  "contractVersion": "vehicle-slu-ux@1.0.0",
+  "datasetVersion": "vehicle-slu-ux-user-reviewed-development@0.2.0",
+  "split": "development",
+  "labelReviewStatus": "reviewed",
+  "cases": [
+    {
+      "id": "uxd-clarify-001",
+      "category": "incomplete-control",
+      "scenarioType": "answer-missing-slot",
+      "labelReviewStatus": "reviewed",
+      "source": {
+        "author": "User",
+        "method": "conversational-review",
+        "secondReviewer": "not-performed"
+      },
+      "closureRequired": true,
+      "closureTurn": 2,
+      "turns": [
+        {
+          "id": "turn-1",
+          "text": "把主驾窗开一点",
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "none",
+            "frames": [
+              {
+                "intent": "body.window.setPosition",
+                "actionNeed": "clarify",
+                "slots": {
+                  "zone": "front_left"
+                },
+                "missingSlots": [
+                  "percent"
+                ]
+              }
+            ],
+            "route": {
+              "disposition": "clarify",
+              "routeId": null
+            }
+          }
+        },
+        {
+          "id": "turn-2",
+          "text": "三成吧",
+          "answeredSlots": [
+            "percent"
+          ],
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "none",
+            "frames": [
+              {
+                "intent": "body.window.setPosition",
+                "actionNeed": "clarify",
+                "slots": {
+                  "percent": 30
+                },
+                "missingSlots": [
+                  "zone"
+                ]
+              }
+            ],
+            "effectiveFrames": [
+              {
+                "intent": "body.window.setPosition",
+                "actionNeed": "execute",
+                "slots": {
+                  "zone": "front_left",
+                  "percent": 30
+                },
+                "missingSlots": []
+              }
+            ],
+            "route": {
+              "disposition": "execute",
+              "routeId": "vehicle-control"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "uxd-clarify-002",
+      "category": "incomplete-control",
+      "scenarioType": "answer-missing-slot",
+      "labelReviewStatus": "reviewed",
+      "source": {
+        "author": "User",
+        "method": "conversational-review",
+        "secondReviewer": "not-performed"
+      },
+      "closureRequired": true,
+      "closureTurn": 2,
+      "turns": [
+        {
+          "id": "turn-1",
+          "text": "空调温度调到舒服点",
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "none",
+            "frames": [
+              {
+                "intent": "cabin.climate.setPreset",
+                "actionNeed": "clarify",
+                "slots": {},
+                "missingSlots": [
+                  "control"
+                ],
+                "acceptedIntentSet": [
+                  "cabin.climate.setPreset",
+                  "cabin.comfort.applySettings"
+                ]
+              }
+            ],
+            "route": {
+              "disposition": "clarify",
+              "routeId": null
+            }
+          }
+        },
+        {
+          "id": "turn-2",
+          "text": "设成二十二度",
+          "answeredSlots": [
+            "temperature"
+          ],
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "none",
+            "frames": [
+              {
+                "intent": "cabin.climate.setPreset",
+                "actionNeed": "execute",
+                "slots": {
+                  "temperature": 22
+                },
+                "missingSlots": [],
+                "acceptedIntentSet": [
+                  "cabin.climate.setPreset",
+                  "cabin.comfort.applySettings"
+                ]
+              }
+            ],
+            "route": {
+              "disposition": "execute",
+              "routeId": "vehicle-control"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "uxd-clarify-003",
+      "category": "incomplete-control",
+      "scenarioType": "correct-accepted-slot-while-answering",
+      "labelReviewStatus": "reviewed",
+      "source": {
+        "author": "User",
+        "method": "conversational-review",
+        "secondReviewer": "not-performed"
+      },
+      "closureRequired": true,
+      "closureTurn": 2,
+      "turns": [
+        {
+          "id": "turn-1",
+          "text": "把左前窗再开一些",
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "none",
+            "frames": [
+              {
+                "intent": "body.window.setPosition",
+                "actionNeed": "clarify",
+                "slots": {
+                  "zone": "front_left"
+                },
+                "missingSlots": [
+                  "percent"
+                ]
+              }
+            ],
+            "route": {
+              "disposition": "clarify",
+              "routeId": null
+            }
+          }
+        },
+        {
+          "id": "turn-2",
+          "text": "改成右前窗，开到三成",
+          "answeredSlots": [
+            "zone",
+            "percent"
+          ],
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "none",
+            "frames": [
+              {
+                "intent": "body.window.setPosition",
+                "actionNeed": "execute",
+                "slots": {
+                  "zone": "front_right",
+                  "percent": 30
+                },
+                "missingSlots": []
+              }
+            ],
+            "route": {
+              "disposition": "execute",
+              "routeId": "vehicle-control"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "uxd-chat-001",
+      "category": "chat-emotion",
+      "scenarioType": "venting-then-companionship",
+      "labelReviewStatus": "reviewed",
+      "source": {
+        "author": "User",
+        "method": "conversational-review",
+        "secondReviewer": "not-performed"
+      },
+      "closureRequired": false,
+      "turns": [
+        {
+          "id": "turn-1",
+          "text": "早高峰堵了半小时，我现在有点烦。",
+          "expected": {
+            "domain": "non_vehicle",
+            "conversationNeed": "social",
+            "frames": [],
+            "route": {
+              "disposition": "execute",
+              "routeId": "chat"
+            }
+          }
+        },
+        {
+          "id": "turn-2",
+          "text": "陪我聊点轻松的吧。",
+          "expected": {
+            "domain": "non_vehicle",
+            "conversationNeed": "social",
+            "frames": [],
+            "route": {
+              "disposition": "execute",
+              "routeId": "chat"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "uxd-chat-002",
+      "category": "chat-emotion",
+      "scenarioType": "creative-request-is-not-a-vehicle-service",
+      "labelReviewStatus": "reviewed",
+      "source": {
+        "author": "User",
+        "method": "conversational-review",
+        "secondReviewer": "not-performed"
+      },
+      "closureRequired": false,
+      "turns": [
+        {
+          "id": "turn-1",
+          "text": "给今天的自己写一句打气的话。",
+          "expected": {
+            "domain": "non_vehicle",
+            "conversationNeed": "social",
+            "frames": [],
+            "route": {
+              "disposition": "execute",
+              "routeId": "chat"
+            }
+          }
+        },
+        {
+          "id": "turn-2",
+          "text": "再来一句短一点的。",
+          "expected": {
+            "domain": "non_vehicle",
+            "conversationNeed": "social",
+            "frames": [],
+            "route": {
+              "disposition": "execute",
+              "routeId": "chat"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "uxd-openqa-001",
+      "category": "open-qa",
+      "scenarioType": "general-explanation-follow-up",
+      "labelReviewStatus": "reviewed",
+      "source": {
+        "author": "User",
+        "method": "conversational-review",
+        "secondReviewer": "not-performed"
+      },
+      "closureRequired": false,
+      "turns": [
+        {
+          "id": "turn-1",
+          "text": "什么是能量守恒？",
+          "expected": {
+            "domain": "non_vehicle",
+            "conversationNeed": "explain",
+            "frames": [],
+            "route": {
+              "disposition": "execute",
+              "routeId": "chat"
+            }
+          }
+        },
+        {
+          "id": "turn-2",
+          "text": "用一个日常例子解释一下。",
+          "expected": {
+            "domain": "non_vehicle",
+            "conversationNeed": "explain",
+            "frames": [],
+            "route": {
+              "disposition": "execute",
+              "routeId": "chat"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "uxd-openqa-002",
+      "category": "open-qa",
+      "scenarioType": "polite-rephrase",
+      "labelReviewStatus": "reviewed",
+      "source": {
+        "author": "User",
+        "method": "conversational-review",
+        "secondReviewer": "not-performed"
+      },
+      "closureRequired": false,
+      "turns": [
+        {
+          "id": "turn-1",
+          "text": "为什么雨后的空气闻起来不一样？",
+          "expected": {
+            "domain": "non_vehicle",
+            "conversationNeed": "explain",
+            "frames": [],
+            "route": {
+              "disposition": "execute",
+              "routeId": "chat"
+            }
+          }
+        },
+        {
+          "id": "turn-2",
+          "text": "简单说说背后的原因就好。",
+          "expected": {
+            "domain": "non_vehicle",
+            "conversationNeed": "explain",
+            "frames": [],
+            "route": {
+              "disposition": "execute",
+              "routeId": "chat"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "uxd-knowledge-001",
+      "category": "vehicle-knowledge",
+      "scenarioType": "manual-query-with-follow-up",
+      "labelReviewStatus": "reviewed",
+      "source": {
+        "author": "User",
+        "method": "conversational-review",
+        "secondReviewer": "not-performed"
+      },
+      "closureRequired": false,
+      "turns": [
+        {
+          "id": "turn-1",
+          "text": "ES8主驾车窗怎么调节？",
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "explain",
+            "frames": [
+              {
+                "intent": "vehicle.knowledge.query",
+                "actionNeed": "none",
+                "slots": {
+                  "query": "ES8主驾车窗调节方法"
+                },
+                "missingSlots": []
+              }
+            ],
+            "route": {
+              "disposition": "execute",
+              "routeId": "vehicle-knowledge"
+            }
+          }
+        },
+        {
+          "id": "turn-2",
+          "text": "我主要想知道怎么调到一半。",
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "explain",
+            "frames": [
+              {
+                "intent": "vehicle.knowledge.query",
+                "actionNeed": "none",
+                "slots": {
+                  "query": "车窗调到一半的方法"
+                },
+                "missingSlots": []
+              }
+            ],
+            "route": {
+              "disposition": "execute",
+              "routeId": "vehicle-knowledge"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "uxd-knowledge-002",
+      "category": "vehicle-knowledge",
+      "scenarioType": "read-only-capability-question",
+      "labelReviewStatus": "reviewed",
+      "source": {
+        "author": "User",
+        "method": "conversational-review",
+        "secondReviewer": "not-performed"
+      },
+      "closureRequired": false,
+      "turns": [
+        {
+          "id": "turn-1",
+          "text": "ES8有没有办法只开一条缝？",
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "explain",
+            "frames": [
+              {
+                "intent": "vehicle.knowledge.query",
+                "actionNeed": "none",
+                "slots": {
+                  "query": "ES8车窗能否只开一条缝"
+                },
+                "missingSlots": []
+              }
+            ],
+            "route": {
+              "disposition": "execute",
+              "routeId": "vehicle-knowledge"
+            }
+          }
+        },
+        {
+          "id": "turn-2",
+          "text": "我问的是操作方法，不用现在帮我调。",
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "explain",
+            "frames": [
+              {
+                "intent": "vehicle.knowledge.query",
+                "actionNeed": "none",
+                "slots": {
+                  "query": "车窗操作方法"
+                },
+                "missingSlots": []
+              }
+            ],
+            "route": {
+              "disposition": "execute",
+              "routeId": "vehicle-knowledge"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "uxd-control-001",
+      "category": "complete-control",
+      "scenarioType": "indirect-but-explicit-position",
+      "labelReviewStatus": "reviewed",
+      "source": {
+        "author": "User",
+        "method": "conversational-review",
+        "secondReviewer": "not-performed"
+      },
+      "closureRequired": false,
+      "turns": [
+        {
+          "id": "turn-1",
+          "text": "主驾窗留三成就行。",
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "none",
+            "frames": [
+              {
+                "intent": "body.window.setPosition",
+                "actionNeed": "execute",
+                "slots": {
+                  "zone": "front_left",
+                  "percent": 30
+                },
+                "missingSlots": []
+              }
+            ],
+            "route": {
+              "disposition": "execute",
+              "routeId": "vehicle-control"
+            }
+          }
+        },
+        {
+          "id": "turn-2",
+          "text": "副驾那扇也降到两成。",
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "none",
+            "frames": [
+              {
+                "intent": "body.window.setPosition",
+                "actionNeed": "execute",
+                "slots": {
+                  "zone": "front_right",
+                  "percent": 20
+                },
+                "missingSlots": []
+              }
+            ],
+            "route": {
+              "disposition": "execute",
+              "routeId": "vehicle-control"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "uxd-control-002",
+      "category": "complete-control",
+      "scenarioType": "explicit-absolute-control",
+      "labelReviewStatus": "reviewed",
+      "source": {
+        "author": "User",
+        "method": "conversational-review",
+        "secondReviewer": "not-performed"
+      },
+      "closureRequired": false,
+      "turns": [
+        {
+          "id": "turn-1",
+          "text": "把后排右边窗降到40%。",
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "none",
+            "frames": [
+              {
+                "intent": "body.window.setPosition",
+                "actionNeed": "execute",
+                "slots": {
+                  "zone": "rear_right",
+                  "percent": 40
+                },
+                "missingSlots": []
+              }
+            ],
+            "route": {
+              "disposition": "execute",
+              "routeId": "vehicle-control"
+            }
+          }
+        },
+        {
+          "id": "turn-2",
+          "text": "尾门打开。",
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "none",
+            "frames": [
+              {
+                "intent": "body.tailgate.open",
+                "actionNeed": "execute",
+                "slots": {
+                  "open": true
+                },
+                "missingSlots": []
+              }
+            ],
+            "route": {
+              "disposition": "execute",
+              "routeId": "vehicle-control"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "uxd-service-001",
+      "category": "vehicle-services",
+      "scenarioType": "weather-query-follow-up",
+      "labelReviewStatus": "reviewed",
+      "source": {
+        "author": "User",
+        "method": "conversational-review",
+        "secondReviewer": "not-performed"
+      },
+      "closureRequired": false,
+      "turns": [
+        {
+          "id": "turn-1",
+          "text": "查一下北京今天的天气。",
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "explain",
+            "frames": [
+              {
+                "intent": "weather.query",
+                "actionNeed": "none",
+                "slots": {
+                  "location": "北京",
+                  "timeRange": "today"
+                },
+                "missingSlots": []
+              }
+            ],
+            "route": {
+              "disposition": "execute",
+              "routeId": "task"
+            }
+          }
+        },
+        {
+          "id": "turn-2",
+          "text": "再看看明天北京天气。",
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "explain",
+            "frames": [
+              {
+                "intent": "weather.query",
+                "actionNeed": "none",
+                "slots": {
+                  "location": "北京",
+                  "timeRange": "tomorrow"
+                },
+                "missingSlots": []
+              }
+            ],
+            "route": {
+              "disposition": "execute",
+              "routeId": "task"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "uxd-service-002",
+      "category": "vehicle-services",
+      "scenarioType": "unsupported-navigation-request-and-cancel",
+      "labelReviewStatus": "reviewed",
+      "source": {
+        "author": "User",
+        "method": "conversational-review",
+        "secondReviewer": "not-performed"
+      },
+      "closureRequired": false,
+      "turns": [
+        {
+          "id": "turn-1",
+          "text": "导航去苏州中心。",
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "none",
+            "frames": [
+              {
+                "intent": "navigation.planRoute",
+                "actionNeed": "execute",
+                "slots": {
+                  "origin": "当前位置",
+                  "destination": "苏州中心"
+                },
+                "missingSlots": []
+              }
+            ],
+            "route": {
+              "disposition": "respond",
+              "routeId": null
+            }
+          }
+        },
+        {
+          "id": "turn-2",
+          "text": "先别导航了。",
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "none",
+            "frames": [
+              {
+                "intent": "navigation.cancel",
+                "actionNeed": "none",
+                "slots": {},
+                "missingSlots": []
+              }
+            ],
+            "route": {
+              "disposition": "respond",
+              "routeId": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "uxd-nonexec-001",
+      "category": "non-execution",
+      "scenarioType": "explicit-negative-control",
+      "labelReviewStatus": "reviewed",
+      "source": {
+        "author": "User",
+        "method": "conversational-review",
+        "secondReviewer": "not-performed"
+      },
+      "closureRequired": false,
+      "turns": [
+        {
+          "id": "turn-1",
+          "text": "先别把左前窗关上。",
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "explain",
+            "frames": [],
+            "route": {
+              "disposition": "execute",
+              "routeId": "chat"
+            }
+          }
+        },
+        {
+          "id": "turn-2",
+          "text": "我只是提醒你，暂时不用调整。",
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "explain",
+            "frames": [],
+            "route": {
+              "disposition": "execute",
+              "routeId": "chat"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "uxd-mixed-002",
+      "category": "mixed-multi-intent",
+      "scenarioType": "social-plus-control",
+      "labelReviewStatus": "reviewed",
+      "source": {
+        "author": "User",
+        "method": "conversational-review",
+        "secondReviewer": "not-performed"
+      },
+      "closureRequired": false,
+      "turns": [
+        {
+          "id": "turn-1",
+          "text": "今天心情不错，顺手把主驾窗调到一半。",
+          "expected": {
+            "domain": "vehicle",
+            "conversationNeed": "social",
+            "frames": [
+              {
+                "intent": "body.window.setPosition",
+                "actionNeed": "execute",
+                "slots": {
+                  "zone": "front_left",
+                  "percent": 50
+                },
+                "missingSlots": []
+              }
+            ],
+            "route": {
+              "disposition": "execute",
+              "routeId": "task"
+            }
+          }
+        },
+        {
+          "id": "turn-2",
+          "text": "聊着挺开心的，先这样吧。",
+          "expected": {
+            "domain": "non_vehicle",
+            "conversationNeed": "social",
+            "frames": [],
+            "route": {
+              "disposition": "execute",
+              "routeId": "chat"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "reviewBasis": "Single-user conversational review recorded in docs/superpowers/audits/2026-09-26-vehicle-slu-task-b-conversational-review.md; not independently adjudicated.",
+  "excludedCases": [
+    {
+      "id": "uxd-mixed-001",
+      "excludedFromScoring": true
+    },
+    {
+      "id": "uxd-clarify-004",
+      "excludedFromScoring": true
+    },
+    {
+      "id": "uxd-nonexec-002",
+      "excludedFromScoring": true
+    },
+    {
+      "id": "uxd-mixed-003",
+      "excludedFromScoring": true
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "assetKind": "prebaked-neutral-waiting-bridge",
+  "catalogVersion": "nio-prebaked-waiting-bridge-catalog@1.0.0",
+  "assetId": "medium-structure",
+  "text": "我来帮你梳理",
+  "tier": "medium",
+  "answerCharacterRange": {
+    "minInclusive": 41,
+    "maxInclusive": 100
+  },
+  "language": "zh",
+  "profileId": "sandrone-dev",
+  "synthesisProfileId": "sandrone-dev-gptsovits-cpu-balanced@1.0.0",
+  "provider": "GPT-SoVITS",
+  "licenseBoundary": "local-non-commercial-testing-only",
+  "generationMethod": "local GPT-SoVITS /tts using the resolved sandrone-dev profile; generated offline before UI playback",
+  "provenance": "prebaked local development-test asset; not real-time progress and not derived from user, vehicle, or NIO production voice data",
+  "usageBoundary": "Development testing only. This file must not be presented as a production-authorized voice, a real NIO voice, or a user/vehicle recording.",
+  "fileName": "sandrone-dev-zh-medium-structure.wav",
+  "bytes": 98604,
+  "sha256": "66144bc6dfd61308de810b75b2aa653214e6ed21e6a8e2fcbda80e996f128d55",
+  "wav": {
+    "audioFormat": 1,
+    "channels": 1,
+    "sampleRateHz": 32000,
+    "byteRate": 64000,
+    "bitsPerSample": 16,
+    "dataBytes": 98560,
+    "durationMs": 1540
+  }
+}

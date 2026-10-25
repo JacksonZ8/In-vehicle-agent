@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>蔚来 Multi-Agent 智能出行助手</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./vendor/three/three.module.js",
+          "three/addons/": "./vendor/three/addons/"
+        }
+      }
+    </script>
+    <script>
+      window.NIO_LOCAL_MODEL_ENDPOINT = window.NIO_LOCAL_MODEL_ENDPOINT || "/api/local-semantic";
+      const localModelWatchdogMs = Math.floor(Number(window.NIO_LOCAL_MODEL_WATCHDOG_MS));
+      window.NIO_LOCAL_MODEL_WATCHDOG_MS = Number.isFinite(localModelWatchdogMs)
+        && localModelWatchdogMs > 0
+        ? localModelWatchdogMs
+        : null;
+      window.NIO_LOCAL_MODEL_NAME = window.NIO_LOCAL_MODEL_NAME || "edge-semantic-local";
+      window.NIO_LOCAL_LLM_ENDPOINT = window.NIO_LOCAL_LLM_ENDPOINT || "/api/local-llm";
+      window.NIO_LOCAL_LLM_TIMEOUT_MS = window.NIO_LOCAL_LLM_TIMEOUT_MS || 30000;
+      window.NIO_LOCAL_LLM_NAME = window.NIO_LOCAL_LLM_NAME || "edge-planner-local";
+      window.NIO_TTS_PROVIDER = window.NIO_TTS_PROVIDER || "gpt-sovits";
+      window.NIO_TTS_ENDPOINT = window.NIO_TTS_ENDPOINT || "/api/tts";
+
+      window.addEventListener("error", (event) => {
+        const message = event.message || event.error?.message;
+        if (!message) return;
+        window.__vehicleBootError = message;
+        const status = document.querySelector("#modelStatus");
+        if (status) status.textContent = `车模加载错误：${message}`;
+      });
+      window.addEventListener("unhandledrejection", (event) => {
+        const message = event.reason?.message || String(event.reason || "");
+        window.__vehicleBootError = message;
+        const status = document.querySelector("#modelStatus");
+        if (status) status.textContent = `车模加载错误：${message}`;
+      });
+    </script>
+    <link rel="stylesheet" href="./src/app/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <div class="ambient-grid"></div>
+
+      <header class="telemetry-bar">
+        <div class="brand-lockup">
+          <span class="brand-mark">NIO</span>
+          <div>
+            <strong>Multi-Agent Drive OS</strong>
+            <span>车载智能交互演示台</span>
+          </div>
+        </div>
+        <div class="telemetry-items">
+          <div class="telemetry-card">
+            <span>电量</span>
+            <strong id="batteryMetric">--</strong>
+          </div>
+          <div class="telemetry-card">
+            <span>车速</span>
+            <strong id="speedMetric">--</strong>
+          </div>
+          <div class="telemetry-card">
+            <span>网络</span>
+            <strong id="networkMetric">开发环境 · 网络未知</strong>
+          </div>
+          <div class="telemetry-card model-route-card">
+            <span>模型链路</span>
+            <strong id="modelRouteMetric">待运行</strong>
+            <button
+              id="demoReadinessToggle"
+              class="demo-readiness-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="demoReadinessPanel"
+            >准备状态</button>
+          </div>
+          <div class="telemetry-card">
+            <span>模式</span>
+            <strong id="driveMetric">状态不可用</strong>
+          </div>
+          <div class="telemetry-card destination">
+            <span>目的地</span>
+            <strong id="destinationMetric">待设定</strong>
+          </div>
+        </div>
+        <aside
+          id="demoReadinessPanel"
+          class="demo-readiness-panel"
+          aria-label="演示准备状态与模型服务级别"
+          hidden
+        >
+          <div class="demo-readiness-heading">
+            <div>
+              <span class="eyebrow">Demo Readiness</span>
+              <strong id="demoReadinessSummary">正在检查</strong>
+              <small id="demoReadinessElapsed">0.0s / 30s</small>
+            </div>
+            <button id="demoReadinessRefresh" type="button">刷新</button>
+          </div>
+          <div class="demo-readiness-scroll">
+            <div id="demoReadinessContent" class="demo-readiness-content" role="status" aria-live="polite">
+              <p>正在读取本地服务与模型链路状态。</p>
+            </div>
+            <section class="local-voice-settings" aria-labelledby="localVoiceSettingsTitle">
+            <div>
+              <span class="eyebrow">Local Voice</span>
+              <strong id="localVoiceSettingsTitle">常驻唤醒</strong>
+              <p id="localVoiceStatus" role="status" aria-live="polite">正在检查本地唤醒能力</p>
+            </div>
+            <button id="localVoiceEnableButton" type="button" aria-pressed="false">启用常驻唤醒</button>
+            <p class="local-voice-privacy">
+              唤醒音频仅发送到当前 Mac 的本地服务且不保留；唤醒后的普通指令转写仍使用浏览器语音识别。
+              关闭页面后常驻唤醒停止，文字输入和按键说话始终可用。
+            </p>
+            <div class="voice-identity-settings" data-state="disabled" hidden>
+              <div class="voice-identity-heading">
+                <div>
+                  <span class="eyebrow">Primary Driver Voice</span>
+                  <strong>主驾声纹</strong>
+                  <p id="voiceIdentityStatus" role="status" aria-live="polite">正在检查本地声纹能力</p>
+                </div>
+                <button
+                  id="voiceIdentityManageButton"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="voiceIdentityEnrollment"
+                >查看注册步骤</button>
+              </div>
+              <div id="voiceIdentityEnrollment" class="voice-identity-enrollment" hidden>
+                <p id="voiceIdentityReason" class="voice-identity-reason"></p>
+                <ol class="voice-identity-phrases" aria-label="主驾声纹注册短句">
+                  <li data-voice-phrase="primary-driver-phrase-1" data-state="pending">
+                    <span>1</span>
+                    <div>
+                      <p>NOMI，请记住我的声音，我是这辆车的主驾。</p>
+                      <small role="status">未录制</small>
+                    </div>
+                    <button type="button" data-voice-record="primary-driver-phrase-1" disabled>录制第 1 段</button>
+                  </li>
+                  <li data-voice-phrase="primary-driver-phrase-2" data-state="pending">
+                    <span>2</span>
+                    <div>
+                      <p>今天路况不错，请帮我规划一条安全舒适的路线。</p>
+                      <small role="status">未录制</small>
+                    </div>
+                    <button type="button" data-voice-record="primary-driver-phrase-2" disabled>录制第 2 段</button>
+                  </li>
+                  <li data-voice-phrase="primary-driver-phrase-3" data-state="pending">
+                    <span>3</span>
+                    <div>
+                      <p>需要执行车辆操作时，请先确认是我本人。</p>
+                      <small role="status">未录制</small>
+                    </div>
+                    <button type="button" data-voice-record="primary-driver-phrase-3" disabled>录制第 3 段</button>
+                  </li>
+                </ol>
+                <p class="voice-identity-privacy">
+                  每段录音仅在本机内存中用于质量检查和 embedding 提取；完成后只保存三段聚合结果，不保存录音。
+                </p>
+                <div class="voice-identity-actions">
+                  <button id="voiceIdentityEnrollButton" type="button" disabled>开始三段声纹注册</button>
+                  <button id="voiceIdentityCancelButton" type="button" hidden>取消本次注册</button>
+                  <button id="voiceIdentityDeleteButton" class="danger" type="button" hidden>删除本地主驾声纹</button>
+                </div>
+                <section class="voice-identity-calibration" aria-labelledby="voiceIdentityCalibrationTitle">
+                  <div class="voice-identity-calibration-heading">
+                    <strong id="voiceIdentityCalibrationTitle">安全确认声纹标定</strong>
+                    <span id="voiceIdentityCalibrationStatus" role="status" aria-live="polite">尚未标定</span>
+                  </div>
+                  <p id="voiceIdentityCalibrationReason" class="voice-identity-reason">
+                    注册主驾声纹后，可在三种距离与环境下完成五段本地标定。
+                  </p>
+                  <ol
+                    id="voiceIdentityCalibrationSteps"
+                    class="voice-identity-phrases voice-identity-calibration-steps"
+                    aria-label="主驾安全确认声纹标定步骤"
+                  ></ol>
+                  <p class="voice-identity-privacy">
+                    五段录音、单段 embedding 与一致性分数只在本机内存中使用且不保存；完成后仅保存与当前声纹档案绑定的验证策略。
+                  </p>
+                  <div class="voice-identity-actions">
+                    <button id="voiceIdentityCalibrateButton" type="button" disabled>开始五段安全确认标定</button>
+                    <button id="voiceIdentityCalibrationCancelButton" type="button" hidden>取消本次标定</button>
+                  </div>
+                </section>
+              </div>
+            </div>
+            </section>
+          </div>
+        </aside>
+      </header>
+
+      <section class="dashboard-grid">
+        <aside class="panel agent-panel" aria-label="协同组件状态">
+          <div class="panel-heading">
+            <span class="eyebrow">Component Matrix</span>
+            <h1>协同组件</h1>
+          </div>
+          <div id="agentList" class="agent-list" data-run-event-graph="shared" aria-label="当前 Run Event 切片中实际出现的协同组件"></div>
+        </aside>
+
+        <section class="vehicle-stage" aria-label="车辆数字孪生演示区">
+          <div class="stage-header">
+            <div>
+              <span class="eyebrow">Vehicle Digital Twin</span>
+              <h2 id="modeTitle">系统待命</h2>
+            </div>
+            <span id="modePill" class="mode-pill">IDLE</span>
+          </div>
+
+          <div id="vehicleScene" class="vehicle-scene" data-mode="idle">
+            <div id="vehicle3dStage" class="vehicle-3d-stage" aria-label="NIO ES7 GLB 与已确认车辆状态组件动画"></div>
+            <div id="modelStatus" class="model-status">Three.js 车辆数字孪生加载中</div>
+            <a class="vehicle-model-credit" href="https://sketchfab.com/3d-models/nio-es7-2023-4d9c574b84514b21ac783aca550793fe" target="_blank" rel="noreferrer">NIO ES7 model by ItsDiyor · CC BY 4.0</a>
+            <div class="route-beam"></div>
+            <div class="voice-wave wave-a"></div>
+            <div class="voice-wave wave-b"></div>
+            <div class="safety-shield"></div>
+            <div class="network-nodes">
+              <span class="node node-cloud">Cloud LLM</span>
+              <span class="node node-edge">Edge SLM</span>
+              <span class="node node-cabin">Vehicle Bus</span>
+            </div>
+            <div class="pipeline-card">
+              <div class="pipeline-step active">
+                <span>01</span>
+                <strong>语音 / 文本</strong>
+                <em>用户自然语言</em>
+              </div>
+              <div class="pipeline-step">
+                <span>02</span>
+                <strong>车端小模型</strong>
+                <em>车用场景提示词</em>
+              </div>
+              <div class="pipeline-step">
+                <span>03</span>
+                <strong>安全网关</strong>
+                <em>权限 / 风险 / 域控约束</em>
+              </div>
+              <div class="pipeline-step">
+                <span>04</span>
+                <strong>云端大模型</strong>
+                <em>规划 / RAG / 工具调用</em>
+              </div>
+              <div class="pipeline-step">
+                <span>05</span>
+                <strong>车辆执行域</strong>
+                <em>可执行动作集</em>
+              </div>
+            </div>
+          </div>
+
+          <div class="stage-footer">
+            <div>
+              <span>当前任务</span>
+              <strong id="activeTask">等待语音或快捷指令</strong>
+            </div>
+            <div>
+              <span>车模交互</span>
+              <strong id="safetyMode">按住拖拽旋转 · 触控板外扩放大</strong>
+            </div>
+          </div>
+
+        </section>
+
+        <aside class="panel developer-vehicle-state-panel" aria-label="开发者车辆状态机" data-development-only="true">
+          <div class="panel-heading">
+            <div>
+              <span class="eyebrow">Vehicle State</span>
+              <h2>车辆状态机</h2>
+            </div>
+            <span class="developer-state-mode">DIRECT · DEV</span>
+          </div>
+
+          <div class="developer-state-scroll">
+            <section class="developer-state-source" aria-label="车辆状态快照">
+              <div><span>source</span><strong id="developerStateSource">demo-sensor-simulator</strong></div>
+              <div><span>snapshot</span><strong id="developerStateSnapshot">等待 Provider</strong></div>
+              <div><span>captured</span><strong id="developerStateCapturedAt">--</strong></div>
+              <div><span>editor</span><strong id="developerStateLock" role="status" aria-live="polite">初始化中</strong></div>
+            </section>
+
+            <section id="es8InterfaceControls" class="developer-state-section vehicle-api-controls" aria-label="车辆接口模拟">
+              <div class="developer-state-section-title">
+                <h3>车辆接口</h3>
+                <span>LOCAL MOCK</span>
+              </div>
+              <p class="vehicle-api-notice">只更新本地模拟快照，不连接实体车辆。</p>
+              <div class="vehicle-api-groups">
+                <section class="vehicle-api-group" aria-label="空调接口">
+                  <span>空调</span>
+                  <button id="es8ClimatePowerToggle" type="button" aria-pressed="false">空调状态读取中</button>
+                  <output id="es8ClimateTemperature" class="vehicle-api-temperature" aria-live="polite">设定温度：读取中</output>
+                  <label>模式
+                    <select id="es8ClimateMode">
+                      <option value="auto">自动</option>
+                      <option value="cooling">制冷</option>
+                      <option value="heating">制热</option>
+                      <option value="ventilation">通风 / 自然风</option>
+                    </select>
+                  </label>
+                </section>
+                <section class="vehicle-api-group" aria-label="车窗接口">
+                  <span>车窗</span>
+                  <button type="button" data-es8-api-action="window-vent">透气 10%</button>
+                  <button type="button" data-es8-api-action="window-open-all">全部开启</button>
+                  <button type="button" data-es8-api-action="window-close-all">全部关闭</button>
+                </section>
+                <section class="vehicle-api-group" aria-label="全车门锁接口">
+                  <span>门锁</span>
+                  <button id="es8VehicleLockToggle" type="button" data-es8-api-action="vehicle-lock-toggle" aria-pressed="false">门锁状态读取中</button>
+                </section>
+              </div>
+              <p id="es8InterfaceStatus" class="vehicle-api-status" role="status" aria-live="polite">等待接口操作。</p>
+              <details class="vehicle-api-manual-reference">
+                <summary>座椅、场景与辅助驾驶手册说明</summary>
+                <p>座椅模式按 6/7 座配置选择；“座椅一键成床”默认对应沙发床，“竖直”按 90°。可参考沙发床、整车大床（7 座）、二排空间最大和三排折叠；操作前挂 P 挡、清空运动路径并按车机提示处理头枕。本页面不执行座椅动作。</p>
+                <p>“驻车舒享”仍待澄清，可对照手册场景；这里仅比较条件，不启动车辆场景。</p>
+                <div class="vehicle-api-scene-options" role="group" aria-label="手册场景比较">
+                  <button type="button" data-es8-manual-scene="rest" aria-pressed="true">休憩</button>
+                  <button type="button" data-es8-manual-scene="camp" aria-pressed="false">露营</button>
+                  <button type="button" data-es8-manual-scene="theater" aria-pressed="false">影院</button>
+                </div>
+                <p id="es8ManualSceneDetails" class="cabin-manual-scene-details" role="status" aria-live="polite">休憩模式：电量充足或正在充电且高压与空调正常；开启前关闭车门和尾门。场景会自动锁车、关窗并展开遮阳帘。</p>
+                <p>ACC 开关及跟车距离由驾驶员使用方向盘控制，本页面不提供对应车控接口。</p>
+              </details>
+            </section>
+
+            <section class="developer-state-section">
+              <div class="developer-state-section-title">
+                <h3>测试状态</h3>
+                <span>SIMULATED</span>
+              </div>
+              <div class="developer-state-preset-row">
+                <select id="developerStatePreset" aria-label="开发者车辆状态预设">
+                  <option value="safe">安全</option>
+                  <option value="unsafe">不安全</option>
+                  <option value="unknown">未知</option>
+                  <option value="confirmation">尾门需确认</option>
+                  <option value="stale">过期状态</option>
+                  <option value="sensor-fault">传感器故障</option>
+                </select>
+                <button id="developerStateApplyPreset" type="button">应用</button>
+              </div>
+            </section>
+
+            <section class="developer-state-section">
+              <div class="developer-state-section-title">
+                <h3>安全与环境</h3>
+                <span>SENSOR FACTS</span>
+              </div>
+              <div class="developer-state-field-grid">
+                <label>
+                  <span>电量</span>
+                  <input id="developerBatteryPercent" type="number" min="0" max="100" step="1" inputmode="numeric" required />
+                </label>
+                <label>
+                  <span>车速 km/h</span>
+                  <input id="developerSpeedKph" type="number" min="0" step="1" inputmode="numeric" />
+                </label>
+                <label>
+                  <span>挡位</span>
+                  <select id="developerGear">
+                    <option value="">unknown</option>
+                    <option value="P">P</option>
+                    <option value="R">R</option>
+                    <option value="N">N</option>
+                    <option value="D">D</option>
+                  </select>
+                </label>
+                <label>
+                  <span>尾门后方净空</span>
+                  <select id="developerRearClearance">
+                    <option value="">unknown</option>
+                    <option value="true">safe</option>
+                    <option value="false">blocked</option>
+                  </select>
+                </label>
+                <label>
+                  <span>车窗防夹</span>
+                  <select id="developerWindowAntiPinch">
+                    <option value="">unknown</option>
+                    <option value="true">available</option>
+                    <option value="false">unavailable</option>
+                  </select>
+                </label>
+                <label>
+                  <span>雨量</span>
+                  <select id="developerRainDetected">
+                    <option value="">unknown</option>
+                    <option value="false">dry</option>
+                    <option value="true">rain</option>
+                  </select>
+                </label>
+              </div>
+            </section>
+
+            <section class="developer-state-section">
+              <div class="developer-state-section-title">
+                <h3>座舱状态</h3>
+                <span>CLIMATE</span>
+              </div>
+              <div class="developer-state-field-grid">
+                <label>
+                  <span>温度 °C</span>
+                  <input id="developerCabinTemperature" type="number" min="15" max="31" step="1" inputmode="numeric" required />
+                </label>
+                <label>
+                  <span>风量</span>
+                  <select id="developerAirflow">
+                    <option value="">unknown</option>
+                    <option value="auto">auto</option>
+                    <option value="low">low</option>
+                    <option value="medium">medium</option>
+                    <option value="high">high</option>
+                    <option value="rear_soft">rear soft</option>
+                  </select>
+                </label>
+                <label>
+                  <span>空调开关</span>
+                  <select id="developerClimatePower">
+                    <option value="">unknown</option>
+                    <option value="false">关闭</option>
+                    <option value="true">开启</option>
+                  </select>
+                </label>
+                <label>
+                  <span>空调模式</span>
+                  <select id="developerClimateMode">
+                    <option value="">unknown</option>
+                    <option value="auto">自动</option>
+                    <option value="cooling">制冷</option>
+                    <option value="heating">制热</option>
+                    <option value="ventilation">通风 / 自然风</option>
+                  </select>
+                </label>
+                <label>
+                  <span>风量挡位</span>
+                  <input id="developerFanLevel" type="number" min="0" max="8" step="1" inputmode="numeric" />
+                </label>
+                <label>
+                  <span>乘客模式</span>
+                  <select id="developerPassengerMode">
+                    <option value="">unknown</option>
+                    <option value="comfort">comfort</option>
+                    <option value="child_comfort">child comfort</option>
+                  </select>
+                </label>
+              </div>
+              <div class="developer-state-readout">
+                <span>座椅加热 / 通风</span>
+                <strong id="developerSeatComfortSummary">等待状态</strong>
+              </div>
+            </section>
+
+            <section class="developer-state-section">
+              <div class="developer-state-section-title">
+                <h3>主驾座椅</h3>
+                <span>DRIVER · 4 AXES</span>
+              </div>
+              <div id="developerSeatControls" class="developer-range-controls" aria-label="主驾座椅连续状态"></div>
+            </section>
+
+            <section class="developer-state-section">
+              <div class="developer-state-section-title">
+                <h3>连续机械状态</h3>
+                <span>6 CLIPS</span>
+              </div>
+              <div id="developerContinuousControls" class="developer-range-controls" aria-label="连续机械状态"></div>
+            </section>
+
+            <section class="developer-state-section">
+              <div class="developer-state-section-title">
+                <h3>机械动作</h3>
+                <span>25 CLIPS TOTAL</span>
+              </div>
+              <div id="developerBinaryControls" class="developer-binary-controls" aria-label="机械开关状态"></div>
+            </section>
+
+            <button id="developerStateReset" class="developer-state-reset" type="button">一键复位</button>
+            <p id="developerStateStatus" class="developer-state-status" role="status" aria-live="polite">等待 Provider</p>
+            <p class="developer-state-warning">开发者模拟状态 · 不绕过 Safety 裁决</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="lower-deck">
+        <section class="voice-dock" aria-label="语音控制台">
+          <button id="micButton" class="mic-button" type="button" aria-label="开始语音输入">
+            <span class="mic-icon"></span>
+          </button>
+          <div class="voice-input-wrap">
+            <label for="commandInput">语音转写 / 手动输入</label>
+            <textarea id="commandInput" rows="2" placeholder="请输入希望完成的目标，例如：帮我规划明天从上海到杭州的路线。"></textarea>
+          </div>
+          <button id="runButton" class="primary-action" type="button" data-icon="▶">启动智能协作</button>
+          <div class="interaction-session-controls" aria-label="交互会话状态">
+            <span data-testid="interaction-session-status" role="status" aria-live="polite">会话未唤醒</span>
+            <button data-testid="stop-current-task" type="button" disabled>停止当前任务</button>
+          </div>
+          <section class="assistant-response" aria-label="Assistant Response">
+            <div>
+              <span class="eyebrow">Assistant Response</span>
+              <strong id="assistantText">等待开放对话或车端响应</strong>
+              <span id="runFeedback" class="run-feedback" role="status" aria-live="polite" aria-atomic="true"></span>
+              <span id="ttsProviderStatus">语音：角色TTS / 浏览器兜底</span>
+            </div>
+            <div class="tts-controls" aria-label="语音播报控制">
+              <button id="ttsPauseButton" type="button" disabled>暂停</button>
+              <button id="ttsResumeButton" type="button" disabled>继续</button>
+              <button id="ttsStopButton" type="button" disabled>停止</button>
+              <button id="clearSessionMemoryButton" type="button">清除本次对话</button>
+            </div>
+          </section>
+        </section>
+
+        <section class="scenario-strip" aria-label="快捷演示场景">
+          <button type="button" data-scenario="trip" data-icon="NAV">长途规划</button>
+          <button type="button" data-scenario="family" data-icon="CAB">家庭出行</button>
+          <button type="button" data-scenario="energy" data-icon="BAT">续航焦虑</button>
+          <button type="button" data-scenario="offline" data-icon="LOC">弱网兜底</button>
+          <button type="button" data-scenario="safety" data-icon="SAFE">安全拦截</button>
+          <button type="button" data-scenario="windowControl" data-icon="WIN">车窗控制</button>
+          <button type="button" data-scenario="trunkControl" data-icon="TAIL">后备箱</button>
+          <button type="button" data-scenario="seatControl" data-icon="SEAT">座椅靠背</button>
+        </section>
+
+        <section class="panel event-panel" aria-label="运行详情入口">
+          <div class="panel-heading compact">
+            <span class="eyebrow">Run Detail</span>
+            <h2>详情</h2>
+          </div>
+          <div id="runSummary" class="run-summary">
+            <strong>等待 Runtime 结果</strong>
+            <span>执行指令后，下滑查看思考流程、LLM 输入输出与耗时。</span>
+            <a href="#runDetailSection">查看详情</a>
+          </div>
+        </section>
+      </section>
+
+      <section id="runDetailSection" class="run-detail-section" aria-label="协同运行详情">
+        <div class="detail-heading">
+          <div>
+            <span class="eyebrow">Runtime Trace</span>
+            <h2>协同运行详情</h2>
+          </div>
+          <div class="detail-heading-tools">
+            <p>耗时为前端接收事件的 UI 观测值，用于展示链路节奏，不等同于底层模型精确 profiling。</p>
+            <div id="replayControls" class="replay-controls" aria-label="Run Event 回放控制">
+              <button id="replayBackButton" type="button" disabled>上一步</button>
+              <button id="replayForwardButton" type="button" disabled>下一步</button>
+              <button id="replayLiveButton" type="button" disabled>返回 Live</button>
+              <span id="replayPosition" role="status" aria-live="polite">Live · 0 / 0</span>
+            </div>
+          </div>
+        </div>
+        <section class="collaboration-log-panel" aria-label="协同运行日志">
+          <div class="panel-heading compact">
+            <div>
+              <span class="eyebrow">Runtime Log</span>
+              <h2>协同日志</h2>
+            </div>
+            <span class="collaboration-log-meta">RUN EVENT · LIVE</span>
+          </div>
+          <div id="eventLog" class="event-log detail-runtime-log">
+            <div class="empty-state">
+              <strong>等待指令</strong>
+              <span>这里显示组件事件、工具调用、安全结果和模型状态。</span>
+            </div>
+          </div>
+        </section>
+        <div id="runDetailContent" class="run-detail-grid">
+          <article class="detail-card wide">
+            <h3>等待执行</h3>
+            <span>输入语音或文本指令后，这里会展开智能体思考、组件交接、LLM 输入输出、工具调用和 telemetry。</span>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div
+      id="safetyConfirmationModal"
+      class="safety-confirmation-backdrop"
+      data-testid="safety-confirmation-modal"
+      hidden
+    >
+      <section
+        class="safety-confirmation-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="safetyConfirmationTitle"
+        aria-describedby="safetyConfirmationReason"
+        tabindex="-1"
+      >
+        <div class="safety-confirmation-heading">
+          <div>
+            <span class="eyebrow">Safety Confirmation</span>
+            <h2 id="safetyConfirmationTitle">需要安全确认</h2>
+          </div>
+          <span class="safety-confirmation-badge">不会绕过 Safety</span>
+        </div>
+        <p id="safetyConfirmationReason" class="safety-confirmation-warning"></p>
+        <dl class="safety-confirmation-summary">
+          <div>
+            <dt>请求动作</dt>
+            <dd id="safetyConfirmationAction"></dd>
+          </div>
+          <div id="safetyConfirmationAlternativeRow" hidden>
+            <dt>安全建议</dt>
+            <dd id="safetyConfirmationAlternative"></dd>
+          </div>
+        </dl>
+        <div class="safety-confirmation-assertions">
+          <strong>确认前请核对</strong>
+          <ul id="safetyConfirmationAssertions"></ul>
+        </div>
+        <p id="safetyConfirmationVoiceState" class="safety-confirmation-voice" data-state="unavailable" role="status" hidden>
+          可使用本机已标定的主驾声纹完成语音确认。
+        </p>
+        <div class="safety-confirmation-actions">
+          <a href="#runDetailSection" data-view-confirmation-details>查看运行详情</a>
+          <div>
+            <button id="safetyConfirmationCancel" type="button">取消</button>
+            <button id="safetyConfirmationVoice" type="button" hidden>录音确认</button>
+            <button id="safetyConfirmationConfirm" class="primary-action" type="button">确认执行</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="./src/app/vehicle-three.js"></script>
+    <script type="module" src="./src/app/app.js"></script>
+  </body>
+</html>

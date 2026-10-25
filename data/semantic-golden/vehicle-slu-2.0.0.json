@@ -1,0 +1,3771 @@
+{
+  "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+  "datasetVersion": "vehicle-slu-golden@2.0.2",
+  "split": "acceptance",
+  "cases": [
+    {
+      "id": "slu-chat-001",
+      "category": "chat-emotion",
+      "text": "你叫什么名字？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-001",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "回答自我介绍问题",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-002",
+      "category": "chat-emotion",
+      "text": "今天心情有点低落，陪我聊聊吧。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-002",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "回应低落情绪",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-003",
+      "category": "chat-emotion",
+      "text": "讲个不会太冷的笑话。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-003",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "讲一个笑话",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-004",
+      "category": "chat-emotion",
+      "text": "我刚换了工作，有点紧张。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-004",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "安抚工作焦虑",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-005",
+      "category": "chat-emotion",
+      "text": "给我推荐一种周末放松方式。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-005",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "推荐放松方式",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-006",
+      "category": "chat-emotion",
+      "text": "你觉得雨天适合听什么类型的歌？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-006",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "讨论雨天音乐偏好",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-007",
+      "category": "chat-emotion",
+      "text": "帮我想一句生日祝福。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-007",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "撰写生日祝福",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-008",
+      "category": "chat-emotion",
+      "text": "我今天完成了马拉松训练，夸夸我。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-008",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "庆祝训练完成",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-009",
+      "category": "chat-emotion",
+      "text": "我们来玩一个成语接龙。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-009",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "开始成语接龙",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-010",
+      "category": "chat-emotion",
+      "text": "把这句话改得更有诗意：晚风很好。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-010",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "润色一句话",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-011",
+      "category": "chat-emotion",
+      "text": "为什么人会在分别时难过？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-011",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "讨论离别情绪",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-012",
+      "category": "chat-emotion",
+      "text": "给我一个坚持读书的小鼓励。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-012",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "鼓励坚持阅读",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-013",
+      "category": "chat-emotion",
+      "text": "我和朋友闹别扭了，该怎么开口？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-013",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "建议沟通方式",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-014",
+      "category": "chat-emotion",
+      "text": "用温柔的语气提醒我早点休息。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-014",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "温柔提醒休息",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-015",
+      "category": "chat-emotion",
+      "text": "如果只能保留一种爱好，你会选什么？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-015",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "讨论兴趣选择",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-016",
+      "category": "chat-emotion",
+      "text": "给流浪猫起三个可爱的名字。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-016",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "起宠物名字",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-017",
+      "category": "chat-emotion",
+      "text": "我有点想家，你能陪我说几句吗？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-017",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "陪伴思乡情绪",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-018",
+      "category": "chat-emotion",
+      "text": "写一首四行的小诗，主题是清晨。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-018",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "创作清晨小诗",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-019",
+      "category": "chat-emotion",
+      "text": "你会害怕犯错吗？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-019",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "讨论犯错感受",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-020",
+      "category": "chat-emotion",
+      "text": "给我的毕业留言写个开头。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-020",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "撰写毕业留言开头",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-021",
+      "category": "chat-emotion",
+      "text": "我做菜失败了，安慰我一下。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-021",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "安慰烹饪失败",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-022",
+      "category": "chat-emotion",
+      "text": "今天有什么值得开心的小事？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-022",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "寻找开心小事",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-023",
+      "category": "chat-emotion",
+      "text": "帮我把道歉的话说得诚恳一些。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-023",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "润色道歉表达",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-024",
+      "category": "chat-emotion",
+      "text": "猜猜我现在最想吃什么？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-024",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "进行轻松猜测互动",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-025",
+      "category": "chat-emotion",
+      "text": "请用三句话介绍春天。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-025",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "介绍春天",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-026",
+      "category": "chat-emotion",
+      "text": "我怕明天的面试表现不好。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-026",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "安抚面试焦虑",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-027",
+      "category": "chat-emotion",
+      "text": "设计一个适合家庭聚会的小游戏。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-027",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "设计聚会游戏",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-028",
+      "category": "chat-emotion",
+      "text": "听到老歌总让我想起学生时代。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-028",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "回应怀旧感受",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-029",
+      "category": "chat-emotion",
+      "text": "给今天的自己写一张鼓励便签。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-029",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "写鼓励便签",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-chat-030",
+      "category": "chat-emotion",
+      "text": "你觉得友情最重要的是什么？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-chat-030",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "讨论友情价值",
+            "need": "social"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-001",
+      "category": "open-qa",
+      "text": "光年是时间单位还是距离单位？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-001",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "解释光年概念",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-002",
+      "category": "open-qa",
+      "text": "太阳系里最大的行星是哪一颗？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-002",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "回答天文常识",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-003",
+      "category": "open-qa",
+      "text": "为什么海水通常是咸的？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-003",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "解释海水盐分来源",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-004",
+      "category": "open-qa",
+      "text": "水在标准大气压下多少度沸腾？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-004",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "回答沸点知识",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-005",
+      "category": "open-qa",
+      "text": "莎士比亚写过哪些著名悲剧？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-005",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "介绍文学作品",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-006",
+      "category": "open-qa",
+      "text": "二进制的1010换成十进制是多少？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-006",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "转换二进制数值",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-007",
+      "category": "open-qa",
+      "text": "人体为什么需要睡眠？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-007",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "解释睡眠作用",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-008",
+      "category": "open-qa",
+      "text": "唐诗和宋词在形式上有什么区别？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-008",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "比较诗词形式",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-009",
+      "category": "open-qa",
+      "text": "世界上面积最大的海洋是什么？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-009",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "回答地理常识",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-010",
+      "category": "open-qa",
+      "text": "什么是温室效应？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-010",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "解释温室效应",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-011",
+      "category": "open-qa",
+      "text": "斐波那契数列的前六项是什么？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-011",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "列出斐波那契数列",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-012",
+      "category": "open-qa",
+      "text": "为什么树叶在秋天会变色？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-012",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "解释树叶变色",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-013",
+      "category": "open-qa",
+      "text": "金字塔最早建在什么地区？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-013",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "回答历史地点",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-014",
+      "category": "open-qa",
+      "text": "咖啡因为什么会让人感觉清醒？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-014",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "解释咖啡因作用",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-015",
+      "category": "open-qa",
+      "text": "怎样区分行星和恒星？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-015",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "区分行星恒星",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-016",
+      "category": "open-qa",
+      "text": "五边形的内角和是多少度？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-016",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "计算多边形内角和",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-017",
+      "category": "open-qa",
+      "text": "为什么冰会浮在水面上？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-017",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "解释冰的密度",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-018",
+      "category": "open-qa",
+      "text": "指南针为什么总指向南北？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-018",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "解释指南针原理",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-019",
+      "category": "open-qa",
+      "text": "什么叫机会成本？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-019",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "解释经济学概念",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-open-qa-020",
+      "category": "open-qa",
+      "text": "蜜蜂是怎样把花粉带回蜂巢的？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-open-qa-020",
+          "domain": "non_vehicle",
+          "conversationGoal": {
+            "summary": "解释蜜蜂采粉",
+            "need": "explain"
+          },
+          "vehicleFrames": [],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-vehicle-knowledge-001",
+      "category": "vehicle-knowledge",
+      "text": "ES8的尾门如何手动开启？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-vehicle-knowledge-001",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "说明尾门手动开启方法",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "knowledge-1",
+              "capability": "knowledge",
+              "intent": "vehicle.knowledge.query",
+              "speechAct": "question",
+              "knowledgeNeed": "manual",
+              "actionNeed": "none",
+              "slots": {
+                "query": "ES8尾门手动开启方法",
+                "vehicleModel": "ES8"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": "ES8尾门手动开启方法",
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-vehicle-knowledge-002",
+      "category": "vehicle-knowledge",
+      "text": "蔚来的换电站是怎么工作的？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-vehicle-knowledge-002",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "解释换电站工作方式",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "knowledge-1",
+              "capability": "knowledge",
+              "intent": "vehicle.knowledge.query",
+              "speechAct": "question",
+              "knowledgeNeed": "manual",
+              "actionNeed": "none",
+              "slots": {
+                "query": "换电站工作原理"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": "换电站工作原理",
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-vehicle-knowledge-003",
+      "category": "vehicle-knowledge",
+      "text": "车窗防夹功能有什么作用？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-vehicle-knowledge-003",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "解释车窗防夹功能",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "knowledge-1",
+              "capability": "knowledge",
+              "intent": "vehicle.knowledge.query",
+              "speechAct": "question",
+              "knowledgeNeed": "manual",
+              "actionNeed": "none",
+              "slots": {
+                "query": "车窗防夹功能作用"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": "车窗防夹功能作用",
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-vehicle-knowledge-004",
+      "category": "vehicle-knowledge",
+      "text": "如何理解车辆的驻车挡？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-vehicle-knowledge-004",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "解释驻车挡",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "knowledge-1",
+              "capability": "knowledge",
+              "intent": "vehicle.knowledge.query",
+              "speechAct": "question",
+              "knowledgeNeed": "manual",
+              "actionNeed": "none",
+              "slots": {
+                "query": "驻车挡含义"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": "驻车挡含义",
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-vehicle-knowledge-005",
+      "category": "vehicle-knowledge",
+      "text": "空调自动模式会调节哪些项目？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-vehicle-knowledge-005",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "说明空调自动模式",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "knowledge-1",
+              "capability": "knowledge",
+              "intent": "vehicle.knowledge.query",
+              "speechAct": "question",
+              "knowledgeNeed": "manual",
+              "actionNeed": "none",
+              "slots": {
+                "query": "空调自动模式调节项目"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": "空调自动模式调节项目",
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-vehicle-knowledge-006",
+      "category": "vehicle-knowledge",
+      "text": "车辆当前的电量是多少？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-vehicle-knowledge-006",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "查询当前电量",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "state-1",
+              "capability": "knowledge",
+              "intent": "vehicle.state.query",
+              "speechAct": "question",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {
+                "stateFields": [
+                  "batteryPercent"
+                ]
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-vehicle-knowledge-007",
+      "category": "vehicle-knowledge",
+      "text": "现在的挡位和车速分别是多少？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-vehicle-knowledge-007",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "查询挡位和车速",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "state-1",
+              "capability": "knowledge",
+              "intent": "vehicle.state.query",
+              "speechAct": "question",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {
+                "stateFields": [
+                  "gear",
+                  "speedKph"
+                ]
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-vehicle-knowledge-008",
+      "category": "vehicle-knowledge",
+      "text": "后备厢现在是开着还是关着？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-vehicle-knowledge-008",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "查询尾门状态",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "state-1",
+              "capability": "knowledge",
+              "intent": "vehicle.state.query",
+              "speechAct": "question",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {
+                "stateFields": [
+                  "tailgateOpen"
+                ]
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-vehicle-knowledge-009",
+      "category": "vehicle-knowledge",
+      "text": "驾驶位靠背目前是什么角度？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-vehicle-knowledge-009",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "查询靠背角度",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "state-1",
+              "capability": "knowledge",
+              "intent": "vehicle.state.query",
+              "speechAct": "question",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {
+                "stateFields": [
+                  "driverBackrestAngle"
+                ]
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-vehicle-knowledge-010",
+      "category": "vehicle-knowledge",
+      "text": "车内温度和风量现在怎样？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-vehicle-knowledge-010",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "查询空调状态",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "state-1",
+              "capability": "knowledge",
+              "intent": "vehicle.state.query",
+              "speechAct": "question",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {
+                "stateFields": [
+                  "cabinTemperature",
+                  "airflow"
+                ]
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-vehicle-knowledge-011",
+      "category": "vehicle-knowledge",
+      "text": "我的 ES8 现在是否可以打开尾门？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-vehicle-knowledge-011",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "查询 ES8 尾门当前开启资格",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "knowledge-1",
+              "capability": "knowledge",
+              "intent": "vehicle.knowledge.query",
+              "speechAct": "question",
+              "knowledgeNeed": "manual",
+              "actionNeed": "none",
+              "slots": {
+                "query": "ES8 尾门现在是否可以打开？",
+                "vehicleModel": "ES8",
+                "eligibilityAction": "body.tailgate.open"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": "ES8 尾门现在是否可以打开？",
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-vehicle-knowledge-012",
+      "category": "vehicle-knowledge",
+      "text": "为什么倒车时要留意后方净空？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-vehicle-knowledge-012",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "解释后方净空意义",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "knowledge-1",
+              "capability": "knowledge",
+              "intent": "vehicle.knowledge.query",
+              "speechAct": "question",
+              "knowledgeNeed": "manual",
+              "actionNeed": "none",
+              "slots": {
+                "query": "后方净空安全意义"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": "后方净空安全意义",
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-vehicle-knowledge-013",
+      "category": "vehicle-knowledge",
+      "text": "能介绍一下儿童舒适模式吗？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-vehicle-knowledge-013",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "介绍儿童舒适模式",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "knowledge-1",
+              "capability": "knowledge",
+              "intent": "vehicle.knowledge.query",
+              "speechAct": "question",
+              "knowledgeNeed": "manual",
+              "actionNeed": "none",
+              "slots": {
+                "query": "儿童舒适模式"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": "儿童舒适模式",
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-vehicle-knowledge-014",
+      "category": "vehicle-knowledge",
+      "text": "怎样通过车机查看四个车窗的开度？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-vehicle-knowledge-014",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "说明查看车窗开度的方法",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "knowledge-1",
+              "capability": "knowledge",
+              "intent": "vehicle.knowledge.query",
+              "speechAct": "question",
+              "knowledgeNeed": "manual",
+              "actionNeed": "none",
+              "slots": {
+                "query": "车机查看四个车窗开度的方法"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": "车机查看四个车窗开度的方法",
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-vehicle-knowledge-015",
+      "category": "vehicle-knowledge",
+      "text": "为什么车内空调需要设置预设温度？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-vehicle-knowledge-015",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "解释温度预设用途",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "knowledge-1",
+              "capability": "knowledge",
+              "intent": "vehicle.knowledge.query",
+              "speechAct": "question",
+              "knowledgeNeed": "manual",
+              "actionNeed": "none",
+              "slots": {
+                "query": "空调预设温度用途"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": "空调预设温度用途",
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-complete-control-001",
+      "category": "complete-control",
+      "text": "把副驾车窗打开一半。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-complete-control-001",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "调节副驾车窗",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "body.window.setPosition",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "zone": "front_right",
+                "percent": 50
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-control",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-complete-control-002",
+      "category": "complete-control",
+      "text": "驾驶位车窗降到三分之一。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-complete-control-002",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "调节驾驶位车窗",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "body.window.setPosition",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "zone": "front_left",
+                "percent": 33
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-control",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-complete-control-003",
+      "category": "complete-control",
+      "text": "后排右侧窗户关到百分之十。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-complete-control-003",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "调节右后车窗",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "body.window.setPosition",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "zone": "rear_right",
+                "percent": 10
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-control",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-complete-control-004",
+      "category": "complete-control",
+      "text": "把左后车窗开到七成。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-complete-control-004",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "调节左后车窗",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "body.window.setPosition",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "zone": "rear_left",
+                "percent": 70
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-control",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-complete-control-005",
+      "category": "complete-control",
+      "text": "请打开后备厢。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-complete-control-005",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "打开尾门",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "body.tailgate.open",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "open": true
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-control",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-complete-control-006",
+      "category": "complete-control",
+      "text": "把尾门升起来，我要取行李。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-complete-control-006",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "为取行李打开尾门",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "body.tailgate.open",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "open": true
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-control",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-complete-control-007",
+      "category": "complete-control",
+      "text": "驾驶座靠背调到一百一十度。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-complete-control-007",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "调节驾驶座靠背",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "seat.driver.setBackrestAngle",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "seat": "driver",
+                "angle": 110
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-control",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-complete-control-008",
+      "category": "complete-control",
+      "text": "把主驾椅背放平到一百二十度。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-complete-control-008",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "后仰驾驶座靠背",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "seat.driver.setBackrestAngle",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "seat": "driver",
+                "angle": 120
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-control",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-complete-control-009",
+      "category": "complete-control",
+      "text": "空调设到二十二度。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-complete-control-009",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "设置空调温度",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "cabin.climate.setPreset",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "temperature": 22
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-control",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-complete-control-010",
+      "category": "complete-control",
+      "text": "车里有些冷，调成二十五摄氏度。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-complete-control-010",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "升高空调温度",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "cabin.climate.setPreset",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "temperature": 25
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-control",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-complete-control-011",
+      "category": "complete-control",
+      "text": "把副驾窗户降到百分之二十。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-complete-control-011",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "降低副驾车窗",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "body.window.setPosition",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "zone": "front_right",
+                "percent": 20
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-control",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-complete-control-012",
+      "category": "complete-control",
+      "text": "后备厢帮我打开到顶。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-complete-control-012",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "完全打开尾门",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "body.tailgate.open",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "open": true
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-control",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-complete-control-013",
+      "category": "complete-control",
+      "text": "把驾驶位座椅靠背调到九十五度。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-complete-control-013",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "前调驾驶座靠背",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "seat.driver.setBackrestAngle",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "seat": "driver",
+                "angle": 95
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-control",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-complete-control-014",
+      "category": "complete-control",
+      "text": "请把车内温度预设为十九度。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-complete-control-014",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "降低空调温度",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "cabin.climate.setPreset",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "temperature": 19
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-control",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-complete-control-015",
+      "category": "complete-control",
+      "text": "把右后窗开到百分之八十。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-complete-control-015",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "打开右后车窗",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "body.window.setPosition",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "zone": "rear_right",
+                "percent": 80
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-control",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-incomplete-control-001",
+      "category": "incomplete-control",
+      "text": "把车窗打开。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-incomplete-control-001",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "澄清车窗位置和开度",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "body.window.setPosition",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "clarify",
+              "slots": {},
+              "missingSlots": [
+                "zone",
+                "percent"
+              ],
+              "clarificationQuestion": "请告诉我要调节哪一扇车窗，以及车窗要调到多少开度。",
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "clarify",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-incomplete-control-002",
+      "category": "incomplete-control",
+      "text": "把右边窗户调小一点。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-incomplete-control-002",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "澄清右侧车窗和目标开度",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "body.window.setPosition",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "clarify",
+              "slots": {},
+              "missingSlots": [
+                "zone",
+                "percent"
+              ],
+              "clarificationQuestion": "请告诉我要调节哪一扇车窗，以及车窗要调到多少开度。",
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "clarify",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-incomplete-control-003",
+      "category": "incomplete-control",
+      "text": "后面窗户关一些。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-incomplete-control-003",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "澄清后排车窗和开度",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "body.window.setPosition",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "clarify",
+              "slots": {},
+              "missingSlots": [
+                "zone",
+                "percent"
+              ],
+              "clarificationQuestion": "请告诉我要调节哪一扇车窗，以及车窗要调到多少开度。",
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "clarify",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-incomplete-control-004",
+      "category": "incomplete-control",
+      "text": "后备厢帮我调一下。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-incomplete-control-004",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "澄清尾门开关目标",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "body.tailgate.open",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "clarify",
+              "slots": {},
+              "missingSlots": [
+                "open"
+              ],
+              "clarificationQuestion": "请告诉我尾门要打开还是关闭。",
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "clarify",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-incomplete-control-005",
+      "category": "incomplete-control",
+      "text": "把座椅调舒服一点。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-incomplete-control-005",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "澄清座位和靠背目标角度",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "seat.driver.setBackrestAngle",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "clarify",
+              "slots": {},
+              "missingSlots": [
+                "seat",
+                "angle"
+              ],
+              "clarificationQuestion": "请告诉我要调节哪个座椅，以及靠背要调到多少度。",
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "clarify",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-incomplete-control-006",
+      "category": "incomplete-control",
+      "text": "驾驶座椅靠背往后一点。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-incomplete-control-006",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "澄清靠背调整角度",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "seat.driver.setBackrestAngle",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "clarify",
+              "slots": {
+                "seat": "driver"
+              },
+              "missingSlots": [
+                "angle"
+              ],
+              "clarificationQuestion": "请告诉我靠背要调到多少度。",
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "clarify",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-incomplete-control-007",
+      "category": "incomplete-control",
+      "text": "空调调暖和些。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-incomplete-control-007",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "澄清目标温度",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "cabin.climate.setPreset",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "clarify",
+              "slots": {},
+              "missingSlots": [
+                "control"
+              ],
+              "clarificationQuestion": "请告诉我空调要设置温度、开关、模式还是风量。",
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "clarify",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-incomplete-control-008",
+      "category": "incomplete-control",
+      "text": "把车内降温。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-incomplete-control-008",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "澄清降温目标",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "cabin.climate.setPreset",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "clarify",
+              "slots": {},
+              "missingSlots": [
+                "control"
+              ],
+              "clarificationQuestion": "请告诉我空调要设置温度、开关、模式还是风量。",
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "clarify",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-incomplete-control-009",
+      "category": "incomplete-control",
+      "text": "窗户调成我平时的样子。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-incomplete-control-009",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "澄清车窗预期状态",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "body.window.setPosition",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "clarify",
+              "slots": {},
+              "missingSlots": [
+                "zone",
+                "percent"
+              ],
+              "clarificationQuestion": "请告诉我要调节哪一扇车窗，以及车窗要调到多少开度。",
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "clarify",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-incomplete-control-010",
+      "category": "incomplete-control",
+      "text": "帮我调一下主驾靠背。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-incomplete-control-010",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "澄清主驾靠背角度",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "seat.driver.setBackrestAngle",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "clarify",
+              "slots": {
+                "seat": "driver"
+              },
+              "missingSlots": [
+                "angle"
+              ],
+              "clarificationQuestion": "请告诉我靠背要调到多少度。",
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "clarify",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-services-001",
+      "category": "vehicle-services",
+      "text": "上海明天下午会下雨吗？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-services-001",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "查询上海天气",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "weather-1",
+              "capability": "weather",
+              "intent": "weather.query",
+              "speechAct": "question",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {
+                "location": "上海",
+                "timeRange": "tomorrow_afternoon"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "task",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-services-002",
+      "category": "vehicle-services",
+      "text": "北京周末的气温大概多少？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-services-002",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "查询北京周末天气",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "weather-1",
+              "capability": "weather",
+              "intent": "weather.query",
+              "speechAct": "question",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {
+                "location": "北京",
+                "timeRange": "this_weekend"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "task",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-services-003",
+      "category": "vehicle-services",
+      "text": "导航到最近的换电站。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-services-003",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "寻找最近换电站",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "navigation-1",
+              "capability": "navigation",
+              "intent": "energy.findSwapStation",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "destination": "最近换电站"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "respond",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-services-004",
+      "category": "vehicle-services",
+      "text": "从这里导航到上海虹桥火车站。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-services-004",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "规划前往虹桥站路线",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "navigation-1",
+              "capability": "navigation",
+              "intent": "navigation.planRoute",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "origin": "当前位置",
+                "destination": "上海虹桥火车站"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "respond",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-services-005",
+      "category": "vehicle-services",
+      "text": "带我去公司，地址是滨江大道88号。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-services-005",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "规划前往公司路线",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "navigation-1",
+              "capability": "navigation",
+              "intent": "navigation.planRoute",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "origin": "当前位置",
+                "destination": "滨江大道88号"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "respond",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-services-006",
+      "category": "vehicle-services",
+      "text": "播放周杰伦的晴天。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-services-006",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "播放指定歌曲",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "media-1",
+              "capability": "media",
+              "intent": "media.play",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "query": "周杰伦 晴天"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "respond",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-services-007",
+      "category": "vehicle-services",
+      "text": "来一张适合夜路的爵士乐歌单。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-services-007",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "播放夜路爵士乐",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "media-1",
+              "capability": "media",
+              "intent": "media.play",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "query": "夜路 爵士乐歌单"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "respond",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-services-008",
+      "category": "vehicle-services",
+      "text": "给妈妈打电话。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-services-008",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "呼叫妈妈",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "phone-1",
+              "capability": "phone",
+              "intent": "phone.call",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "contact": "妈妈"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "respond",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-services-009",
+      "category": "vehicle-services",
+      "text": "拨通李娜的手机。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-services-009",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "呼叫李娜",
+            "need": "none"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "phone-1",
+              "capability": "phone",
+              "intent": "phone.call",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "contact": "李娜"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "respond",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-services-010",
+      "category": "vehicle-services",
+      "text": "苏州今晚需要带伞吗？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-services-010",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "查询苏州晚间天气",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "weather-1",
+              "capability": "weather",
+              "intent": "weather.query",
+              "speechAct": "question",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {
+                "location": "苏州",
+                "timeRange": "tonight"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "task",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-non-execution-001",
+      "category": "non-execution",
+      "text": "副驾车窗已经开到一半了。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-non-execution-001",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "确认车窗状态陈述",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "state-1",
+              "capability": "knowledge",
+              "intent": "vehicle.state.query",
+              "speechAct": "report",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {
+                "stateFields": [
+                  "windowPositionPercentByZone"
+                ]
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-non-execution-002",
+      "category": "non-execution",
+      "text": "如果打开后备厢会不会挡住后车？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-non-execution-002",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "回答尾门假设问题",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "knowledge-1",
+              "capability": "knowledge",
+              "intent": "vehicle.knowledge.query",
+              "speechAct": "question",
+              "knowledgeNeed": "manual",
+              "actionNeed": "none",
+              "slots": {
+                "query": "尾门开启安全注意事项"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": "尾门开启安全注意事项",
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-non-execution-003",
+      "category": "non-execution",
+      "text": "不要打开后备厢。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-non-execution-003",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "确认尾门操作被否定",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "body.tailgate.open",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {
+                "open": true
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-non-execution-004",
+      "category": "non-execution",
+      "text": "不用调空调，我只是觉得有点闷。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-non-execution-004",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "确认空调操作被否定",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "cabin.climate.setPreset",
+              "speechAct": "complaint",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {},
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-non-execution-005",
+      "category": "non-execution",
+      "text": "别再把驾驶位座椅往后调了。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-non-execution-005",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "确认座椅操作被否定",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "seat.driver.setBackrestAngle",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {
+                "seat": "driver"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "chat",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-non-execution-006",
+      "category": "non-execution",
+      "text": "取消刚才去机场的导航。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-non-execution-006",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "取消前往机场的导航",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "navigation-1",
+              "capability": "navigation",
+              "intent": "navigation.planRoute",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {
+                "destination": "机场"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "respond",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-non-execution-007",
+      "category": "non-execution",
+      "text": "要是把车窗全开，雨会飘进来吗？",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-non-execution-007",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "回答车窗假设问题",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "knowledge-1",
+              "capability": "knowledge",
+              "intent": "vehicle.knowledge.query",
+              "speechAct": "question",
+              "knowledgeNeed": "manual",
+              "actionNeed": "none",
+              "slots": {
+                "query": "雨天全开车窗影响"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": "雨天全开车窗影响",
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-non-execution-008",
+      "category": "non-execution",
+      "text": "这辆车的尾门刚刚已经关好了。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-non-execution-008",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "确认尾门状态陈述",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "state-1",
+              "capability": "knowledge",
+              "intent": "vehicle.state.query",
+              "speechAct": "report",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {
+                "stateFields": [
+                  "tailgateOpen"
+                ]
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "vehicle-knowledge",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-non-execution-009",
+      "category": "non-execution",
+      "text": "不必给王磊打电话，我自己联系他。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-non-execution-009",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "取消呼叫王磊",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "phone-1",
+              "capability": "phone",
+              "intent": "phone.call",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {
+                "contact": "王磊"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "respond",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-non-execution-010",
+      "category": "non-execution",
+      "text": "关闭碰撞预警和安全提醒。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-non-execution-010",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "拒绝关闭安全保护",
+            "need": "explain"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "safety-1",
+              "capability": "control",
+              "intent": "safety.reject",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {},
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "respond",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-mixed-001",
+      "category": "mixed-multi-intent",
+      "text": "今天心情不错，把副驾车窗打开一半。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-mixed-001",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "回应心情并调节副驾车窗",
+            "need": "social"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "body.window.setPosition",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "zone": "front_right",
+                "percent": 50
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "task",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-mixed-002",
+      "category": "mixed-multi-intent",
+      "text": "谢谢你，顺便把车内调到二十三度。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-mixed-002",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "回应感谢并设置空调",
+            "need": "social"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "cabin.climate.setPreset",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "temperature": 23
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "task",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-mixed-003",
+      "category": "mixed-multi-intent",
+      "text": "我有点累，帮我把驾驶座靠背调到一百一十五度。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-mixed-003",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "回应疲惫并调节靠背",
+            "need": "social"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "seat.driver.setBackrestAngle",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "seat": "driver",
+                "angle": 115
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "task",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-mixed-004",
+      "category": "mixed-multi-intent",
+      "text": "今天天气真好，打开后备厢让我拿野餐垫。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-mixed-004",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "回应天气并打开尾门",
+            "need": "social"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "body.tailgate.open",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "open": true
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "task",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-mixed-005",
+      "category": "mixed-multi-intent",
+      "text": "先告诉我车内温度和电量，再播放轻音乐。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-mixed-005",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "读取状态并播放轻音乐",
+            "need": "social"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "state-1",
+              "capability": "knowledge",
+              "intent": "vehicle.state.query",
+              "speechAct": "question",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {
+                "stateFields": [
+                  "cabinTemperature",
+                  "batteryPercent"
+                ]
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            },
+            {
+              "frameId": "media-1",
+              "capability": "media",
+              "intent": "media.play",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "query": "轻音乐"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "task",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-mixed-006",
+      "category": "mixed-multi-intent",
+      "text": "查一下苏州明天是否下雨，再导航到观前街。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-mixed-006",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "查询天气并规划路线",
+            "need": "social"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "weather-1",
+              "capability": "weather",
+              "intent": "weather.query",
+              "speechAct": "question",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {
+                "location": "苏州",
+                "timeRange": "tomorrow"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            },
+            {
+              "frameId": "navigation-1",
+              "capability": "navigation",
+              "intent": "navigation.planRoute",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "origin": "当前位置",
+                "destination": "观前街"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "task",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-mixed-007",
+      "category": "mixed-multi-intent",
+      "text": "后备厢打开，副驾车窗也降到三十。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-mixed-007",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "依次执行尾门和车窗操作",
+            "need": "social"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "body.tailgate.open",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "open": true
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            },
+            {
+              "frameId": "control-2",
+              "capability": "control",
+              "intent": "body.window.setPosition",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "zone": "front_right",
+                "percent": 30
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "task",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-mixed-008",
+      "category": "mixed-multi-intent",
+      "text": "给李娜打电话，然后把空调设为二十一度。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-mixed-008",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "依次呼叫联系人和设置空调",
+            "need": "social"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "phone-1",
+              "capability": "phone",
+              "intent": "phone.call",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "contact": "李娜"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            },
+            {
+              "frameId": "control-1",
+              "capability": "control",
+              "intent": "cabin.climate.setPreset",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "temperature": 21
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "task",
+        "disposition": "execute",
+        "vehicleWriteCount": 1
+      }
+    },
+    {
+      "id": "slu-mixed-009",
+      "category": "mixed-multi-intent",
+      "text": "我想听歌，也想知道现在车速。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-mixed-009",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "读取车速并播放音乐",
+            "need": "social"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "state-1",
+              "capability": "knowledge",
+              "intent": "vehicle.state.query",
+              "speechAct": "question",
+              "knowledgeNeed": "none",
+              "actionNeed": "none",
+              "slots": {
+                "stateFields": [
+                  "speedKph"
+                ]
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            },
+            {
+              "frameId": "media-1",
+              "capability": "media",
+              "intent": "media.play",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "query": "音乐"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": "task",
+        "disposition": "execute",
+        "vehicleWriteCount": 0
+      }
+    },
+    {
+      "id": "slu-mixed-010",
+      "category": "mixed-multi-intent",
+      "text": "说个笑话，再帮我导航到人民广场。",
+      "expected": {
+        "semanticEnvelope": {
+          "contractVersion": "nio-vehicle-slu-contract@2.0.0",
+          "requestId": "fixture:slu-mixed-010",
+          "domain": "vehicle",
+          "conversationGoal": {
+            "summary": "讲笑话并规划路线",
+            "need": "social"
+          },
+          "vehicleFrames": [
+            {
+              "frameId": "navigation-1",
+              "capability": "navigation",
+              "intent": "navigation.planRoute",
+              "speechAct": "command",
+              "knowledgeNeed": "none",
+              "actionNeed": "execute",
+              "slots": {
+                "origin": "当前位置",
+                "destination": "人民广场"
+              },
+              "missingSlots": [],
+              "clarificationQuestion": null,
+              "standaloneQuery": null,
+              "confidence": 1
+            }
+          ],
+          "domainConfidence": 1
+        },
+        "routeId": null,
+        "disposition": "respond",
+        "vehicleWriteCount": 0
+      }
+    }
+  ]
+}

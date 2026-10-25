@@ -1,0 +1,35 @@
+{
+  "version": "manual-evidence-eligibility-golden-1.0.0",
+  "policyId": "nio-manual-evidence-eligibility",
+  "policyVersion": "1.1.0",
+  "sourceId": "nio-es8-user-manual-2026",
+  "positiveGolden": "es8-manual-rag-golden-v1.json",
+  "calibration": {
+    "id": "nio-es8-manual-evidence-eligibility-calibration@1.0.0",
+    "registry": "nio-manual-corpus-registry@1.0.0",
+    "method": "12 authoritative positive queries plus explicit negative/OOD queries; keyword candidates use real corpus scores, vector boundary uses labeled injectable fixtures until online bge-m3 acceptance",
+    "selectedThresholds": {
+      "keyword-fallback": { "minScore": 70, "minCoverage": 0.16, "minEntityCoverage": 0.34 },
+      "vector-bge-m3": { "minScore": 0.42, "minCoverage": 0.12, "minEntityCoverage": 0.34 },
+      "default-untrusted-adapter": { "minCoverage": 0.12, "minEntityCoverage": 0.5 }
+    }
+  },
+  "negativeCases": [
+    { "id": "ood-weather", "query": "今天杭州天气怎么样？", "expectedReason": "not-answerable" },
+    { "id": "ood-stock", "query": "蔚来股票现在多少钱？", "expectedReason": "not-answerable" },
+    { "id": "ood-poi", "query": "附近换电站排队多久？", "expectedReason": "not-answerable" },
+    { "id": "other-model-es6", "query": "ES6 的尾门怎么应急打开？", "expectedReason": "not-applicable" },
+    {
+      "id": "other-model-et5",
+      "query": "ET5 车窗防夹怎么设置？",
+      "expectedReason": "corpus-artifact-unavailable",
+      "expectedCorpusId": "nio-et5-user-manual-placeholder",
+      "expectedCorpusArtifactStatus": "unavailable",
+      "expectedGeneratedRows": 0,
+      "expectedChunkCount": 0
+    },
+    { "id": "unknown-answer", "query": "ES8 能不能在水上航行？", "expectedReason": "low-confidence" },
+    { "id": "non-vehicle", "query": "红烧肉应该怎么做？", "expectedReason": "low-confidence" },
+    { "id": "gibberish", "query": "啊啊啊测试测试", "expectedReason": "not-answerable" }
+  ]
+}

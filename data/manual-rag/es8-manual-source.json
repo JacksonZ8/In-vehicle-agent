@@ -1,0 +1,18 @@
+{
+  "chunkingVersion": "manual-rag-v1-page-heading-window-900-overlap-100",
+  "contentDigest": "sha256:bec6a67e8012ca81e006a07296b430e4107823a281772f2418664458ee40c590",
+  "extractionTool": "pdfplumber 0.11.9 via Codex bundled Python",
+  "fileSizeBytes": 43454358,
+  "generatedAt": "2026-07-07T12:17:32.407344+00:00",
+  "pageCount": 480,
+  "pdfMetadata": {
+    "CreationDate": "D:20260618073432Z00'00'",
+    "Creator": "AH Formatter V7.1 MR1 for Linux64 : 7.1.2.49520 (2021-03-15T13:01+09)",
+    "ModDate": "D:20260618073432Z00'00'",
+    "Producer": "macOS 版本26.2（版号25C56） Quartz PDFContext"
+  },
+  "sourceFile": "ES8用户手册.pdf",
+  "sourceId": "nio-es8-user-manual-2026",
+  "sourceVersion": "2026",
+  "title": "蔚来 ES8 用户手册"
+}

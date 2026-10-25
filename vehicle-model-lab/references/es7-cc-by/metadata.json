@@ -1,0 +1,80 @@
+{
+  "contract": "sketchfab-reference-metadata@0.1.0",
+  "retrievedAt": "2026-08-23",
+  "downloadStatus": "downloaded-original-package",
+  "intendedUse": "complete ES7 animated derivative asset for a personal non-commercial prototype",
+  "model": {
+    "uid": "4d9c574b84514b21ac783aca550793fe",
+    "name": "Nio ES7 2023",
+    "author": "ItsDiyor",
+    "pageUrl": "https://sketchfab.com/3d-models/nio-es7-2023-4d9c574b84514b21ac783aca550793fe",
+    "publishedAt": "2025-05-12",
+    "isDownloadable": true,
+    "vertexCount": 330355,
+    "faceCount": 588958,
+    "animationCount": 0
+  },
+  "officialDimensions": {
+    "source": "https://www.nio.com/es7",
+    "lengthMm": 4912,
+    "widthMm": 1987,
+    "heightMm": 1720,
+    "wheelbaseMm": 2960,
+    "normalizationBasis": "wheelbase"
+  },
+  "license": {
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution 4.0 International",
+    "slug": "by",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "requirements": "Author must be credited. Commercial use is allowed."
+  },
+  "package": {
+    "downloadedAt": "2026-08-23",
+    "archive": "nio-es7-2023.zip",
+    "archiveSizeBytes": 18721295,
+    "sha256": "d25b1ecae9011a654611c1fbed6604d60ffb534cb841f559d8ea4ec3897b8bab",
+    "originalFormat": "glb",
+    "originalFile": "source/Untitled.glb",
+    "originalFileSizeBytes": 18269220,
+    "originalFileSha256": "b48c51f8735c30262604617c9df73ec134734f3b558896f3647c25e51eb04a8d",
+    "textureCount": 8,
+    "downloadMethod": "authenticated Sketchfab download UI"
+  },
+  "blenderAudit": {
+    "scene": "source/es7-reference.blend",
+    "meshObjects": 47,
+    "objects": 96,
+    "importedVertices": 353360,
+    "triangles": 588958,
+    "materials": 56,
+    "images": 9,
+    "sourceBounds": {
+      "widthX": 1.540993,
+      "lengthY": 3.394308,
+      "heightZ": 1.217263
+    },
+    "componentEvidence": [
+      "four separated door meshes",
+      "four separated door-glass meshes",
+      "four separated door-handle meshes",
+      "four wheels and four brake calipers",
+      "separated trunk mesh"
+    ]
+  },
+  "incorporation": {
+    "geometry": [
+      "all 47 imported ES7 mesh objects as the visual base of the animated derivative",
+      "working-copy component separation and pivot hierarchy derived from the imported geometry"
+    ],
+    "materials": [
+      "all 56 imported source materials, subject to later component-specific duplication"
+    ],
+    "textures": [
+      "all 8 source textures packaged with the authenticated download"
+    ],
+    "status": "full-es7-asset-authorized-for-animated-derivative",
+    "workingMaster": "source/nio-es7-animation-master.blend",
+    "historicalReferenceStudy": "A dimension-calibrated copy remains under REF_ES7/ES7_ES8_DIMENSION_STUDY in the stopped ES8 experiment. It stays hidden and export-forbidden."
+  }
+}

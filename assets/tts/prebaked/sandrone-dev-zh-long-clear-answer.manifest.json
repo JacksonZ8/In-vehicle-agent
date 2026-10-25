@@ -1,0 +1,31 @@
+{
+  "assetKind": "prebaked-neutral-waiting-bridge",
+  "catalogVersion": "nio-prebaked-waiting-bridge-catalog@1.0.0",
+  "assetId": "long-clear-answer",
+  "text": "我来给你一个清晰的回答",
+  "tier": "long",
+  "answerCharacterRange": {
+    "minInclusive": 101,
+    "maxInclusive": 180
+  },
+  "language": "zh",
+  "profileId": "sandrone-dev",
+  "synthesisProfileId": "sandrone-dev-gptsovits-cpu-balanced@1.0.0",
+  "provider": "GPT-SoVITS",
+  "licenseBoundary": "local-non-commercial-testing-only",
+  "generationMethod": "local GPT-SoVITS /tts using the resolved sandrone-dev profile; generated offline before UI playback",
+  "provenance": "prebaked local development-test asset; not real-time progress and not derived from user, vehicle, or NIO production voice data",
+  "usageBoundary": "Development testing only. This file must not be presented as a production-authorized voice, a real NIO voice, or a user/vehicle recording.",
+  "fileName": "sandrone-dev-zh-long-clear-answer.wav",
+  "bytes": 154924,
+  "sha256": "ad3f49d725de63b5c1dca89dd46669e51eef013275b14cef027b93721e59dbcb",
+  "wav": {
+    "audioFormat": 1,
+    "channels": 1,
+    "sampleRateHz": 32000,
+    "byteRate": 64000,
+    "bitsPerSample": 16,
+    "dataBytes": 154880,
+    "durationMs": 2420
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "nio-es6-official-seed",
+  "vehicle": {
+    "brand": "NIO",
+    "model": "ES6",
+    "marketName": "NIO ES6"
+  },
+  "source": {
+    "name": "NIO ES6 official model page",
+    "url": "https://www.nio.com/es6",
+    "type": "official-model-page"
+  },
+  "usageBoundary": {
+    "label": "official-model-page-seed",
+    "summary": "This file is a local vehicle knowledge seed compiled from the public NIO ES6 official model page. It is not a complete official user manual, owner manual, service manual, maintenance guide, diagnostic guide, or real vehicle service.",
+    "safetyNoticeZh": "当前未接入完整官方用户手册/真实车辆服务，仅基于公开官方车型资料提供一般说明。涉及具体操作、安全限制、故障处理、维修保养、法规或真实车辆执行时，请以车机提示、完整官方用户手册和官方服务为准。",
+    "allowedUse": [
+      "general product feature explanation",
+      "high-level cabin, display, seat, storage, safety, and battery boundary answers",
+      "seed context for local vehicle knowledge Q&A"
+    ],
+    "notAllowedUse": [
+      "step-by-step operational instructions that require the full user manual",
+      "repair, maintenance, diagnostics, warranty, or legal guidance",
+      "claims about real vehicle state or execution"
+    ]
+  },
+  "updatedAt": "2026-07-02",
+  "language": "zh-CN",
+  "sections": [
+    {
+      "id": "positioning",
+      "title": "车型定位",
+      "summary": "NIO ES6 是蔚来的智能电动 SUV 车型，官方车型页重点展示其智能座舱、舒适空间、性能与安全、电池与续航等产品特性。"
+    },
+    {
+      "id": "nomi-cockpit",
+      "title": "NOMI Mate 3.0 与智能座舱",
+      "summary": "官方车型资料提到 NOMI Mate 3.0 和智能座舱体验，可作为语音交互、车内信息显示和座舱体验的一般介绍来源。"
+    },
+    {
+      "id": "displays",
+      "title": "座舱显示",
+      "summary": "官方车型资料包含 15.6 英寸 AMOLED 中控屏、19.4 英寸 W-HUD 和 6.6 英寸后排控制屏等显示配置，可用于回答屏幕和显示系统的高层介绍。"
+    },
+    {
+      "id": "seats-storage",
+      "title": "座椅与后备箱",
+      "summary": "官方车型资料介绍了座椅舒适性、乘坐空间与后备箱/储物相关能力。具体调节步骤、载物限制和真实开启状态仍需完整用户手册或车辆服务确认。"
+    },
+    {
+      "id": "climate-comfort",
+      "title": "空调、香氛与空气质量",
+      "summary": "官方车型资料包含 3 区空调、香氛和空气质量相关体验，可用于一般性说明座舱舒适与空气管理能力。具体设置路径、滤芯维护或空气质量实时值不在本种子源范围内。"
+    },
+    {
+      "id": "child-safety",
+      "title": "儿童相关提醒",
+      "summary": "官方车型资料提到儿童监测、儿童锁、防夹提醒和儿童座椅温度提醒等儿童相关安全与舒适功能。涉及儿童安全、真实提醒触发条件或操作限制时必须提示当前不是完整用户手册。"
+    },
+    {
+      "id": "performance-safety",
+      "title": "Performance and Safety",
+      "summary": "官方车型资料包含性能与安全相关卖点，可用于高层介绍。驾驶辅助、安全边界、制动、碰撞、维修或故障处理必须以完整官方资料和真实车辆状态为准。"
+    },
+    {
+      "id": "battery-range",
+      "title": "CLTC 续航与电池边界",
+      "summary": "官方车型资料涉及 CLTC 续航以及 75 kWh、100 kWh、150 kWh 电池包边界。续航为工况信息，真实续航会受温度、路况、车速、载重、驾驶方式和电池状态影响。"
+    }
+  ],
+  "qaSeeds": [
+    {
+      "questionPatterns": ["ES6 是什么车", "介绍一下 ES6", "这辆车有什么特点"],
+      "answer": "NIO ES6 是蔚来的智能电动 SUV。当前本地资料来自 NIO ES6 官方车型页，能介绍智能座舱、屏幕、座椅空间、后备箱、舒适配置、儿童相关提醒、性能安全和电池续航边界，但不是完整官方用户手册。"
+    },
+    {
+      "questionPatterns": ["中控屏多大", "屏幕配置", "HUD", "后排控制屏"],
+      "answer": "官方车型资料提到 ES6 配备 15.6 英寸 AMOLED 中控屏、19.4 英寸 W-HUD 和 6.6 英寸后排控制屏。具体显示设置路径和驾驶时显示限制需要以完整官方用户手册和车机实际版本为准。"
+    },
+    {
+      "questionPatterns": ["NOMI", "NOMI Mate", "智能座舱"],
+      "answer": "官方车型资料提到 NOMI Mate 3.0 与智能座舱体验，可用于介绍车内语音交互和座舱信息体验。当前未接入真实车辆服务，不能代表实际账号、车机版本或车辆状态。"
+    },
+    {
+      "questionPatterns": ["空调", "香氛", "空气质量", "三区空调"],
+      "answer": "官方车型资料包含 3 区空调、香氛和空气质量相关体验，可作为座舱舒适功能的一般说明。具体设置步骤、维护项目和实时空气质量数据不在当前种子源范围内。"
+    },
+    {
+      "questionPatterns": ["儿童", "儿童锁", "防夹", "儿童座椅", "儿童监测"],
+      "answer": "官方车型资料提到儿童监测、儿童锁、防夹提醒和儿童座椅温度提醒等功能。涉及儿童安全、真实提醒触发条件、开关步骤或紧急处理时，当前未接入完整官方用户手册/真实车辆服务，仅能提供一般说明。"
+    },
+    {
+      "questionPatterns": ["续航", "CLTC", "75 kWh", "100 kWh", "150 kWh", "电池"],
+      "answer": "官方车型资料涉及 CLTC 续航与 75 kWh、100 kWh、150 kWh 电池包边界。CLTC 是工况续航信息，真实续航会受温度、路况、车速、载重、驾驶方式和电池状态影响。"
+    },
+    {
+      "questionPatterns": ["后备箱", "尾门", "座椅", "储物"],
+      "answer": "官方车型资料可支持对座椅舒适性、乘坐空间和后备箱/储物能力的一般介绍。具体开启步骤、载物限制、防夹条件或真实执行结果需要完整官方用户手册和真实车辆服务确认。"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NIO ES7 Component Lab</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="lab-shell">
+      <section class="viewport-panel" aria-label="ES7 3D 预览">
+        <canvas id="vehicle-canvas"></canvas>
+        <header class="hero-copy">
+          <p class="eyebrow">NIO ES7 · COMPONENT LAB</p>
+          <h1>整车组件动效验证台</h1>
+          <p id="load-status">正在载入 Stage C 资产…</p>
+        </header>
+        <div class="viewport-hint">拖拽旋转 · 滚轮缩放 · 右键平移</div>
+      </section>
+
+      <aside class="control-panel">
+        <section class="metrics" aria-label="资产指标">
+          <div><span>加载耗时</span><strong id="metric-load">—</strong></div>
+          <div><span>GLB 大小</span><strong id="metric-size">—</strong></div>
+          <div><span>三角面</span><strong id="metric-triangles">—</strong></div>
+          <div><span>材质 / 纹理</span><strong id="metric-materials">—</strong></div>
+        </section>
+
+        <section class="control-section seat-section">
+          <div class="section-title"><h2>座椅调节</h2><span>DRIVER · 4 AXES</span></div>
+          <button id="seat-focus-toggle" class="seat-focus-toggle" type="button" disabled>进入四座聚焦</button>
+          <div id="seat-controls" class="seat-controls" aria-label="主驾座椅连续调节">
+            <label>
+              <span>前后位置 <output data-seat-output="driver_seat_fore_aft">0 cm</output></span>
+              <input type="range" data-seat-clip="driver_seat_fore_aft" disabled />
+            </label>
+            <label>
+              <span>座椅高度 <output data-seat-output="driver_seat_height">0 cm</output></span>
+              <input type="range" data-seat-clip="driver_seat_height" disabled />
+            </label>
+            <label>
+              <span>靠背角度 <output data-seat-output="driver_seat_backrest_recline">0°</output></span>
+              <input type="range" data-seat-clip="driver_seat_backrest_recline" disabled />
+            </label>
+            <label>
+              <span>头枕高度 <output data-seat-output="driver_seat_headrest_height">0 cm</output></span>
+              <input type="range" data-seat-clip="driver_seat_headrest_height" disabled />
+            </label>
+          </div>
+          <button id="seat-reset" class="seat-reset" type="button" disabled>一键复位</button>
+        </section>
+
+        <section class="control-section">
+          <div class="section-title"><h2>机械动作</h2><span id="mechanical-count">— clips</span></div>
+          <div id="mechanical-controls" class="control-grid"></div>
+        </section>
+
+        <section class="control-section">
+          <div class="section-title"><h2>灯光控制</h2><span id="light-count">— states</span></div>
+          <div id="light-controls" class="control-grid light-grid"></div>
+        </section>
+
+        <section class="activity-card" aria-live="polite">
+          <span>当前状态</span>
+          <strong id="activity-status">等待资产</strong>
+        </section>
+
+        <footer>
+          <span>Model by ItsDiyor · CC BY 4.0</span>
+          <a href="https://sketchfab.com/3d-models/nio-es7-2023-4d9c574b84514b21ac783aca550793fe" target="_blank" rel="noreferrer">来源</a>
+        </footer>
+      </aside>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

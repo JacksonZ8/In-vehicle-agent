@@ -1,0 +1,37 @@
+{
+  "type": "module",
+  "scripts": {
+    "vehicle:inspect": "node vehicle-model-lab/verify/inspect-es7-glb-components.mjs && node vehicle-model-lab/verify/inspect-es7-glb-animations.mjs",
+    "vehicle:verify": "node vehicle-model-lab/verify/verify-es7-schema.mjs && node vehicle-model-lab/verify/inspect-es7-glb-components.mjs && node vehicle-model-lab/verify/inspect-es7-glb-animations.mjs && node vehicle-model-lab/verify/verify-es7-attribution.mjs && node vehicle-model-lab/verify/verify-es7-viewer.mjs && node vehicle-model-lab/verify/test-es7-verifier-failures.mjs",
+    "vehicle:verify:main": "node scripts/verify/verify-es7-agent-state-animation-migration.mjs",
+    "verify:semantic": "node scripts/lib/run-regression-group.mjs semantic",
+    "verify:runtime-safety": "node scripts/lib/run-regression-group.mjs runtime-safety",
+    "verify:manual": "node scripts/lib/run-regression-group.mjs manual",
+    "verify:voice": "node scripts/lib/run-regression-group.mjs voice",
+    "verify:hmi": "node scripts/lib/run-regression-group.mjs hmi",
+    "verify:online": "node scripts/lib/run-regression-group.mjs online",
+    "verify:offline": "npm run verify:semantic && npm run verify:runtime-safety && npm run verify:manual && npm run verify:voice && npm run test:unit",
+    "test:unit": "node --test src/runtime/run-event-model-telemetry.test.mjs src/server/model-providers/vehicle-slu-provider-compat.test.mjs",
+    "verify:model-provider": "node scripts/verify/verify-model-task-profile.mjs && node scripts/verify/verify-model-provider-config.mjs && node scripts/verify/verify-ollama-model-provider.mjs && node scripts/verify/verify-dashscope-model-provider.mjs && node scripts/verify/verify-model-provider-routing.mjs && node scripts/verify/verify-model-provider-fallback.mjs && node scripts/verify/verify-model-provider-browser-profile.mjs && node scripts/verify/verify-model-provider-secret-boundary.mjs",
+    "verify:dashscope:live": "node scripts/verify/verify-dashscope-live-smoke.mjs",
+    "benchmark:vehicle-slu": "node scripts/benchmarks/evaluate-vehicle-slu-models.mjs",
+    "benchmark:b4": "node scripts/benchmarks/run-b4-baseline.mjs --profile warm-baseline",
+    "benchmark:b4:cold": "node scripts/benchmarks/run-b4-baseline.mjs --profile cold-diagnostic",
+    "benchmark:b4:faults": "node scripts/benchmarks/run-b4-baseline.mjs --profile stability-faults",
+    "benchmark:b4:voice": "node scripts/benchmarks/run-b4-baseline.mjs --profile voice-browser",
+    "verify:b4:offline": "node scripts/verify/verify-b4-benchmark-contract.mjs && node scripts/verify/verify-b4-metric-projector.mjs && node scripts/verify/verify-b4-report-builder.mjs && node scripts/verify/verify-b4-baseline-runner.mjs && node scripts/verify/verify-b4-fault-profile.mjs && node scripts/verify/verify-b3-b4-cloud-call-budget.mjs && node scripts/verify/verify-hmi-b4-baseline.mjs --static-only",
+    "verify:groups": "node scripts/lib/verify-regression-groups.mjs",
+    "verify:layout": "node scripts/verify/verify-project-layout.mjs",
+    "verify:readiness": "node scripts/verify/verify-demo-readiness-contract.mjs",
+    "start": "bash scripts/services/start-nio-with-gptsovits.sh",
+    "setup:local-voice": "bash scripts/services/install-local-voice-model.sh"
+  },
+  "devDependencies": {
+    "@gltf-transform/cli": "^4.4.1"
+  },
+  "dependencies": {
+    "sherpa-onnx-darwin-arm64": "1.13.6",
+    "sherpa-onnx-node": "1.13.6",
+    "ws": "8.21.3"
+  }
+}

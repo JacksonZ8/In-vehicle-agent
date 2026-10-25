@@ -1,0 +1,1793 @@
+{
+  "contract": "nio-es7-seat-component-audit@0.1.0",
+  "source": "source/nio-es7-animation-master.blend",
+  "sourceObject": "es7_work__ES7_Body_C",
+  "coordinateSystem": {
+    "forward": "+X",
+    "left": "+Y",
+    "up": "+Z"
+  },
+  "candidateCount": 48,
+  "candidates": [
+    {
+      "rootVertex": 6800,
+      "vertices": 1871,
+      "polygons": 3494,
+      "triangles": 3494,
+      "worldBounds": {
+        "minimum": [
+          0.386961,
+          0.207061,
+          1.062056
+        ],
+        "maximum": [
+          0.559527,
+          0.583214,
+          1.391744
+        ],
+        "center": [
+          0.473244,
+          0.395137,
+          1.2269
+        ],
+        "size": [
+          0.172566,
+          0.376153,
+          0.329688
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_翻毛皮",
+          "polygons": 3494
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-000"
+    },
+    {
+      "rootVertex": 25921,
+      "vertices": 1387,
+      "polygons": 2462,
+      "triangles": 2462,
+      "worldBounds": {
+        "minimum": [
+          0.39747,
+          0.219397,
+          1.102927
+        ],
+        "maximum": [
+          0.56207,
+          0.570877,
+          1.364565
+        ],
+        "center": [
+          0.47977,
+          0.395137,
+          1.233746
+        ],
+        "size": [
+          0.164601,
+          0.35148,
+          0.261639
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 2462
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-002"
+    },
+    {
+      "rootVertex": 28440,
+      "vertices": 687,
+      "polygons": 1283,
+      "triangles": 1283,
+      "worldBounds": {
+        "minimum": [
+          -0.062933,
+          0.226812,
+          0.736868
+        ],
+        "maximum": [
+          0.269587,
+          0.563518,
+          0.825752
+        ],
+        "center": [
+          0.103327,
+          0.395165,
+          0.78131
+        ],
+        "size": [
+          0.33252,
+          0.336707,
+          0.088885
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 1283
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-010"
+    },
+    {
+      "rootVertex": 27784,
+      "vertices": 680,
+      "polygons": 1272,
+      "triangles": 1272,
+      "worldBounds": {
+        "minimum": [
+          -0.062933,
+          -0.563382,
+          0.736868
+        ],
+        "maximum": [
+          0.269585,
+          -0.226765,
+          0.825764
+        ],
+        "center": [
+          0.103326,
+          -0.395073,
+          0.781316
+        ],
+        "size": [
+          0.332518,
+          0.336617,
+          0.088896
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 1272
+        }
+      ],
+      "candidateRegion": "front_right",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-011"
+    },
+    {
+      "rootVertex": 9512,
+      "vertices": 492,
+      "polygons": 965,
+      "triangles": 965,
+      "worldBounds": {
+        "minimum": [
+          0.54451,
+          0.203186,
+          1.135098
+        ],
+        "maximum": [
+          0.623845,
+          0.322342,
+          1.233229
+        ],
+        "center": [
+          0.584178,
+          0.262764,
+          1.184164
+        ],
+        "size": [
+          0.079335,
+          0.119156,
+          0.09813
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_翻毛皮",
+          "polygons": 965
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-016"
+    },
+    {
+      "rootVertex": 9834,
+      "vertices": 492,
+      "polygons": 965,
+      "triangles": 965,
+      "worldBounds": {
+        "minimum": [
+          0.54451,
+          0.468406,
+          1.135099
+        ],
+        "maximum": [
+          0.623845,
+          0.587562,
+          1.233229
+        ],
+        "center": [
+          0.584178,
+          0.527984,
+          1.184164
+        ],
+        "size": [
+          0.079335,
+          0.119156,
+          0.09813
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_翻毛皮",
+          "polygons": 965
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-017"
+    },
+    {
+      "rootVertex": 4721,
+      "vertices": 414,
+      "polygons": 756,
+      "triangles": 756,
+      "worldBounds": {
+        "minimum": [
+          -1.336694,
+          -0.130083,
+          0.758459
+        ],
+        "maximum": [
+          -1.046707,
+          0.629399,
+          1.317937
+        ],
+        "center": [
+          -1.191701,
+          0.249658,
+          1.038198
+        ],
+        "size": [
+          0.289986,
+          0.759482,
+          0.559478
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_翻毛皮",
+          "polygons": 756
+        }
+      ],
+      "candidateRegion": "rear_left",
+      "crossesRearCenter": true,
+      "islandId": "es7_work__ES7_Body_C:island-026"
+    },
+    {
+      "rootVertex": 5153,
+      "vertices": 358,
+      "polygons": 648,
+      "triangles": 648,
+      "worldBounds": {
+        "minimum": [
+          -1.336725,
+          -0.629658,
+          0.75831
+        ],
+        "maximum": [
+          -1.046707,
+          -0.129676,
+          1.317919
+        ],
+        "center": [
+          -1.191716,
+          -0.379667,
+          1.038115
+        ],
+        "size": [
+          0.290018,
+          0.499983,
+          0.559609
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_翻毛皮",
+          "polygons": 648
+        }
+      ],
+      "candidateRegion": "rear_right",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-037"
+    },
+    {
+      "rootVertex": 22408,
+      "vertices": 363,
+      "polygons": 644,
+      "triangles": 644,
+      "worldBounds": {
+        "minimum": [
+          0.388104,
+          0.278253,
+          1.081158
+        ],
+        "maximum": [
+          0.432841,
+          0.512022,
+          1.112852
+        ],
+        "center": [
+          0.410473,
+          0.395138,
+          1.097005
+        ],
+        "size": [
+          0.044736,
+          0.233769,
+          0.031695
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 644
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-038"
+    },
+    {
+      "rootVertex": 26928,
+      "vertices": 365,
+      "polygons": 641,
+      "triangles": 641,
+      "worldBounds": {
+        "minimum": [
+          0.448605,
+          0.30972,
+          1.10825
+        ],
+        "maximum": [
+          0.579213,
+          0.480752,
+          1.246356
+        ],
+        "center": [
+          0.513909,
+          0.395236,
+          1.177303
+        ],
+        "size": [
+          0.130608,
+          0.171032,
+          0.138106
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 641
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-039"
+    },
+    {
+      "rootVertex": 18952,
+      "vertices": 330,
+      "polygons": 618,
+      "triangles": 618,
+      "worldBounds": {
+        "minimum": [
+          -1.091037,
+          0.161386,
+          0.982365
+        ],
+        "maximum": [
+          -1.043432,
+          0.237979,
+          1.023546
+        ],
+        "center": [
+          -1.067234,
+          0.199683,
+          1.002955
+        ],
+        "size": [
+          0.047605,
+          0.076593,
+          0.041181
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 618
+        }
+      ],
+      "candidateRegion": "rear_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-043"
+    },
+    {
+      "rootVertex": 23249,
+      "vertices": 305,
+      "polygons": 548,
+      "triangles": 548,
+      "worldBounds": {
+        "minimum": [
+          0.430523,
+          0.308958,
+          1.134842
+        ],
+        "maximum": [
+          0.562409,
+          0.478797,
+          1.2583
+        ],
+        "center": [
+          0.496466,
+          0.393877,
+          1.196571
+        ],
+        "size": [
+          0.131886,
+          0.169839,
+          0.123458
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 548
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-049"
+    },
+    {
+      "rootVertex": 23360,
+      "vertices": 298,
+      "polygons": 515,
+      "triangles": 515,
+      "worldBounds": {
+        "minimum": [
+          0.462451,
+          0.239189,
+          1.16273
+        ],
+        "maximum": [
+          0.571036,
+          0.345088,
+          1.250841
+        ],
+        "center": [
+          0.516744,
+          0.292139,
+          1.206785
+        ],
+        "size": [
+          0.108586,
+          0.105899,
+          0.088111
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 515
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-052"
+    },
+    {
+      "rootVertex": 42776,
+      "vertices": 283,
+      "polygons": 514,
+      "triangles": 514,
+      "worldBounds": {
+        "minimum": [
+          0.395783,
+          0.354194,
+          1.083013
+        ],
+        "maximum": [
+          0.518515,
+          0.436082,
+          1.118749
+        ],
+        "center": [
+          0.457149,
+          0.395138,
+          1.100881
+        ],
+        "size": [
+          0.122732,
+          0.081888,
+          0.035736
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_金属",
+          "polygons": 514
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-054"
+    },
+    {
+      "rootVertex": 27945,
+      "vertices": 295,
+      "polygons": 513,
+      "triangles": 513,
+      "worldBounds": {
+        "minimum": [
+          0.374969,
+          -0.604127,
+          0.573817
+        ],
+        "maximum": [
+          0.531962,
+          -0.186132,
+          0.828488
+        ],
+        "center": [
+          0.453466,
+          -0.39513,
+          0.701152
+        ],
+        "size": [
+          0.156993,
+          0.417995,
+          0.254671
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 513
+        }
+      ],
+      "candidateRegion": "front_right",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-055"
+    },
+    {
+      "rootVertex": 29945,
+      "vertices": 294,
+      "polygons": 504,
+      "triangles": 504,
+      "worldBounds": {
+        "minimum": [
+          0.452912,
+          0.249746,
+          1.198497
+        ],
+        "maximum": [
+          0.483386,
+          0.300282,
+          1.238482
+        ],
+        "center": [
+          0.468149,
+          0.275014,
+          1.21849
+        ],
+        "size": [
+          0.030475,
+          0.050535,
+          0.039985
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 504
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-057"
+    },
+    {
+      "rootVertex": 46638,
+      "vertices": 276,
+      "polygons": 500,
+      "triangles": 500,
+      "worldBounds": {
+        "minimum": [
+          0.455152,
+          0.373803,
+          1.224348
+        ],
+        "maximum": [
+          0.468679,
+          0.413995,
+          1.24134
+        ],
+        "center": [
+          0.461916,
+          0.393899,
+          1.232844
+        ],
+        "size": [
+          0.013527,
+          0.040192,
+          0.016991
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_金属",
+          "polygons": 500
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-058"
+    },
+    {
+      "rootVertex": 22776,
+      "vertices": 267,
+      "polygons": 459,
+      "triangles": 459,
+      "worldBounds": {
+        "minimum": [
+          0.462453,
+          0.445187,
+          1.162647
+        ],
+        "maximum": [
+          0.571035,
+          0.551085,
+          1.250274
+        ],
+        "center": [
+          0.516744,
+          0.498136,
+          1.206461
+        ],
+        "size": [
+          0.108582,
+          0.105899,
+          0.087627
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 459
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-064"
+    },
+    {
+      "rootVertex": 30369,
+      "vertices": 266,
+      "polygons": 456,
+      "triangles": 456,
+      "worldBounds": {
+        "minimum": [
+          0.452995,
+          0.490394,
+          1.198465
+        ],
+        "maximum": [
+          0.4833,
+          0.54085,
+          1.238501
+        ],
+        "center": [
+          0.468148,
+          0.515622,
+          1.218483
+        ],
+        "size": [
+          0.030305,
+          0.050456,
+          0.040036
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 456
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-065"
+    },
+    {
+      "rootVertex": 16425,
+      "vertices": 224,
+      "polygons": 404,
+      "triangles": 404,
+      "worldBounds": {
+        "minimum": [
+          0.399125,
+          0.356172,
+          1.094907
+        ],
+        "maximum": [
+          0.487793,
+          0.434102,
+          1.121987
+        ],
+        "center": [
+          0.443459,
+          0.395137,
+          1.108447
+        ],
+        "size": [
+          0.088668,
+          0.077931,
+          0.02708
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 404
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-076"
+    },
+    {
+      "rootVertex": 29306,
+      "vertices": 214,
+      "polygons": 372,
+      "triangles": 372,
+      "worldBounds": {
+        "minimum": [
+          0.514417,
+          0.29663,
+          1.340191
+        ],
+        "maximum": [
+          0.549202,
+          0.493653,
+          1.386193
+        ],
+        "center": [
+          0.531809,
+          0.395142,
+          1.363192
+        ],
+        "size": [
+          0.034785,
+          0.197023,
+          0.046001
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 372
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-083"
+    },
+    {
+      "rootVertex": 46518,
+      "vertices": 201,
+      "polygons": 356,
+      "triangles": 356,
+      "worldBounds": {
+        "minimum": [
+          0.446801,
+          0.376245,
+          1.211244
+        ],
+        "maximum": [
+          0.458629,
+          0.411553,
+          1.226273
+        ],
+        "center": [
+          0.452715,
+          0.393899,
+          1.218759
+        ],
+        "size": [
+          0.011828,
+          0.035309,
+          0.01503
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_金属",
+          "polygons": 356
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-084"
+    },
+    {
+      "rootVertex": 46934,
+      "vertices": 192,
+      "polygons": 320,
+      "triangles": 320,
+      "worldBounds": {
+        "minimum": [
+          0.44954,
+          0.245095,
+          1.196929
+        ],
+        "maximum": [
+          0.483841,
+          0.306599,
+          1.242957
+        ],
+        "center": [
+          0.46669,
+          0.275847,
+          1.219943
+        ],
+        "size": [
+          0.034301,
+          0.061504,
+          0.046029
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_金属",
+          "polygons": 320
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-096"
+    },
+    {
+      "rootVertex": 47207,
+      "vertices": 192,
+      "polygons": 320,
+      "triangles": 320,
+      "worldBounds": {
+        "minimum": [
+          0.44954,
+          0.483942,
+          1.196929
+        ],
+        "maximum": [
+          0.483837,
+          0.545446,
+          1.242957
+        ],
+        "center": [
+          0.466688,
+          0.514694,
+          1.219943
+        ],
+        "size": [
+          0.034297,
+          0.061504,
+          0.046029
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_金属",
+          "polygons": 320
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-097"
+    },
+    {
+      "rootVertex": 20392,
+      "vertices": 186,
+      "polygons": 318,
+      "triangles": 318,
+      "worldBounds": {
+        "minimum": [
+          0.260901,
+          -0.572267,
+          0.797882
+        ],
+        "maximum": [
+          0.433807,
+          -0.217996,
+          0.858241
+        ],
+        "center": [
+          0.347354,
+          -0.395131,
+          0.828061
+        ],
+        "size": [
+          0.172906,
+          0.354271,
+          0.06036
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 318
+        }
+      ],
+      "candidateRegion": "front_right",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-098"
+    },
+    {
+      "rootVertex": 28250,
+      "vertices": 174,
+      "polygons": 316,
+      "triangles": 316,
+      "worldBounds": {
+        "minimum": [
+          0.43186,
+          -0.600597,
+          0.581529
+        ],
+        "maximum": [
+          0.536443,
+          -0.189666,
+          0.828388
+        ],
+        "center": [
+          0.484152,
+          -0.395131,
+          0.704958
+        ],
+        "size": [
+          0.104583,
+          0.410931,
+          0.246859
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 316
+        }
+      ],
+      "candidateRegion": "front_right",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-100"
+    },
+    {
+      "rootVertex": 19424,
+      "vertices": 160,
+      "polygons": 272,
+      "triangles": 272,
+      "worldBounds": {
+        "minimum": [
+          0.261078,
+          0.217641,
+          0.717239
+        ],
+        "maximum": [
+          0.436984,
+          0.572629,
+          0.844151
+        ],
+        "center": [
+          0.349031,
+          0.395135,
+          0.780695
+        ],
+        "size": [
+          0.175906,
+          0.354988,
+          0.126912
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 272
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-114"
+    },
+    {
+      "rootVertex": 20713,
+      "vertices": 160,
+      "polygons": 270,
+      "triangles": 270,
+      "worldBounds": {
+        "minimum": [
+          -0.022821,
+          -0.221048,
+          0.680812
+        ],
+        "maximum": [
+          0.425157,
+          -0.142695,
+          0.849192
+        ],
+        "center": [
+          0.201168,
+          -0.181872,
+          0.765002
+        ],
+        "size": [
+          0.447978,
+          0.078353,
+          0.16838
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 270
+        }
+      ],
+      "candidateRegion": "front_right",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-115"
+    },
+    {
+      "rootVertex": 21178,
+      "vertices": 160,
+      "polygons": 270,
+      "triangles": 270,
+      "worldBounds": {
+        "minimum": [
+          -0.022829,
+          -0.647567,
+          0.680809
+        ],
+        "maximum": [
+          0.425157,
+          -0.569214,
+          0.849192
+        ],
+        "center": [
+          0.201164,
+          -0.608391,
+          0.765001
+        ],
+        "size": [
+          0.447986,
+          0.078353,
+          0.168384
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 270
+        }
+      ],
+      "candidateRegion": "front_right",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-116"
+    },
+    {
+      "rootVertex": 20216,
+      "vertices": 162,
+      "polygons": 262,
+      "triangles": 262,
+      "worldBounds": {
+        "minimum": [
+          -0.1432,
+          -0.231127,
+          0.665864
+        ],
+        "maximum": [
+          0.416607,
+          -0.149172,
+          0.852357
+        ],
+        "center": [
+          0.136704,
+          -0.190149,
+          0.759111
+        ],
+        "size": [
+          0.559807,
+          0.081955,
+          0.186493
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 262
+        }
+      ],
+      "candidateRegion": "front_right",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-118"
+    },
+    {
+      "rootVertex": 19240,
+      "vertices": 156,
+      "polygons": 252,
+      "triangles": 252,
+      "worldBounds": {
+        "minimum": [
+          -0.143518,
+          0.559105,
+          0.665861
+        ],
+        "maximum": [
+          0.403256,
+          0.640909,
+          0.84461
+        ],
+        "center": [
+          0.129869,
+          0.600007,
+          0.755235
+        ],
+        "size": [
+          0.546774,
+          0.081804,
+          0.178749
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 252
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-121"
+    },
+    {
+      "rootVertex": 19833,
+      "vertices": 156,
+      "polygons": 252,
+      "triangles": 252,
+      "worldBounds": {
+        "minimum": [
+          -0.143518,
+          0.149362,
+          0.665861
+        ],
+        "maximum": [
+          0.403256,
+          0.231166,
+          0.84461
+        ],
+        "center": [
+          0.129869,
+          0.190264,
+          0.755236
+        ],
+        "size": [
+          0.546774,
+          0.081804,
+          0.178749
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 252
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-122"
+    },
+    {
+      "rootVertex": 20872,
+      "vertices": 156,
+      "polygons": 252,
+      "triangles": 252,
+      "worldBounds": {
+        "minimum": [
+          -0.143515,
+          -0.641091,
+          0.665866
+        ],
+        "maximum": [
+          0.416603,
+          -0.559109,
+          0.852357
+        ],
+        "center": [
+          0.136544,
+          -0.6001,
+          0.759112
+        ],
+        "size": [
+          0.560118,
+          0.081982,
+          0.186491
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 252
+        }
+      ],
+      "candidateRegion": "front_right",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-123"
+    },
+    {
+      "rootVertex": 19560,
+      "vertices": 147,
+      "polygons": 249,
+      "triangles": 249,
+      "worldBounds": {
+        "minimum": [
+          -0.143084,
+          0.537727,
+          0.665433
+        ],
+        "maximum": [
+          0.260784,
+          0.611458,
+          0.834728
+        ],
+        "center": [
+          0.05885,
+          0.574593,
+          0.75008
+        ],
+        "size": [
+          0.403868,
+          0.073731,
+          0.169294
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 249
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-124"
+    },
+    {
+      "rootVertex": 19985,
+      "vertices": 147,
+      "polygons": 249,
+      "triangles": 249,
+      "worldBounds": {
+        "minimum": [
+          -0.143083,
+          0.178816,
+          0.665438
+        ],
+        "maximum": [
+          0.260784,
+          0.252602,
+          0.834727
+        ],
+        "center": [
+          0.05885,
+          0.215709,
+          0.750082
+        ],
+        "size": [
+          0.403867,
+          0.073786,
+          0.169289
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 249
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-125"
+    },
+    {
+      "rootVertex": 20576,
+      "vertices": 147,
+      "polygons": 249,
+      "triangles": 249,
+      "worldBounds": {
+        "minimum": [
+          -0.143091,
+          -0.252526,
+          0.6654
+        ],
+        "maximum": [
+          0.262215,
+          -0.179142,
+          0.834852
+        ],
+        "center": [
+          0.059562,
+          -0.215834,
+          0.750126
+        ],
+        "size": [
+          0.405306,
+          0.073385,
+          0.169452
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 249
+        }
+      ],
+      "candidateRegion": "front_right",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-126"
+    },
+    {
+      "rootVertex": 21074,
+      "vertices": 147,
+      "polygons": 249,
+      "triangles": 249,
+      "worldBounds": {
+        "minimum": [
+          -0.143091,
+          -0.611119,
+          0.6654
+        ],
+        "maximum": [
+          0.260539,
+          -0.537736,
+          0.834855
+        ],
+        "center": [
+          0.058724,
+          -0.574428,
+          0.750128
+        ],
+        "size": [
+          0.403631,
+          0.073383,
+          0.169456
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 249
+        }
+      ],
+      "candidateRegion": "front_right",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-127"
+    },
+    {
+      "rootVertex": 46230,
+      "vertices": 115,
+      "polygons": 209,
+      "triangles": 209,
+      "worldBounds": {
+        "minimum": [
+          0.461303,
+          0.508073,
+          1.211759
+        ],
+        "maximum": [
+          0.473513,
+          0.524067,
+          1.227018
+        ],
+        "center": [
+          0.467408,
+          0.51607,
+          1.219388
+        ],
+        "size": [
+          0.01221,
+          0.015995,
+          0.015259
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_金属",
+          "polygons": 209
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-138"
+    },
+    {
+      "rootVertex": 46367,
+      "vertices": 115,
+      "polygons": 209,
+      "triangles": 209,
+      "worldBounds": {
+        "minimum": [
+          0.461303,
+          0.266208,
+          1.211759
+        ],
+        "maximum": [
+          0.473513,
+          0.282202,
+          1.227018
+        ],
+        "center": [
+          0.467408,
+          0.274205,
+          1.219388
+        ],
+        "size": [
+          0.01221,
+          0.015994,
+          0.015259
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_金属",
+          "polygons": 209
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-139"
+    },
+    {
+      "rootVertex": 26409,
+      "vertices": 117,
+      "polygons": 192,
+      "triangles": 192,
+      "worldBounds": {
+        "minimum": [
+          -0.143065,
+          -0.543071,
+          0.6653
+        ],
+        "maximum": [
+          -0.059485,
+          -0.247192,
+          0.757917
+        ],
+        "center": [
+          -0.101275,
+          -0.395131,
+          0.711608
+        ],
+        "size": [
+          0.083579,
+          0.295879,
+          0.092617
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 192
+        }
+      ],
+      "candidateRegion": "front_right",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-142"
+    },
+    {
+      "rootVertex": 29091,
+      "vertices": 117,
+      "polygons": 192,
+      "triangles": 192,
+      "worldBounds": {
+        "minimum": [
+          -0.143075,
+          0.247157,
+          0.665297
+        ],
+        "maximum": [
+          -0.059675,
+          0.543115,
+          0.757263
+        ],
+        "center": [
+          -0.101375,
+          0.395136,
+          0.71128
+        ],
+        "size": [
+          0.0834,
+          0.295958,
+          0.091966
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 192
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-143"
+    },
+    {
+      "rootVertex": 30576,
+      "vertices": 96,
+      "polygons": 188,
+      "triangles": 188,
+      "worldBounds": {
+        "minimum": [
+          -1.300818,
+          0.170796,
+          0.789295
+        ],
+        "maximum": [
+          -1.013448,
+          0.232891,
+          1.343363
+        ],
+        "center": [
+          -1.157133,
+          0.201843,
+          1.066329
+        ],
+        "size": [
+          0.28737,
+          0.062095,
+          0.554069
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 188
+        }
+      ],
+      "candidateRegion": "rear_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-145"
+    },
+    {
+      "rootVertex": 19697,
+      "vertices": 108,
+      "polygons": 172,
+      "triangles": 172,
+      "worldBounds": {
+        "minimum": [
+          -0.023188,
+          0.569733,
+          0.712627
+        ],
+        "maximum": [
+          0.407059,
+          0.647151,
+          0.842831
+        ],
+        "center": [
+          0.191936,
+          0.608442,
+          0.777729
+        ],
+        "size": [
+          0.430247,
+          0.077418,
+          0.130205
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 172
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-149"
+    },
+    {
+      "rootVertex": 20112,
+      "vertices": 108,
+      "polygons": 172,
+      "triangles": 172,
+      "worldBounds": {
+        "minimum": [
+          -0.023156,
+          0.142888,
+          0.714157
+        ],
+        "maximum": [
+          0.407035,
+          0.220538,
+          0.842831
+        ],
+        "center": [
+          0.19194,
+          0.181713,
+          0.778494
+        ],
+        "size": [
+          0.430191,
+          0.07765,
+          0.128675
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 172
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-150"
+    },
+    {
+      "rootVertex": 9226,
+      "vertices": 102,
+      "polygons": 170,
+      "triangles": 170,
+      "worldBounds": {
+        "minimum": [
+          0.582252,
+          0.469554,
+          1.132236
+        ],
+        "maximum": [
+          0.627048,
+          0.475981,
+          1.177773
+        ],
+        "center": [
+          0.60465,
+          0.472767,
+          1.155004
+        ],
+        "size": [
+          0.044796,
+          0.006427,
+          0.045538
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_翻毛皮",
+          "polygons": 170
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-151"
+    },
+    {
+      "rootVertex": 12232,
+      "vertices": 102,
+      "polygons": 170,
+      "triangles": 170,
+      "worldBounds": {
+        "minimum": [
+          0.582252,
+          0.314766,
+          1.132236
+        ],
+        "maximum": [
+          0.627048,
+          0.321194,
+          1.177773
+        ],
+        "center": [
+          0.60465,
+          0.31798,
+          1.155004
+        ],
+        "size": [
+          0.044796,
+          0.006427,
+          0.045538
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_翻毛皮",
+          "polygons": 170
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-152"
+    },
+    {
+      "rootVertex": 23320,
+      "vertices": 36,
+      "polygons": 48,
+      "triangles": 48,
+      "worldBounds": {
+        "minimum": [
+          0.458233,
+          0.298369,
+          1.199788
+        ],
+        "maximum": [
+          0.483989,
+          0.318924,
+          1.236575
+        ],
+        "center": [
+          0.471111,
+          0.308646,
+          1.218181
+        ],
+        "size": [
+          0.025756,
+          0.020555,
+          0.036787
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 48
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-329"
+    },
+    {
+      "rootVertex": 23650,
+      "vertices": 36,
+      "polygons": 48,
+      "triangles": 48,
+      "worldBounds": {
+        "minimum": [
+          0.458231,
+          0.471516,
+          1.199788
+        ],
+        "maximum": [
+          0.483989,
+          0.492072,
+          1.236575
+        ],
+        "center": [
+          0.47111,
+          0.481794,
+          1.218181
+        ],
+        "size": [
+          0.025758,
+          0.020556,
+          0.036787
+        ]
+      },
+      "materials": [
+        {
+          "name": "0_车内_内饰皮革",
+          "polygons": 48
+        }
+      ],
+      "candidateRegion": "front_left",
+      "crossesRearCenter": false,
+      "islandId": "es7_work__ES7_Body_C:island-330"
+    }
+  ],
+  "warnings": [
+    "Spatial filtering produces review candidates, not approved seat ownership.",
+    "Any rear island crossing the center band must not be assigned to an outer seat without visual review."
+  ]
+}

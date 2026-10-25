@@ -1,0 +1,7 @@
+q uè r èn @确认
+q uè r èn zh í x íng @确认执行
+w ǒ sh ì zh ǔ j ià w ǒ sh ì q uè r èn zh í x íng @我是主驾，我确认执行
+j ì x ù @继续
+q ǔ x iāo @取消
+b ù y ào @不要
+s uàn l e @算了

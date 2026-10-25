@@ -1,0 +1,118 @@
+{
+  "contract": "nio-es7-components@1.2.0",
+  "assetId": "nio-es7-2023-animated-derivative",
+  "coordinateSystem": {
+    "unit": "meter",
+    "forwardAxis": "+X",
+    "leftAxis": "+Y",
+    "upAxis": "+Z"
+  },
+  "provenance": {
+    "author": "ItsDiyor",
+    "modelUrl": "https://sketchfab.com/3d-models/nio-es7-2023-4d9c574b84514b21ac783aca550793fe",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "components": [
+    { "id": "vehicle_root", "nodeName": "vehicle_root", "parent": null, "kind": "root", "requiredStageA": true },
+    { "id": "body_static", "nodeName": "body_static", "parent": "vehicle_root", "kind": "static", "requiredStageA": true },
+
+    { "id": "front_left_door", "nodeName": "front_left_door_pivot", "parent": "vehicle_root", "kind": "hinge", "requiredStageA": true, "pivotSemantic": "front-left A-pillar vertical hinge" },
+    { "id": "front_right_door", "nodeName": "front_right_door_pivot", "parent": "vehicle_root", "kind": "hinge", "requiredStageA": true, "pivotSemantic": "front-right A-pillar vertical hinge" },
+    { "id": "rear_left_door", "nodeName": "rear_left_door_pivot", "parent": "vehicle_root", "kind": "hinge", "requiredStageA": true, "pivotSemantic": "rear-left B-pillar vertical hinge" },
+    { "id": "rear_right_door", "nodeName": "rear_right_door_pivot", "parent": "vehicle_root", "kind": "hinge", "requiredStageA": true, "pivotSemantic": "rear-right B-pillar vertical hinge" },
+
+    { "id": "front_left_window", "nodeName": "front_left_window_slider", "parent": "front_left_door", "kind": "slider", "requiredStageA": true, "pivotSemantic": "front-left door glass guide" },
+    { "id": "front_right_window", "nodeName": "front_right_window_slider", "parent": "front_right_door", "kind": "slider", "requiredStageA": true, "pivotSemantic": "front-right door glass guide" },
+    { "id": "rear_left_window", "nodeName": "rear_left_window_slider", "parent": "rear_left_door", "kind": "slider", "requiredStageA": true, "pivotSemantic": "rear-left door glass guide" },
+    { "id": "rear_right_window", "nodeName": "rear_right_window_slider", "parent": "rear_right_door", "kind": "slider", "requiredStageA": true, "pivotSemantic": "rear-right door glass guide" },
+
+    { "id": "front_left_handle", "nodeName": "front_left_handle_pivot", "parent": "front_left_door", "kind": "slider", "requiredStageA": true, "pivotSemantic": "front-left flush-handle outward travel" },
+    { "id": "front_right_handle", "nodeName": "front_right_handle_pivot", "parent": "front_right_door", "kind": "slider", "requiredStageA": true, "pivotSemantic": "front-right flush-handle outward travel" },
+    { "id": "rear_left_handle", "nodeName": "rear_left_handle_pivot", "parent": "rear_left_door", "kind": "slider", "requiredStageA": true, "pivotSemantic": "rear-left flush-handle outward travel" },
+    { "id": "rear_right_handle", "nodeName": "rear_right_handle_pivot", "parent": "rear_right_door", "kind": "slider", "requiredStageA": true, "pivotSemantic": "rear-right flush-handle outward travel" },
+
+    { "id": "hood", "nodeName": "hood_pivot", "parent": "vehicle_root", "kind": "hinge", "requiredStageA": true, "pivotSemantic": "rear hood transverse hinge" },
+    { "id": "tailgate", "nodeName": "tailgate_pivot", "parent": "vehicle_root", "kind": "hinge", "requiredStageA": true, "pivotSemantic": "roof-rear transverse liftgate hinge" },
+
+    { "id": "wheel_front_left_steer", "nodeName": "wheel_front_left_steer", "parent": "vehicle_root", "kind": "steering", "requiredStageA": true },
+    { "id": "wheel_front_right_steer", "nodeName": "wheel_front_right_steer", "parent": "vehicle_root", "kind": "steering", "requiredStageA": true },
+    { "id": "wheel_front_left_spin", "nodeName": "wheel_front_left_spin", "parent": "wheel_front_left_steer", "kind": "wheel", "requiredStageA": true },
+    { "id": "wheel_front_right_spin", "nodeName": "wheel_front_right_spin", "parent": "wheel_front_right_steer", "kind": "wheel", "requiredStageA": true },
+    { "id": "wheel_rear_left_spin", "nodeName": "wheel_rear_left_spin", "parent": "vehicle_root", "kind": "wheel", "requiredStageA": true },
+    { "id": "wheel_rear_right_spin", "nodeName": "wheel_rear_right_spin", "parent": "vehicle_root", "kind": "wheel", "requiredStageA": true },
+
+    { "id": "front_drl_left", "nodeName": "front_drl_left", "parent": "vehicle_root", "kind": "light", "requiredStageA": true },
+    { "id": "front_drl_right", "nodeName": "front_drl_right", "parent": "vehicle_root", "kind": "light", "requiredStageA": true },
+    { "id": "low_beam_left", "nodeName": "low_beam_left", "parent": "vehicle_root", "kind": "light", "requiredStageA": true },
+    { "id": "low_beam_right", "nodeName": "low_beam_right", "parent": "vehicle_root", "kind": "light", "requiredStageA": true },
+    { "id": "rear_tail_left", "nodeName": "rear_tail_fixed_left", "parent": "vehicle_root", "kind": "light", "requiredStageA": true },
+    { "id": "rear_tail_right", "nodeName": "rear_tail_fixed_right", "parent": "vehicle_root", "kind": "light", "requiredStageA": true },
+    { "id": "rear_tail_tailgate_left", "nodeName": "rear_tail_tailgate_left", "parent": "tailgate", "kind": "light", "requiredStageA": true },
+    { "id": "rear_tail_tailgate_right", "nodeName": "rear_tail_tailgate_right", "parent": "tailgate", "kind": "light", "requiredStageA": true },
+    { "id": "rear_center_brake", "nodeName": "rear_center_brake", "parent": "tailgate", "kind": "light", "requiredStageA": true },
+    { "id": "indicator_front_left", "nodeName": "indicator_front_left", "parent": "front_left_door", "kind": "light", "requiredStageA": true },
+    { "id": "indicator_front_right", "nodeName": "indicator_front_right", "parent": "front_right_door", "kind": "light", "requiredStageA": true },
+    { "id": "indicator_rear_left", "nodeName": "indicator_rear_fixed_left", "parent": "vehicle_root", "kind": "light", "requiredStageA": true },
+    { "id": "indicator_rear_right", "nodeName": "indicator_rear_fixed_right", "parent": "vehicle_root", "kind": "light", "requiredStageA": true },
+    { "id": "indicator_tailgate_left", "nodeName": "indicator_tailgate_left", "parent": "tailgate", "kind": "light", "requiredStageA": true },
+    { "id": "indicator_tailgate_right", "nodeName": "indicator_tailgate_right", "parent": "tailgate", "kind": "light", "requiredStageA": true },
+
+    { "id": "charge_port", "nodeName": "charge_port_pivot", "parent": "body_static", "kind": "hinge", "requiredStageA": false, "requiredStageB": true, "pivotSemantic": "right-front charge-port cover vertical hinge" },
+    { "id": "mirror_left_fold", "nodeName": "mirror_left_fold", "parent": "front_left_door", "kind": "hinge", "requiredStageA": false, "requiredStageB": true, "pivotSemantic": "left mirror inboard vertical fold axis" },
+    { "id": "mirror_right_fold", "nodeName": "mirror_right_fold", "parent": "front_right_door", "kind": "hinge", "requiredStageA": false, "requiredStageB": true, "pivotSemantic": "right mirror inboard vertical fold axis" },
+    { "id": "wipers_mount", "nodeName": "wipers_mount", "parent": "body_static", "kind": "static", "requiredStageA": false, "requiredStageB": true, "pivotSemantic": "windshield-normal alignment mount" },
+    { "id": "wiper_left", "nodeName": "wiper_left_pivot", "parent": "wipers_mount", "kind": "hinge", "requiredStageA": false, "requiredStageB": true, "pivotSemantic": "left wiper spindle" },
+    { "id": "wiper_right", "nodeName": "wiper_right_pivot", "parent": "wipers_mount", "kind": "hinge", "requiredStageA": false, "requiredStageB": true, "pivotSemantic": "right wiper spindle" },
+    { "id": "suspension_height", "nodeName": "suspension_height", "parent": "vehicle_root", "kind": "control", "requiredStageA": false, "requiredStageB": true, "pivotSemantic": "body-height control without wheel translation" },
+
+    { "id": "driver_seat_track_static", "nodeName": "driver_seat_track_static", "parent": "body_static", "kind": "static", "requiredStageC": true, "pivotSemantic": "fixed driver-seat rails" },
+    { "id": "driver_seat_fore_aft", "nodeName": "driver_seat_fore_aft", "parent": "driver_seat_track_static", "kind": "slider", "requiredStageC": true, "pivotSemantic": "driver-seat longitudinal travel" },
+    { "id": "driver_seat_height", "nodeName": "driver_seat_height", "parent": "driver_seat_fore_aft", "kind": "slider", "requiredStageC": true, "pivotSemantic": "driver-seat vertical travel" },
+    { "id": "driver_seat_backrest", "nodeName": "driver_seat_backrest_pivot", "parent": "driver_seat_height", "kind": "hinge", "requiredStageC": true, "pivotSemantic": "driver-seat lower back transverse hinge" },
+    { "id": "driver_seat_headrest", "nodeName": "driver_seat_headrest_slider", "parent": "driver_seat_backrest", "kind": "slider", "requiredStageC": true, "pivotSemantic": "driver-seat headrest local vertical travel" },
+    { "id": "passenger_seat_static", "nodeName": "passenger_seat_static", "parent": "body_static", "kind": "static", "requiredStageC": true },
+    { "id": "rear_left_seat_static", "nodeName": "rear_left_seat_static", "parent": "body_static", "kind": "static", "requiredStageC": true },
+    { "id": "rear_right_seat_static", "nodeName": "rear_right_seat_static", "parent": "body_static", "kind": "static", "requiredStageC": true }
+  ],
+  "mechanicalActions": [
+    { "id": "front_left_door_open", "clip": "front_left_door_open", "type": "rotate", "axis": "Z", "range": [-1.10, 0.0], "durationSeconds": 1.35, "targets": [{ "componentId": "front_left_door", "direction": -1 }] },
+    { "id": "front_right_door_open", "clip": "front_right_door_open", "type": "rotate", "axis": "Z", "range": [0.0, 1.10], "durationSeconds": 1.35, "targets": [{ "componentId": "front_right_door", "direction": 1 }] },
+    { "id": "rear_left_door_open", "clip": "rear_left_door_open", "type": "rotate", "axis": "Z", "range": [-1.02, 0.0], "durationSeconds": 1.3, "targets": [{ "componentId": "rear_left_door", "direction": -1 }] },
+    { "id": "rear_right_door_open", "clip": "rear_right_door_open", "type": "rotate", "axis": "Z", "range": [0.0, 1.02], "durationSeconds": 1.3, "targets": [{ "componentId": "rear_right_door", "direction": 1 }] },
+
+    { "id": "front_left_window_open", "clip": "front_left_window_open", "type": "translate", "axis": "Z", "range": [-0.43, 0.0], "durationSeconds": 1.15, "targets": [{ "componentId": "front_left_window", "direction": -1 }] },
+    { "id": "front_right_window_open", "clip": "front_right_window_open", "type": "translate", "axis": "Z", "range": [-0.43, 0.0], "durationSeconds": 1.15, "targets": [{ "componentId": "front_right_window", "direction": -1 }] },
+    { "id": "rear_left_window_open", "clip": "rear_left_window_open", "type": "translate", "axis": "Z", "range": [-0.36, 0.0], "durationSeconds": 1.1, "targets": [{ "componentId": "rear_left_window", "direction": -1 }] },
+    { "id": "rear_right_window_open", "clip": "rear_right_window_open", "type": "translate", "axis": "Z", "range": [-0.36, 0.0], "durationSeconds": 1.1, "targets": [{ "componentId": "rear_right_window", "direction": -1 }] },
+
+    { "id": "front_left_handle_deploy", "clip": "front_left_handle_deploy", "type": "translate", "axis": "Y", "range": [0.0, 0.04], "durationSeconds": 0.45, "targets": [{ "componentId": "front_left_handle", "direction": 1 }] },
+    { "id": "front_right_handle_deploy", "clip": "front_right_handle_deploy", "type": "translate", "axis": "Y", "range": [-0.04, 0.0], "durationSeconds": 0.45, "targets": [{ "componentId": "front_right_handle", "direction": -1 }] },
+    { "id": "rear_left_handle_deploy", "clip": "rear_left_handle_deploy", "type": "translate", "axis": "Y", "range": [0.0, 0.04], "durationSeconds": 0.45, "targets": [{ "componentId": "rear_left_handle", "direction": 1 }] },
+    { "id": "rear_right_handle_deploy", "clip": "rear_right_handle_deploy", "type": "translate", "axis": "Y", "range": [-0.04, 0.0], "durationSeconds": 0.45, "targets": [{ "componentId": "rear_right_handle", "direction": -1 }] },
+
+    { "id": "hood_open", "clip": "hood_open", "type": "rotate", "axis": "Y", "range": [-0.78, 0.0], "durationSeconds": 1.5, "targets": [{ "componentId": "hood", "direction": -1 }] },
+    { "id": "tailgate_open", "clip": "tailgate_open", "type": "rotate", "axis": "Y", "range": [0.0, 1.08], "durationSeconds": 1.8, "targets": [{ "componentId": "tailgate", "direction": 1 }] },
+    { "id": "front_wheels_steer", "clip": "front_wheels_steer", "type": "rotate", "axis": "Z", "range": [-0.52, 0.52], "durationSeconds": 1.2, "targets": [{ "componentId": "wheel_front_left_steer", "direction": 1 }, { "componentId": "wheel_front_right_steer", "direction": 1 }] },
+    { "id": "wheels_roll", "clip": "wheels_roll", "type": "rotate", "axis": "Y", "range": [0.0, 6.283185], "durationSeconds": 1.0, "loop": true, "targets": [{ "componentId": "wheel_front_left_spin", "direction": 1 }, { "componentId": "wheel_front_right_spin", "direction": 1 }, { "componentId": "wheel_rear_left_spin", "direction": 1 }, { "componentId": "wheel_rear_right_spin", "direction": 1 }] },
+
+    { "id": "charge_port_open", "clip": "charge_port_open", "stage": "B", "type": "rotate", "axis": "Z", "range": [0.0, 1.48], "durationSeconds": 1.0, "targets": [{ "componentId": "charge_port", "direction": 1 }] },
+    { "id": "mirror_left_fold", "clip": "mirror_left_fold", "stage": "B", "type": "rotate", "axis": "Z", "range": [0.0, 1.05], "durationSeconds": 0.8, "targets": [{ "componentId": "mirror_left_fold", "direction": 1 }, { "componentId": "indicator_front_left", "direction": 1 }] },
+    { "id": "mirror_right_fold", "clip": "mirror_right_fold", "stage": "B", "type": "rotate", "axis": "Z", "range": [-1.05, 0.0], "durationSeconds": 0.8, "targets": [{ "componentId": "mirror_right_fold", "direction": -1 }, { "componentId": "indicator_front_right", "direction": -1 }] },
+    { "id": "wipers_sweep", "clip": "wipers_sweep", "stage": "B", "type": "rotate", "axis": "Z", "range": [-1.08, 0.0], "durationSeconds": 0.9, "targets": [{ "componentId": "wiper_left", "direction": -1 }, { "componentId": "wiper_right", "direction": -1 }] },
+    { "id": "suspension_raise", "clip": "suspension_raise", "stage": "B", "type": "translate", "axis": "Z", "range": [0.0, 0.06], "durationSeconds": 1.2, "targets": [{ "componentId": "suspension_height", "direction": 1 }, { "componentId": "body_static", "direction": 1 }, { "componentId": "front_left_door", "direction": 1 }, { "componentId": "front_right_door", "direction": 1 }, { "componentId": "rear_left_door", "direction": 1 }, { "componentId": "rear_right_door", "direction": 1 }, { "componentId": "hood", "direction": 1 }, { "componentId": "tailgate", "direction": 1 }, { "componentId": "front_drl_left", "direction": 1 }, { "componentId": "front_drl_right", "direction": 1 }, { "componentId": "low_beam_left", "direction": 1 }, { "componentId": "low_beam_right", "direction": 1 }, { "componentId": "rear_tail_left", "direction": 1 }, { "componentId": "rear_tail_right", "direction": 1 }, { "componentId": "indicator_rear_left", "direction": 1 }, { "componentId": "indicator_rear_right", "direction": 1 }] },
+
+    { "id": "driver_seat_fore_aft", "clip": "driver_seat_fore_aft", "stage": "C", "control": "slider", "type": "translate", "axis": "X", "range": [-0.14, 0.12], "defaultValue": 0.0, "durationSeconds": 1.0, "targets": [{ "componentId": "driver_seat_fore_aft", "direction": 1 }] },
+    { "id": "driver_seat_height", "clip": "driver_seat_height", "stage": "C", "control": "slider", "type": "translate", "axis": "Z", "range": [0.0, 0.08], "defaultValue": 0.0, "durationSeconds": 1.0, "targets": [{ "componentId": "driver_seat_height", "direction": 1 }] },
+    { "id": "driver_seat_backrest_recline", "clip": "driver_seat_backrest_recline", "stage": "C", "control": "slider", "type": "rotate", "axis": "Y", "range": [-0.349066, 0.087266], "defaultValue": 0.0, "durationSeconds": 1.0, "targets": [{ "componentId": "driver_seat_backrest", "direction": 1 }] },
+    { "id": "driver_seat_headrest_height", "clip": "driver_seat_headrest_height", "stage": "C", "control": "slider", "type": "translate", "axis": "Z", "range": [0.0, 0.08], "defaultValue": 0.0, "durationSeconds": 1.0, "targets": [{ "componentId": "driver_seat_headrest", "direction": 1 }] }
+  ],
+  "lightControls": [
+    { "id": "daytime_running_lights", "components": ["front_drl_left", "front_drl_right"], "materialSemantic": "es7_light_drl", "offEmissive": 0.0, "onEmissive": 6.0 },
+    { "id": "low_beams", "components": ["low_beam_left", "low_beam_right"], "materialSemantic": "es7_light_low_beam", "offEmissive": 0.0, "onEmissive": 12.0 },
+    { "id": "tail_lights", "components": ["rear_tail_left", "rear_tail_right", "rear_tail_tailgate_left", "rear_tail_tailgate_right", "rear_center_brake"], "materialSemantic": "es7_light_tail", "offEmissive": 0.0, "onEmissive": 5.0 },
+    { "id": "left_indicator", "components": ["indicator_front_left", "indicator_rear_left", "indicator_tailgate_left"], "materialSemantic": "es7_light_indicator_left", "offEmissive": 0.0, "onEmissive": 9.0, "flashHz": 1.5 },
+    { "id": "right_indicator", "components": ["indicator_front_right", "indicator_rear_right", "indicator_tailgate_right"], "materialSemantic": "es7_light_indicator_right", "offEmissive": 0.0, "onEmissive": 9.0, "flashHz": 1.5 }
+  ],
+  "optionalStageB": []
+}

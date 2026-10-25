@@ -1,0 +1,215 @@
+{
+  "catalogVersion": "nio-prebaked-waiting-bridge-catalog@1.0.0",
+  "assetKind": "prebaked-neutral-waiting-bridge-catalog",
+  "profileId": "sandrone-dev",
+  "synthesisProfileId": "sandrone-dev-gptsovits-cpu-balanced@1.0.0",
+  "licenseBoundary": "local-non-commercial-testing-only",
+  "provenance": "prebaked local development-test assets; not real-time progress and not NIO product-authorized voice",
+  "usageBoundary": "Development testing only. Not a production-authorized or real NIO voice.",
+  "items": [
+    {
+      "assetId": "short-processing",
+      "text": "正在为你处理",
+      "tier": "short",
+      "answerCharacterRange": {
+        "minInclusive": 0,
+        "maxInclusive": 40
+      },
+      "fileName": "sandrone-dev-zh-short-processing.wav",
+      "bytes": 108844,
+      "sha256": "bf674b8a282e5602bde570e29456664b08fd9b3d7662418738ce95606dc225af",
+      "durationMs": 1700,
+      "profileId": "sandrone-dev",
+      "synthesisProfileId": "sandrone-dev-gptsovits-cpu-balanced@1.0.0",
+      "licenseBoundary": "local-non-commercial-testing-only",
+      "provenance": "prebaked local development-test asset; not real-time progress and not derived from user, vehicle, or NIO production voice data"
+    },
+    {
+      "assetId": "short-organize",
+      "text": "我来整理一下",
+      "tier": "short",
+      "answerCharacterRange": {
+        "minInclusive": 0,
+        "maxInclusive": 40
+      },
+      "fileName": "sandrone-dev-zh-short-organize.wav",
+      "bytes": 108844,
+      "sha256": "52f9c947e64357f6c6540e647ecb1875f246cc0576c97110f35a6a45aea9e413",
+      "durationMs": 1700,
+      "profileId": "sandrone-dev",
+      "synthesisProfileId": "sandrone-dev-gptsovits-cpu-balanced@1.0.0",
+      "licenseBoundary": "local-non-commercial-testing-only",
+      "provenance": "prebaked local development-test asset; not real-time progress and not derived from user, vehicle, or NIO production voice data"
+    },
+    {
+      "assetId": "short-preparing",
+      "text": "我在准备回答",
+      "tier": "short",
+      "answerCharacterRange": {
+        "minInclusive": 0,
+        "maxInclusive": 40
+      },
+      "fileName": "sandrone-dev-zh-short-preparing.wav",
+      "bytes": 106284,
+      "sha256": "880c4a8bfc772b07cf4f39853911310d93e88fb0970e813321e4d5f54a9406bc",
+      "durationMs": 1660,
+      "profileId": "sandrone-dev",
+      "synthesisProfileId": "sandrone-dev-gptsovits-cpu-balanced@1.0.0",
+      "licenseBoundary": "local-non-commercial-testing-only",
+      "provenance": "prebaked local development-test asset; not real-time progress and not derived from user, vehicle, or NIO production voice data"
+    },
+    {
+      "assetId": "medium-wait",
+      "text": "稍等一下",
+      "tier": "medium",
+      "answerCharacterRange": {
+        "minInclusive": 41,
+        "maxInclusive": 100
+      },
+      "fileName": "sandrone-dev-zh-medium-wait.wav",
+      "bytes": 93484,
+      "sha256": "a90bf0238b8fc68cf90de8160ac933f05222552ff7be0beac32845a24241c46e",
+      "durationMs": 1460,
+      "profileId": "sandrone-dev",
+      "synthesisProfileId": "sandrone-dev-gptsovits-cpu-balanced@1.0.0",
+      "licenseBoundary": "local-non-commercial-testing-only",
+      "provenance": "prebaked local development-test asset; not real-time progress and not derived from user, vehicle, or NIO production voice data"
+    },
+    {
+      "assetId": "medium-structure",
+      "text": "我来帮你梳理",
+      "tier": "medium",
+      "answerCharacterRange": {
+        "minInclusive": 41,
+        "maxInclusive": 100
+      },
+      "fileName": "sandrone-dev-zh-medium-structure.wav",
+      "bytes": 98604,
+      "sha256": "66144bc6dfd61308de810b75b2aa653214e6ed21e6a8e2fcbda80e996f128d55",
+      "durationMs": 1540,
+      "profileId": "sandrone-dev",
+      "synthesisProfileId": "sandrone-dev-gptsovits-cpu-balanced@1.0.0",
+      "licenseBoundary": "local-non-commercial-testing-only",
+      "provenance": "prebaked local development-test asset; not real-time progress and not derived from user, vehicle, or NIO production voice data"
+    },
+    {
+      "assetId": "medium-compose",
+      "text": "我在组织内容",
+      "tier": "medium",
+      "answerCharacterRange": {
+        "minInclusive": 41,
+        "maxInclusive": 100
+      },
+      "fileName": "sandrone-dev-zh-medium-compose.wav",
+      "bytes": 126764,
+      "sha256": "944980afd9d2a9c523e85cab939a24d054b9c6efae559d0eedd2b75c5a95f5d4",
+      "durationMs": 1980,
+      "profileId": "sandrone-dev",
+      "synthesisProfileId": "sandrone-dev-gptsovits-cpu-balanced@1.0.0",
+      "licenseBoundary": "local-non-commercial-testing-only",
+      "provenance": "prebaked local development-test asset; not real-time progress and not derived from user, vehicle, or NIO production voice data"
+    },
+    {
+      "assetId": "long-think",
+      "text": "我来仔细想想",
+      "tier": "long",
+      "answerCharacterRange": {
+        "minInclusive": 101,
+        "maxInclusive": 180
+      },
+      "fileName": "sandrone-dev-zh-long-think.wav",
+      "bytes": 131884,
+      "sha256": "3877a0eb6b036dce6a57b240271ff58c576bc35ba9ec3f078a3bc50b83fc9762",
+      "durationMs": 2060,
+      "profileId": "sandrone-dev",
+      "synthesisProfileId": "sandrone-dev-gptsovits-cpu-balanced@1.0.0",
+      "licenseBoundary": "local-non-commercial-testing-only",
+      "provenance": "prebaked local development-test asset; not real-time progress and not derived from user, vehicle, or NIO production voice data"
+    },
+    {
+      "assetId": "long-key-points",
+      "text": "我在整理关键信息",
+      "tier": "long",
+      "answerCharacterRange": {
+        "minInclusive": 101,
+        "maxInclusive": 180
+      },
+      "fileName": "sandrone-dev-zh-long-key-points.wav",
+      "bytes": 139564,
+      "sha256": "906ddaed37e851ede65b58a0640d1133213990e24db8181d0cc29e0022d6582a",
+      "durationMs": 2180,
+      "profileId": "sandrone-dev",
+      "synthesisProfileId": "sandrone-dev-gptsovits-cpu-balanced@1.0.0",
+      "licenseBoundary": "local-non-commercial-testing-only",
+      "provenance": "prebaked local development-test asset; not real-time progress and not derived from user, vehicle, or NIO production voice data"
+    },
+    {
+      "assetId": "long-clear-answer",
+      "text": "我来给你一个清晰的回答",
+      "tier": "long",
+      "answerCharacterRange": {
+        "minInclusive": 101,
+        "maxInclusive": 180
+      },
+      "fileName": "sandrone-dev-zh-long-clear-answer.wav",
+      "bytes": 154924,
+      "sha256": "ad3f49d725de63b5c1dca89dd46669e51eef013275b14cef027b93721e59dbcb",
+      "durationMs": 2420,
+      "profileId": "sandrone-dev",
+      "synthesisProfileId": "sandrone-dev-gptsovits-cpu-balanced@1.0.0",
+      "licenseBoundary": "local-non-commercial-testing-only",
+      "provenance": "prebaked local development-test asset; not real-time progress and not derived from user, vehicle, or NIO production voice data"
+    },
+    {
+      "assetId": "very-long-complete",
+      "text": "我在准备更完整的说明",
+      "tier": "very-long",
+      "answerCharacterRange": {
+        "minInclusive": 181,
+        "maxInclusive": null
+      },
+      "fileName": "sandrone-dev-zh-very-long-complete.wav",
+      "bytes": 137004,
+      "sha256": "0b1f4cf4d0c676c2e63f8d9894ec7fc7e0b6ee85286f1d1b4bc5a9bdc41613ff",
+      "durationMs": 2140,
+      "profileId": "sandrone-dev",
+      "synthesisProfileId": "sandrone-dev-gptsovits-cpu-balanced@1.0.0",
+      "licenseBoundary": "local-non-commercial-testing-only",
+      "provenance": "prebaked local development-test asset; not real-time progress and not derived from user, vehicle, or NIO production voice data"
+    },
+    {
+      "assetId": "very-long-points",
+      "text": "我来把要点整理清楚",
+      "tier": "very-long",
+      "answerCharacterRange": {
+        "minInclusive": 181,
+        "maxInclusive": null
+      },
+      "fileName": "sandrone-dev-zh-very-long-points.wav",
+      "bytes": 149804,
+      "sha256": "69159b976bd6b47081088cb83365404b6064ff1cfa1756974707ab175ab78118",
+      "durationMs": 2340,
+      "profileId": "sandrone-dev",
+      "synthesisProfileId": "sandrone-dev-gptsovits-cpu-balanced@1.0.0",
+      "licenseBoundary": "local-non-commercial-testing-only",
+      "provenance": "prebaked local development-test asset; not real-time progress and not derived from user, vehicle, or NIO production voice data"
+    },
+    {
+      "assetId": "very-long-reply",
+      "text": "我正在组织一个更完整的答复",
+      "tier": "very-long",
+      "answerCharacterRange": {
+        "minInclusive": 181,
+        "maxInclusive": null
+      },
+      "fileName": "sandrone-dev-zh-very-long-reply.wav",
+      "bytes": 165164,
+      "sha256": "0031afa0cb8e35fa2db4d90b78330773646f0783d8a0fc010aebfd71543ee4cb",
+      "durationMs": 2580,
+      "profileId": "sandrone-dev",
+      "synthesisProfileId": "sandrone-dev-gptsovits-cpu-balanced@1.0.0",
+      "licenseBoundary": "local-non-commercial-testing-only",
+      "provenance": "prebaked local development-test asset; not real-time progress and not derived from user, vehicle, or NIO production voice data"
+    }
+  ]
+}

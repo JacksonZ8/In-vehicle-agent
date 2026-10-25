@@ -1,0 +1,31 @@
+{
+  "assetKind": "prebaked-neutral-waiting-bridge",
+  "catalogVersion": "nio-prebaked-waiting-bridge-catalog@1.0.0",
+  "assetId": "very-long-complete",
+  "text": "我在准备更完整的说明",
+  "tier": "very-long",
+  "answerCharacterRange": {
+    "minInclusive": 181,
+    "maxInclusive": null
+  },
+  "language": "zh",
+  "profileId": "sandrone-dev",
+  "synthesisProfileId": "sandrone-dev-gptsovits-cpu-balanced@1.0.0",
+  "provider": "GPT-SoVITS",
+  "licenseBoundary": "local-non-commercial-testing-only",
+  "generationMethod": "local GPT-SoVITS /tts using the resolved sandrone-dev profile; generated offline before UI playback",
+  "provenance": "prebaked local development-test asset; not real-time progress and not derived from user, vehicle, or NIO production voice data",
+  "usageBoundary": "Development testing only. This file must not be presented as a production-authorized voice, a real NIO voice, or a user/vehicle recording.",
+  "fileName": "sandrone-dev-zh-very-long-complete.wav",
+  "bytes": 137004,
+  "sha256": "0b1f4cf4d0c676c2e63f8d9894ec7fc7e0b6ee85286f1d1b4bc5a9bdc41613ff",
+  "wav": {
+    "audioFormat": 1,
+    "channels": 1,
+    "sampleRateHz": 32000,
+    "byteRate": 64000,
+    "bitsPerSample": 16,
+    "dataBytes": 136960,
+    "durationMs": 2140
+  }
+}

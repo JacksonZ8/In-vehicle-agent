@@ -1,0 +1,292 @@
+{
+  "contract": "nio-es7-source-map@0.1.0",
+  "status": "confirmed-by-user-and-blender-selection",
+  "sourceScene": "source/es7-reference.blend",
+  "sourceCollection": "REF_ES7_IMPORTED",
+  "sourceAxisObservation": {
+    "lateral": "+X is source-model left",
+    "longitudinal": "+Y is source-model rear",
+    "vertical": "+Z is up",
+    "normalizationTarget": "+X front, +Y left, +Z up"
+  },
+  "components": {
+    "front_left_door": {
+      "kind": "door",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_Door_LF"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_Door_* mesh in the authenticated source asset."
+    },
+    "front_right_door": {
+      "kind": "door",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_Door_RF"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_Door_* mesh in the authenticated source asset."
+    },
+    "rear_left_door": {
+      "kind": "door",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_Door_LB"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_Door_* mesh in the authenticated source asset."
+    },
+    "rear_right_door": {
+      "kind": "door",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_Door_RB"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_Door_* mesh in the authenticated source asset."
+    },
+    "front_left_window": {
+      "kind": "window",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_DoorGlass_LF"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_DoorGlass_* mesh using the matching door-glass material."
+    },
+    "front_right_window": {
+      "kind": "window",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_DoorGlass_RF"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_DoorGlass_* mesh using the matching door-glass material."
+    },
+    "rear_left_window": {
+      "kind": "window",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_DoorGlass_LB"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_DoorGlass_* mesh using the matching door-glass material."
+    },
+    "rear_right_window": {
+      "kind": "window",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_DoorGlass_RB"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_DoorGlass_* mesh using the matching door-glass material."
+    },
+    "front_left_handle": {
+      "kind": "handle",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_Doorknob_LF"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_Doorknob_* mesh parented to the matching source door."
+    },
+    "front_right_handle": {
+      "kind": "handle",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_Doorknob_RF"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_Doorknob_* mesh parented to the matching source door."
+    },
+    "rear_left_handle": {
+      "kind": "handle",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_Doorknob_LB"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_Doorknob_* mesh parented to the matching source door."
+    },
+    "rear_right_handle": {
+      "kind": "handle",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_Doorknob_RB"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_Doorknob_* mesh parented to the matching source door."
+    },
+    "front_left_handle_light": {
+      "kind": "handle-light",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_DoorLight_LF"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_DoorLight_* mesh using the handle-light material."
+    },
+    "front_right_handle_light": {
+      "kind": "handle-light",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_DoorLight_RF"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_DoorLight_* mesh using the handle-light material."
+    },
+    "rear_left_handle_light": {
+      "kind": "handle-light",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_DoorLight_LB"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_DoorLight_* mesh using the handle-light material."
+    },
+    "rear_right_handle_light": {
+      "kind": "handle-light",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "ES7_DoorLight_RB"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated ES7_DoorLight_* mesh using the handle-light material."
+    },
+    "tailgate": {
+      "kind": "tailgate",
+      "status": "separated-source-object",
+      "sourceObjects": [
+        "Trunk"
+      ],
+      "selectionMode": "whole-object",
+      "evidence": "Dedicated Trunk mesh containing the liftgate exterior, glazing, trim, and rear lamp materials."
+    },
+    "wheel_front_left": {
+      "kind": "wheel",
+      "status": "separated-source-objects",
+      "sourceObjects": [
+        "Wheel1_3",
+        "WheelCaliper_LF"
+      ],
+      "selectionMode": "whole-object-with-material-segmentation",
+      "sourceCenter": [
+        0.574565,
+        -0.201866,
+        -0.017859
+      ],
+      "caliperCenter": [
+        0.587559,
+        -0.201456,
+        -0.017705
+      ],
+      "evidence": "Wheel position and LF/RF/LB/RB caliper label agree; wheel internals still require material-based spin/caliper separation."
+    },
+    "wheel_front_right": {
+      "kind": "wheel",
+      "status": "separated-source-objects",
+      "sourceObjects": [
+        "Wheel1_1",
+        "WheelCaliper_RF"
+      ],
+      "selectionMode": "whole-object-with-material-segmentation",
+      "sourceCenter": [
+        -0.55984,
+        -0.201865,
+        -0.016514
+      ],
+      "caliperCenter": [
+        -0.564762,
+        -0.201456,
+        -0.017705
+      ],
+      "evidence": "Wheel position and LF/RF/LB/RB caliper label agree; wheel internals still require material-based spin/caliper separation."
+    },
+    "wheel_rear_left": {
+      "kind": "wheel",
+      "status": "separated-source-objects",
+      "sourceObjects": [
+        "Wheel1_2",
+        "WheelCaliper_LB"
+      ],
+      "selectionMode": "whole-object-with-material-segmentation",
+      "sourceCenter": [
+        0.572547,
+        1.78853,
+        -0.015841
+      ],
+      "caliperCenter": [
+        0.597601,
+        1.785188,
+        -0.015431
+      ],
+      "evidence": "Wheel position and LF/RF/LB/RB caliper label agree; wheel internals still require material-based spin/caliper separation."
+    },
+    "wheel_rear_right": {
+      "kind": "wheel",
+      "status": "separated-source-objects",
+      "sourceObjects": [
+        "Wheel1",
+        "WheelCaliper_RB"
+      ],
+      "selectionMode": "whole-object-with-material-segmentation",
+      "sourceCenter": [
+        -0.561859,
+        1.789875,
+        -0.014495
+      ],
+      "caliperCenter": [
+        -0.574801,
+        1.785188,
+        -0.015431
+      ],
+      "evidence": "Wheel position and LF/RF/LB/RB caliper label agree; wheel internals still require material-based spin/caliper separation."
+    },
+    "hood": {
+      "kind": "hood",
+      "status": "requires-working-copy-extraction",
+      "sourceObjects": [
+        "ES7_Body_L",
+        "ES7_Body_R"
+      ],
+      "selectionMode": "mesh-boundary-extraction",
+      "evidence": "No dedicated hood object exists; the exterior body halves contain the hood surface."
+    },
+    "front_lights": {
+      "kind": "light-group",
+      "status": "requires-working-copy-material-segmentation",
+      "sourceObjects": [
+        "ES7_Body_L",
+        "ES7_Body_R"
+      ],
+      "selectionMode": "material-segmentation",
+      "materialCandidates": [
+        "2_车灯_前白色",
+        "2_车灯_侧白色",
+        "2_车灯_前大灯",
+        "2_车灯_前大灯2",
+        "3_玻璃_车大灯",
+        "3_玻璃_车灯"
+      ],
+      "evidence": "Front-light materials exist on both exterior body halves, but no dedicated lamp mesh exists."
+    },
+    "rear_lights": {
+      "kind": "light-group",
+      "status": "requires-working-copy-material-segmentation",
+      "sourceObjects": [
+        "Trunk",
+        "ES7_Body_L",
+        "ES7_Body_R"
+      ],
+      "selectionMode": "material-segmentation",
+      "materialCandidates": [
+        "2_车灯_后转向",
+        "2_车灯_刹车灯",
+        "2_车灯_后红色",
+        "3_玻璃_车灯"
+      ],
+      "evidence": "Rear-light materials span the liftgate and fixed body halves and must preserve their ownership after segmentation."
+    }
+  }
+}

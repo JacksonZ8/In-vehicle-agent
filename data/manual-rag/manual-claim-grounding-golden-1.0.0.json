@@ -1,0 +1,127 @@
+{
+  "policy": { "id": "nio-manual-claim-grounding", "version": "1.4.0" },
+  "cases": [
+    {
+      "id": "exact-supported",
+      "question": "开启尾门前要注意什么？",
+      "summary": "开启尾门前请确认后方空间。",
+      "evidence": [{ "chunkId": "tailgate-1", "citation": "p.88", "excerpt": "开启尾门前请确认后方空间。" }],
+      "expectedStatus": "grounded",
+      "expectedRetained": 1,
+      "expectedEvidenceIds": ["tailgate-1"]
+    },
+    {
+      "id": "number-mismatch",
+      "question": "尾门需要多少后方空间？",
+      "summary": "开启尾门前需预留50 cm后方空间。",
+      "evidence": [{ "chunkId": "distance-1", "citation": "p.89", "excerpt": "开启尾门前需预留30 cm后方空间。" }],
+      "expectedStatus": "fallback",
+      "expectedReason": "number-or-unit-mismatch"
+    },
+    {
+      "id": "unit-mismatch",
+      "question": "尾门需要多少后方空间？",
+      "summary": "开启尾门前需预留50 mm后方空间。",
+      "evidence": [{ "chunkId": "distance-2", "citation": "p.89", "excerpt": "开启尾门前需预留50 cm后方空间。" }],
+      "expectedStatus": "fallback",
+      "expectedReason": "number-or-unit-mismatch"
+    },
+    {
+      "id": "polarity-reversal",
+      "question": "行驶中可以开启尾门吗？",
+      "summary": "行驶中可以开启尾门。",
+      "evidence": [{ "chunkId": "polarity-1", "citation": "p.90", "excerpt": "行驶中不得开启尾门。" }],
+      "expectedStatus": "fallback",
+      "expectedReason": "polarity-mismatch"
+    },
+    {
+      "id": "subject-mismatch",
+      "question": "前舱盖开启前要注意什么？",
+      "summary": "开启前舱盖前请确认后方空间。",
+      "evidence": [{ "chunkId": "subject-1", "citation": "p.88", "excerpt": "开启尾门前请确认后方空间。" }],
+      "expectedStatus": "fallback",
+      "expectedReason": "subject-mismatch"
+    },
+    {
+      "id": "condition-mismatch",
+      "question": "行驶中如何开启尾门？",
+      "summary": "行驶中可以开启尾门。",
+      "evidence": [{ "chunkId": "condition-1", "citation": "p.91", "excerpt": "车辆静止并处于P挡时可以开启尾门。" }],
+      "expectedStatus": "fallback",
+      "expectedReason": "condition-or-temporal-mismatch"
+    },
+    {
+      "id": "claim-added-condition",
+      "question": "行驶中如何使用雨刮？",
+      "summary": "行驶中可以开启雨刮。",
+      "evidence": [{ "chunkId": "condition-2", "citation": "p.140", "excerpt": "可以开启雨刮。" }],
+      "expectedStatus": "fallback",
+      "expectedReason": "condition-or-temporal-mismatch"
+    },
+    {
+      "id": "evidence-missing-subject",
+      "question": "前舱盖开启前要注意什么？",
+      "summary": "开启前舱盖前请确认周围安全。",
+      "evidence": [{ "chunkId": "subject-2", "citation": "p.99", "excerpt": "开启前请确认周围安全。" }],
+      "expectedStatus": "fallback",
+      "expectedReason": "subject-mismatch"
+    },
+    {
+      "id": "cross-evidence-cannot-compose",
+      "question": "P挡时尾门可以开到80%吗？",
+      "summary": "P挡时尾门可以开到80%。",
+      "evidence": [
+        { "chunkId": "compose-condition", "citation": "p.92", "excerpt": "车辆处于P挡时可以开启尾门。" },
+        { "chunkId": "compose-number", "citation": "p.93", "excerpt": "尾门开启高度可设置为80%。" }
+      ],
+      "expectedStatus": "fallback",
+      "expectedReason": "number-or-unit-mismatch"
+    },
+    {
+      "id": "partial-support",
+      "question": "开启尾门前要注意什么？",
+      "summary": "开启尾门前请确认后方空间。尾门会自动检测所有障碍物。",
+      "evidence": [{ "chunkId": "partial-1", "citation": "p.88", "excerpt": "开启尾门前请确认后方空间。" }],
+      "expectedStatus": "partial",
+      "expectedRetained": 1,
+      "expectedUnsupported": 1,
+      "expectedEvidenceIds": ["partial-1"]
+    },
+    {
+      "id": "all-unsupported-relevant-fallback",
+      "question": "胎压报警怎么处理？",
+      "summary": "胎压报警后继续高速行驶即可。",
+      "evidence": [
+        { "chunkId": "generic-1", "citation": "p.10", "excerpt": "使用空调时请关闭车窗。" },
+        { "chunkId": "tire-1", "citation": "p.210", "excerpt": "胎压报警后请减速并在安全地点检查轮胎。" }
+      ],
+      "expectedStatus": "fallback",
+      "expectedEvidenceIds": ["tire-1"],
+      "expectedAnswerIncludes": "减速"
+    },
+    {
+      "id": "all-unsupported-unrelated-fallback-boundary",
+      "question": "胎压报警怎么处理？",
+      "summary": "胎压报警后继续高速行驶即可。",
+      "evidence": [
+        { "chunkId": "unrelated-1", "citation": "p.10", "excerpt": "使用空调时请关闭车窗。" },
+        { "chunkId": "unrelated-2", "citation": "p.20", "excerpt": "雨刮片应定期检查。" }
+      ],
+      "expectedStatus": "fallback",
+      "expectedEvidenceIds": [],
+      "expectedAnswerIncludes": "不能编造",
+      "expectedFallbackMode": "no-question-related-evidence"
+    },
+    {
+      "id": "citation-only-for-supporting-evidence",
+      "question": "开启尾门前要注意什么？",
+      "summary": "开启尾门前请确认后方空间。",
+      "evidence": [
+        { "chunkId": "supporting", "citation": "p.88", "excerpt": "开启尾门前请确认后方空间。" },
+        { "chunkId": "irrelevant", "citation": "p.200", "excerpt": "雨刮片应定期检查。" }
+      ],
+      "expectedStatus": "grounded",
+      "expectedEvidenceIds": ["supporting"]
+    }
+  ]
+}
